@@ -1,0 +1,40 @@
+
+##  Early Redeem Product SBN Retail [/primary-bonds/sbnretail/early-redeem/product]
+
+###  Early Redeem Product SBN Retail [GET]
+
+Error Code
+1. B0063 - Tidak ada Product Early Redeem
+2. B0064 - Upcoming Early Redeem
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "iconBase64": "",
+                "products" : [
+                    {
+                        "secId": "205",
+                        "securityNo": "ORI 018",
+                        "typeOfBond": "Government Bonds",
+                        "accountNo": "010810090273",
+                        "accountCcy": "IDR",
+                        "marketPrice": 1000000,
+                        "totalMarketValueDate": "2021-03-16T00:00:00.000+0700"
+                    },
+                    {
+                        "secId": "206",
+                        "securityNo": "ORI019",
+                        "typeOfBond": "Government Bonds",
+                        "accountNo": "010810090273",
+                        "accountCcy": "IDR",
+                        "marketPrice": 2000000,
+                        "totalMarketValueDate": "2021-04-16T00:00:00.000+0700"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

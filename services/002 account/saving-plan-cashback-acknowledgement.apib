@@ -1,0 +1,129 @@
+
+## TAKA Cashback Acknowledgement [/account/saving/plan/cashback/acknowledgement]
+
+### TAKA Cashback Acknowledgement [POST]
+
++ Request (application/json)
+
+        {
+            "email": "mbank.user06@devteam.net",
+            "cashback": 1000000,
+            "currencyCode": "IDR",
+            "productName": "Cashback Taka Online Rp 780ribu nett    ",
+            "productCode": "TKNAS22038",
+            "purposeCode": "AOPUR001",
+            "purposeName": "Education",
+            "sourceOfFundCode": "AOPSRC001",
+            "sourceOfFundName": "From Spouse",
+            "tenor": "24",
+            "installmentAmount": 990435.00,
+            "initialAmount": 1121250,
+            "targetAmount": 25000000,
+            "penalty": 1121250,
+            "interestRate": 0.5,
+            "programCode": "13",
+            "giftCode": "OM001     ",
+            "giftName": "Cashback Taka Online Rp 780ribu nett    ",
+            "cashback": 780000,
+            "groupProgCode": "13",
+            "descGroupProgCode": "13",
+            "groupProgType": "NP",
+            "responseCodeOTP": 021589,
+            "tac": [
+                "test",
+                "test"
+            ],
+            "sourceOfFund": {
+                "productCode": "GRRMCY9901",
+                "productName": "Giro Business Infinity",
+                "accountId": "B9B587D02516076CE0537007FF0A3E18",
+                "accountNo": "010810088673",
+                "accountType": "D",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "cif": "0000000000000000010",
+                "currency": "IDR",
+                "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+            }
+        } 
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "productCode": "GRRMCY9901",
+                        "productName": "Giro Business Infinity",
+                        "accountNo": "010810088681",
+                        "accountType": "S",
+                        "branchCode": "01010",
+                        "mcBit": "Y",
+                        "accountId": "B93CE1F808A9753BE0537007FF0A889E",
+                        "currency": "IDR"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": null,
+                            "transactionTitle": "Taka Hadiah Cashback",
+                            "transactionStatus": "S",
+                            "transactionAmount": 2111685,
+                            "totalAmountDescription": null,
+                            "transactionCcy": "IDR",
+                            "transactionDate": "2021-01-19T09:40:38.432+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Cashback Taka Online Rp 780ribu nett    ",
+                                    "value": "Giro Business Infinity"
+                                },
+                                {
+                                    "title": "Jumlah Detail",
+                                    "note": "Jumlah Setoran IDR 1.121.250",
+                                    "value": "Setoran Bulanan Pertama IDR 990.435"
+                                },
+                                {
+                                    "title": "Produk",
+                                    "value": "Cashback Taka Online Rp 780ribu nett    "
+                                },
+                                {
+                                    "title": "Tenor",
+                                    "value": "2 Tahun"
+                                },
+                                {
+                                    "title": "Bunga (gross per tahun)",
+                                    "value": "0.5%"
+                                },
+                                {
+                                    "title": "Estimasi Target Dana",
+                                    "value": "IDR 25.000.000"
+                                },
+                                {
+                                    "title": "Jumlah Setoran Bulanan",
+                                    "value": "IDR 990.435"
+                                },
+                                {
+                                    "title": "Keperluan",
+                                    "value": "Education"
+                                },
+                                {
+                                    "title": "Sumber Dana",
+                                    "value": "From Spouse"
+                                },
+                                {
+                                    "title": "Nomor Referensi",
+                                    "value": "20210119450064"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

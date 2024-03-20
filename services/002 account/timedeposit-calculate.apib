@@ -1,0 +1,41 @@
+
+## Calculate [/account/time/deposit/calculate]
+
+### Calculate [POST]
+
++ Request (application/json)
+
+        {
+            "productCode" : "AOPRD001",
+            "productName" : "Deposito",
+            "depositProductCode" : "DBECCB0001",
+            "email" : "mbank.user08@devteam.net",
+            "currency" : "IDR",
+            "amount" : 5000000,
+            "tenor" : "1-M",
+            "maturity" : "AOMAT001",
+            "interestPayment" : "1-M",
+            "promoCode" : "ERN00002"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "productCode": "AOPRD001",
+                "productName": "Deposito",
+                "depositProductCode": "DBECCB0001",
+                "interestRate": 5.12,
+                "estimationTotalAmount": 50034027,
+                "estimationMonth" : 3,
+                "promoCode": {
+                    "isValid": true,
+                    "errorCode": "",
+                    "errorDescription": ""
+                }
+            },
+            "response_code": "00000"
+        }

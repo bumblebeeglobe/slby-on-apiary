@@ -1,0 +1,48 @@
+
+## Investment Menu [/dashboard/asset/timedeposit/detail]
+
+### Investment Menu [POST]
+
+####
+ibFlag -> true   : bisa ganti maturity & zakat
+iblfag -> false  : hanya tampilkan detail saja
+
++ Request (application/json)
+
+        {
+            "accountNo": "693810052565"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "productCode": "DHECCB0014",
+                "productName": "DEPO IBMB IDR 14HR",
+                "productCurrency": "IDR",
+                "balance": 8267509,
+                "maturityDate": "2021-06-20T17:00:00.000+0700",
+                "effectiveDate": "2021-06-06T17:00:00.000+0700",
+                "tenor": 14,
+                "tenorType": "D",
+                "interestRate": 0.5,
+                "accountId": "C4613B0F7184764BE053D307FF0AB869",
+                "interestPayment": 14,
+                "interestPaymentType": "D",
+                "isStructured": false,
+                "maturityCode": "N",
+                "maturity": "AOMAT001",
+                "maturityName": "Tidak Diperpanjang Otomatis",
+                "ibFlag": true,
+                "accountNo": "133820000130",
+                "branchCode": "05133",
+                "progressTenor": 0,
+                "isSyariah": false,
+                "zakatFlag": false,
+                "zakat": 0
+            },
+            "response_code": "00000"
+        }

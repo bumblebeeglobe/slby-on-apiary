@@ -1,0 +1,138 @@
+
+## Acknowledgement Submit Own Account [/onfx/acknowledgement-own-account]
+
+### Acknowledgement Submit Own Account [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "accountNo": "693810029464",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "mcBit": "Y",
+                "branchCode": "99693",
+                "productCode": "TBSMCY9902",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR"
+                    }
+                ]
+            },
+            "listNonRegisteredAccount": [
+                {
+                    "beneAccount": {
+                        "accountNo": "693810029464",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "accountType": "S",
+                        "mcBit": "Y",
+                        "branchCode": "99693",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "USD"
+                            }
+                        ]
+                    },
+                    "beneTransaction": {
+                        "amountCcy": "IDR",
+                        "transferPurpose": {
+                            "code": "PR001",
+                            "description": "Business"
+                        },
+                        "remark": "Travelling",
+                        "transferDate": "2022-03-10T00:00:00.000+00:00",
+                        "amount": 50000.00,
+                        "exchangeRate": 14025.00,
+                        "exchangeRateCcy": "USD",
+                        "bidRate": 14012.12,
+                        "askRate": 14045.00,
+                        "spread": 0.16,
+                        "transactionFormatValue": 50000.88,
+                        "transactionFormatCcy": "IDR",
+                        "tacId": "97AD6A0D1CCD1B52E0537007FF0A880A",
+                        "tacCode": "FOREXTRF",
+                        "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+                    }
+                }
+            ],
+            "responseCodeOTP": "123456"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "accountNo": "693810029464",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "accountType": "S",
+                        "mcBit": "Y",
+                        "branchCode": "99693",
+                        "productCode": "TBSMCY9902",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "USD"
+                            }
+                        ]
+                    },
+                    "listTransaction": [
+                        {
+                            "recipients": {
+                                "accountNo": "693810029464",
+                                "accountName": "ENDANG MUSTIKOWATI",
+                                "accountType": "S",
+                                "mcBit": "Y",
+                                "branchCode": "99693",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR"
+                                    }
+                                ]
+                            },
+                            "transactionStatus": "F",
+                            "errorCode": "01009",
+                            "errorCodeDescription": "Saldo Tidak Cukup                             63208.7 ",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "transactionAmount": 3250800.88,
+                            "transactionCcy": "IDR",
+                            "transactionValue": 230.96,
+                            "transactionValueCcy": "USD",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "exchangeRate": 14057,
+                            "exchangeRateFormat": 0.000071,
+                            "transactionFormatValue": 50000.88,
+                            "transactionFormatCcy": "IDR",
+                            "adminFee": 0,
+                            "descriptions": [
+                                {
+                                    "title": "Total Dana",
+                                    "value": "USD 230.96",
+                                    "note": "Total Admin - IDR 0"
+                                },
+                                {
+                                    "title": "Tujuan",
+                                    "value": "Personal"
+                                },
+                                {
+                                    "title": "Nilai Tukar",
+                                    "value": "1 IDR = 0.000071 USD"
+                                },
+                                {
+                                    "title": "Keterangan",
+                                    "value": "Travelling"
+                                },
+                                {
+                                    "title": "Reference Number",
+                                    "value": "10200828105606"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }

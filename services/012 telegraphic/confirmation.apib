@@ -1,0 +1,206 @@
+
+## Telegraphic Confirmation [/telegraphic/confirmation]
+
+### Telegraphic Confirmation [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "accountId": "B1C200A06D9C65D9E0537007FF0AF56E",
+                "accountNo": "693810029464",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "mcBit": "Y",
+                "branchCode": "99693",
+                "productCode": "TBSMCY9902",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR"
+                    }
+                ]
+            },
+            "listTelegraphicTransfer": [
+                {
+                    "remitter": {
+                        "name": "ENDANG MUSTIKOWATI",
+                        "category": {
+                            "code": "A0",
+                            "value": "Perorangan",
+                            "description": ""
+                        },
+                        "domicile": {
+                            "code": "001",
+                            "value": "Afghanistan"
+                        },
+                        "residentStatus": {
+                            "code": "001",
+                            "value": "Warga Negara"
+                        },
+                        "address": "Jl. Mandar 4 No 12, Pondok Aren, Ciputat Timur, 15412"
+                    },
+                    "beneAccount": {
+                        "accountNo": "693810030363",
+                        "accountName": "LISANLY",
+                        "address": "1283, Hikobe, Shiwa-cho Shiwa-gun, Iwate, Chuo-Ku",
+                        "domicile": {
+                            "code": "001",
+                            "value": "Indonesian"
+                        },
+                        "bank": {
+                            "swiftCode": "BOISSGS1XXX",
+                            "name": "MITSUBISHI UFJ SECURITIES (SINGAPORE), LIMITED",
+                            "address": "HONG LEONG BUILDING 01-06 9 RAFFLES PLACE 01-01, REPUBLIC PLAZA",
+                            "country": {
+                                "code": "001",
+                                "value": "Afghanistan"
+                            },
+                            "city": {
+                                "code": "001",
+                                "value": "Aichi"
+                            }
+                        },
+                        "accountBalances": [
+                            {
+                                "accountCcy": "JPY"
+                            }
+                        ]
+                    },
+                    "beneTransaction": {
+                        "swiftChargeMethod": {
+                            "code": "BEN",
+                            "value": "By Recipient (BEN)",
+                            "description": "By Recipient (BEN)"
+                        },
+                        "affiliationStatus": {
+                            "code": "N",
+                            "value": "Bukan Afiliasi",
+                            "description": ""
+                        },
+                        "category": {
+                            "code": "A0",
+                            "value": "Perorangan",
+                            "description": ""
+                        },
+                        "purpose": {
+                            "code": "2150",
+                            "value": "Transfer Penghasilan",
+                            "description": ""
+                        },
+                        "transferServiceCode": "TT",
+                        "amount": 500000,
+                        "amountCcy": "IDR",
+                        "remark": "test",
+                        "tacId": "0001",
+                        "tacCode": "ABC123",
+                        "exchangeRate": 9877.5397178,
+                        "exchangeRateFormat": 0.000101239785267370965083622677974305315326,
+                        "exchangeRateCcy": "SGD"
+                    }
+                }
+            ]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sourceAccount": {
+                    "accountId": "B1C200A06D9C65D9E0537007FF0AF56E",
+                    "accountNo": "693810029464",
+                    "accountName": "ENDANG MUSTIKOWATI",
+                    "accountType": "S",
+                    "mcBit": "Y",
+                    "branchCode": "99693",
+                    "productCode": "TBSMCY9902",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR"
+                        }
+                    ]
+                },
+                "listTelegraphicTransfer": [
+                    {
+                        "remitter": {
+                            "name": "ENDANG MUSTIKOWATI",
+                            "category": {
+                                "code": "A0",
+                                "value": "Perorangan",
+                                "description": ""
+                            },
+                            "domicile": {
+                                "code": "001",
+                                "value": "Indonesian"
+                            },
+                            "residentStatus": {
+                                "code": "001",
+                                "value": "Warga Negara"
+                            },
+                            "address": "Jl. Mandar 4 No 12, Pondok Aren, Ciputat Timur, 15412"
+                        },
+                        "beneAccount": {
+                            "accountNo": "693810030363",
+                            "accountName": "LISANLY",
+                            "address": "1283, Hikobe, Shiwa-cho Shiwa-gun, Iwate, Chuo-Ku",
+                            "domicile": {
+                                "code": "001",
+                                "value": "Afghanistan"
+                            },
+                            "bank": {
+                                "swiftCode": "BOISSGS1XXX",
+                                "name": "MITSUBISHI UFJ SECURITIES (SINGAPORE), LIMITED",
+                                "address": "HONG LEONG BUILDING 01-06 9 RAFFLES PLACE 01-01, REPUBLIC PLAZA",
+                                "country": {
+                                    "code": "001",
+                                    "value": "Afghanistan"
+                                },
+                                "city": {
+                                    "code": "001",
+                                    "value": "Aichi"
+                                }
+                            },
+                            "accountBalances": [
+                                {
+                                    "accountCcy": "JPY"
+                                }
+                            ]
+                        },
+                        "beneTransaction": {
+                            "swiftChargeMethod": {
+                                "code": "BEN",
+                                "value": "By Recipient (BEN)",
+                                "description": "By Recipient (BEN)"
+                            },
+                            "affiliationStatus": {
+                                "code": "N",
+                                "value": "Bukan Afiliasi",
+                                "description": ""
+                            },
+                            "category": {
+                                "code": "A0",
+                                "value": "Perorangan",
+                                "description": ""
+                            },
+                            "purpose": {
+                                "code": "2150",
+                                "value": "Transfer Penghasilan",
+                                "description": ""
+                            },
+                            "transferServiceCode": "TT",
+                            "amount": 50,
+                            "amountCcy": "IDR",
+                            "remark": "test",
+                            "tacId": "0001",
+                            "tacCode": "ABC123",
+                            "exchangeRate": 9877.5397178,
+                            "exchangeRateFormat": 0.000101239785267370965083622677974305315326,
+                            "exchangeRateCcy": "SGD",
+                            "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+                        }
+                    }
+                ]
+            }
+        }

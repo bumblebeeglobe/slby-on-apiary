@@ -1,0 +1,26 @@
+## Primary bonds Risk Profile Info [/wealth/risk-profile-info]
+
+### Primary bonds Risk Profile Info [POST]
+
++ Request (application/json)
+
+        {
+            "riskProfileCode": "A"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "riskProfile" : {
+                    "isExpired": true,
+                    "code": "A",
+                    "title": "Conservative",
+                    "description": "You are a risk-averse Investor. Your primary priority is to maintain the principal amount rather than looking for potential growth with short term investment horizon focus."
+                }
+            },
+            "response_code": "00000"
+        }

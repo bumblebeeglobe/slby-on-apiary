@@ -1,0 +1,37 @@
+
+## Sell Buy Exchange [/onfx/sell-buy-exchange]
+
+### Sell Buy Exchange [POST]
+
++ Request (application/json)
+
+        {
+            "sellCcy": "USD",
+            "buyCcy": "USD"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "timeCreated": "2020-05-26T08:23:14.000+00:00",
+                "buyCcy": "USD",
+                "sellCcy": "IDR",
+                "pairCcy": "USD/IDR",
+                "exchangeRate": 14057,
+                "bidSpread": 31,
+                "kursBISellLeft": 14257,
+                "kursBIBuyLeft": 14257,
+                "kursBISellRight": 14257,
+                "kursBIBuyRight": 1,
+                "min": 5,
+                "minCcy" : "IDR",
+                "max": 100000,
+                "decimalExchange": 2,
+                "tradeable": "Y",
+                "exchangeRateFormat": 14057
+            }
+        }

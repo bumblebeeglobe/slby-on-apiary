@@ -1,0 +1,111 @@
+
+## ITR View Receipt [/history/view-receipt]
+
+### View Receipt [POST]
+
++ Request
+
+        {
+            "historyId" : "777f5c6f-e03f-498b-a555-17101cbb7a49",
+            "transactionCode" : "TRANSFER"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810055543",
+                        "accountType": "S",
+                        "accountName": "RESTU KURNIAWAN",
+                        "accountCcy": "IDR",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "dynamicAccountId": "",
+                        "bankCode": "999",
+                        "bankName": "OCBC NISP",
+                        "description": "",
+                        "qrCode": "",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 4000000000,
+                                "holdBalance": 0,
+                                "isAvailable": false,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            }
+                        ]
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "",
+                            "errorDesc": "",
+                            "recipients": {
+                                "productCode": "TBSMCY9901",
+                                "productName": "Tanda360Plus-S",
+                                "accountNo": "693810055519",
+                                "accountType": "S",
+                                "accountName": "RESTU KURNIAWAN",
+                                "accountCcy": "USD",
+                                "branchCode": "99693",
+                                "mcBit": "Y",
+                                "dynamicAccountId": "",
+                                "bankCode": "999",
+                                "bankName": "OCBC NISP",
+                                "description": "",
+                                "qrCode": "",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "USD",
+                                        "balance": 5000,
+                                        "holdBalance": 0,
+                                        "isAvailable": false,
+                                        "accountCcyNameID": "Dolar Amerika",
+                                        "accountCcyNameEN": "US Dollar"
+                                    }
+                                ]
+                            },
+                            "transactionTitle": "Transfer",
+                            "transactionStatus": "S",
+                            "transactionId": "777f5c6f-e03f-498b-a555-17101cbb7a49",
+                            "transactionCode": "TRANSFER",
+                            "transactionAmount": 14400632.02,
+                            "totalAmountDescription": "Setara dengan IDR 999,97",
+                            "transactionCcy": "IDR",
+                            "transactionFormatValue": 0,
+                            "transactionFormatCcy": "",
+                            "transactionDate": "2021-05-17T04:05:24.212+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Catatan",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Metode Transfer",
+                                    "value": "OCBC NISP"
+                                },
+                                {
+                                    "title": "Waktu Transfer",
+                                    "value": "17 Mei 2021"
+                                },
+                                {
+                                    "title": "Nomor Referensi",
+                                    "value": "20210517133710"
+                                }
+                            ],
+                            "headlines": [],
+                            "footnote": "",
+                            "header": ""
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

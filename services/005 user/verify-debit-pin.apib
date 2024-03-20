@@ -1,0 +1,29 @@
+
+## Verify DEBIT PIN [/user/verify_pin]
+
+### Verify DEBIT PIN [POST]
+
++ Request (application/json)
+
+        {
+            "operationCode": "000",
+            "registerInternetBankingForm": {
+                "cif": "12351234151",
+                "ccPIN": "01012000",
+                "ccNumber": "0000000000000181"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "registerInternetBankingFormResponse": {
+                    "isValid": true,
+                    "uniqueIdentifier": "9rtghuyih3v9hd9"
+                }
+            }
+        }

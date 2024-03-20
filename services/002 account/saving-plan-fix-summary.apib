@@ -1,0 +1,78 @@
+
+## TAKA Fix Summary [/account/saving/plan/fix/summary]
+
+### TAKA Fix Disbursement [POST]
+
++ Request (application/json)
+
+        {
+            "type" : "FIX",
+            "accountType" : "S",
+            "productName" : "Taka Fix",
+            "installmentAmount" : 100000,
+            "tenor" : 1,
+            "sourceOfFundName" : "Pendapatan",
+            "purposeName" : "Investasi",
+            "disburseAcctNo" : "010810161160"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "type": "FIX",
+                "accountType": "S",
+                "productName": "Taka Fix",
+                "installmentAmount": 100000,
+                "initialAmount": 0,
+                "tenor": 1,
+                "currencyCode": "IDR",
+                "tncCode": "TAKAFIX",
+                "productCode": "TKFIXNA003",
+                "disburseAcctNo": "330810001710",
+                "sourceOfFundName": "Pendapatan",
+                "purposeName": "Investasi",
+                "minimumTargetAmount": 1000000,
+                "maximumTargetAmount": 999999999999,
+                "targetAmount": 1214454,
+                "interestRate": 2.75,
+                "summaries": [
+                    {
+                        "title": "Produk",
+                        "value": "Taka Fix"
+                    },
+                    {
+                        "title": "Jumlah Setoran Bulanan",
+                        "value": "IDR 100.000"
+                    },
+                    {
+                        "title": "Rekening Pencairan",
+                        "value": "330-810-00171-0"
+                    },
+                    {
+                        "title": "Tenor",
+                        "value": "1 Tahun"
+                    },
+                    {
+                        "title": "Target Dana",
+                        "value": "IDR 1.214.454"
+                    },
+                    {
+                        "title": "Bunga (gross per tahun)",
+                        "value": "2.75%*"
+                    },
+                    {
+                        "title": "Sumber Dana",
+                        "value": "Pendapatan"
+                    },
+                    {
+                        "title": "Keperluan",
+                        "value": "Investasi"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

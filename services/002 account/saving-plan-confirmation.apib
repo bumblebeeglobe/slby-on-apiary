@@ -1,0 +1,84 @@
+
+## TAKA Confirmation [/account/saving/plan/confirmation]
+
+### TAKA Confirmation [POST]
+
+- "initialAmount" always return 0 if taka fix
+
++ Request (application/json)
+
+        {
+            "installmentAmount" : 10000000,
+            "productName" : "Taka Target",
+            "tenor" : 1,
+            "currencyCode" : "IDR",
+            "productCode" : "TKNAS22035",
+            "tncCode" : "TAKABUNGA",
+            "interestRate" : 4.0,
+            "sourceOfFundCode" : "D",
+            "sourceOfFundName" : "Pendapatan",
+            "purposeCode" : "B",
+            "purposeName" : "Investasi",
+            "initialAmount": 5000000,
+            "minimumTargetAmount": 10000000,
+            "maximumTargetAmount": 999999999999999,
+            "targetAmount": 127264945,
+            "sourceOfFund": {
+                "productName" : "Tanda360Plus-Digital",
+                "productCode": "TBSMCY9902",
+                "accountNo": "010810161160",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "accountBranch": "99693",
+                "accountLabel": "B48335E2CE7D11C9E0537007FF0AF372",
+                "mcBit": "Y"
+            }
+            "disbursement": {
+                "productName" : "Tanda360Plus-Digital",
+                "productCode": "TBSMCY9902",
+                "accountNo": "693810030363",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "accountBranch": "99693",
+                "accountLabel": "B48335E2CE7D11C9E0537007FF0AF372",
+                "mcBit": "Y"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "lang": "IN",
+                "installmentAmount": 10000000,
+                "productName": "Taka Target",
+                "sourceOfFund": {
+                    "productName": "Tanda360Plus-Digital",
+                    "productCode": "TBSMCY9902",
+                    "accountNo": "010810161160",
+                    "accountName": "ENDANG MUSTIKOWATI",
+                    "accountType": "S",
+                    "accountBranch": "99693",
+                    "accountLabel": "B48335E2CE7D11C9E0537007FF0AF372",
+                    "mcBit": "Y"
+                },
+                "disburseAccNo": null,
+                "tenor": 1,
+                "currencyCode": "IDR",
+                "productCode": "TKNAS22035",
+                "tncCode" : "TAKABUNGA",
+                "targetAmount": 127264945,
+                "interestRate": 4,
+                "sourceOfFundCode": "D",
+                "sourceOfFundName": "Pendapatan",
+                "purposeCode": "B",
+                "purposeName": "Investasi",
+                "initialAmount": 5000000,
+                "minimumTargetAmount": 10000000,
+                "maximumTargetAmount": 999999999999999,
+                "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+            }
+        }

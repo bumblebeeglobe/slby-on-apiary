@@ -1,0 +1,39 @@
+
+## Term and Condition [/user/agreements]
+
+### Term and Condition [POST]
+
+Note Parameter
+1. isDownload "true" download and show pdf (SBNRitelBuy)
+
++ Request (application/json)
+
+        {
+            "code": "REGISTERINVESTMENT"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "title": "Make sure you have read, understood, and agreed to the product & service summary and its terms & conditions",
+                "agreements": [
+                    {
+                        "title": "Product & Service Summary",
+                        "tacCode": "TANDAGENERAL",
+                        "tacId": "1234",
+                        "isDownload": false
+                    },
+                    {
+                        "title": "PDF Tnc Agreement (Download)",
+                        "tacCode": "TANDAGENERALDOWNLOAD",
+                        "tacId": "12345",
+                        "isDownload": true
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

@@ -1,0 +1,33 @@
+
+## Pin Transaction Validate Appli [/token/verify/internet-banking/appli]
+
+### Pin Transaction Validate Appli [POST]
+
+1. for appli 1 - appliNumber: 1
+2. for appli 2 - appliNumber: 2
+3. for scan cronto - appliNumber: 3
+
++ Request (application/json)
+
+        {
+            "responseCodeOTP": "160992",
+            "appliNumber" : "1",
+            "sequenceNumber": "4",
+            "userName": "UATRESTU1111",
+            "device" : {
+                "fingerprint": "8E89788B8BAF1AB075248DDD1C0223C6FB5A911D60720FA0209AEBAD0B1871C4",
+                "name" : "Samsung SM-G935F"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "responseCodeOTP": "160992"
+            },
+            "response_code": "00000"
+        }

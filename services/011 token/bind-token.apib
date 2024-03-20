@@ -1,0 +1,38 @@
+
+## aktivasi pin transaksi + binding device [/token/bind-token]
+
+### aktivasi pin transaksi + binding device [POST]
+
+Activation Type:
+1. C - Create PIN
+2. U - Change PIN
+
++ Request (application/json)
+
+        {
+            "activationType": "C",
+            "otipType": "313230",
+            "appliName": "SG",
+            "appliNo": "4",
+            "seqNo": "4",
+            "deviceFingerPrint": "F7057AF3F7CF2E20A433B77B6A4330161F0816D73271EBDE93B70FA2D78566FD",
+            "deviceBindingParameters": {
+                "deviceId": "A12345",
+                "deviceModel": "xiaomi",
+                "deviceType": "red mi note",
+                "deviceOs": "android 9.0",
+                "isRooted": false,
+                "pushToken": "9988776666"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "velisTimeStamp": 1608951693
+            }
+        }

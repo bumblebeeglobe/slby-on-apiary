@@ -1,0 +1,70 @@
+
+## Summary [/account/time/deposit/summary]
+
+### Summary [POST]
+
++ Request (application/json)
+
+        {
+            "productCode" : "AOPRD001",
+            "productName" : "Deposito",
+            "depositProductCode" : "DBECCB0001",
+            "email": "mbank.user08@devteam.net",
+            "currency": "IDR",
+            "amount": 5000000,
+            "tenor": "3-M",
+            "maturity": "AOMAT001",
+            "interestPayment": "3-M",
+            "promoCode" : "ERN00002"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "productCode": "AOPRD001",
+                "productName": "Deposito",
+                "depositProductCode": "DBECCB0001",
+                "email": "mbank.user08@devteam.net",
+                "currency": "IDR",
+                "amount": 5000000,
+                "tenor": "3-M",
+                "maturity": "AOMAT001",
+                "interestPayment": "3-M",
+                "promoCode" : "ERN00002",
+                "tncCode": "TIMEDEPOSIT_IDR",
+                "sourceOfFundName": "Pendapatan",
+                "purposeName": "Investasi",
+                "interestRate": 5.12,
+                "summaries": [
+                    {
+                        "title": "Amount",
+                        "value": "IDR 5,000,000"
+                    },
+                    {
+                        "title": "Duration",
+                        "value": "3 Month"
+                    },
+                    {
+                        "title": "Interest Rate",
+                        "value": "5.50% P.A"
+                    },
+                    {
+                        "title": "Maturity Instruction",
+                        "value": "Auto Rollover & Interest Compounded"
+                    },
+                    {
+                        "title": "Promo Code",
+                        "value": "OCBC NISP Ultah"
+                    },
+                    {
+                        "title": "Cancelation Fee",
+                        "value": "IDR 50,000"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

@@ -1,0 +1,64 @@
+
+## Validate QRIS Pay [/payment/validate-qris-pay]
+
+### Validate QRIS Pay [POST]
+
++ Request (application/json)
+
+        {
+            "qrcode": "00020101021226690017ID.CO.DANAMON.WWW011893600011000000088802150000880800000200303UME27720020COM.BANKSINARMAS.WWW011893600153100290563402157338680866228710303UMI51320002000215ID10191010101180303UME52045812530336054100010001.005502015802ID5918AYAM GORENG SEKALI6010TANGGERANG61051511562070703C0163044A9F",
+            "billAmount": 200000,
+            "tipAmount": 10000,
+            "totalAmount": 30000,
+            "sourceAccount": {
+                "productCode": "TBPAY10002",
+                "productName": "TANDA PAYROLL 1-P",
+                "accountNo": "693810003337",
+                "accountType": "S",
+                "branchCode": "99693",
+                "mcBit": "N",
+                "accountId": "AE28BF3D6C7CDA13E050A8C0940711A9",
+                "labelDebitAccount": "TANDA PAYROLL 1-P 693810003337 IDR 2280351.00",
+                "cif": "0000000000001679512",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 2280351,
+                        "isAvailable": true
+                    }
+                ]
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "qrcode": "00020101021226690017ID.CO.DANAMON.WWW011893600011000000088802150000880800000200303UME27720020COM.BANKSINARMAS.WWW011893600153100290563402157338680866228710303UMI51320002000215ID10191010101180303UME52045812530336054100010001.005502015802ID5918AYAM GORENG SEKALI6010TANGGERANG61051511562070703C0163044A9F",
+                "billAmount": 200000,
+                "tipAmount": 10000,
+                "totalAmount": 30000,
+                "sourceAccount": {
+                    "productCode": "TBPAY10002",
+                    "productName": "TANDA PAYROLL 1-P",
+                    "accountNo": "693810003337",
+                    "accountType": "S",
+                    "branchCode": "99693",
+                    "mcBit": "N",
+                    "accountId": "AE28BF3D6C7CDA13E050A8C0940711A9",
+                    "labelDebitAccount": "TANDA PAYROLL 1-P 693810003337 IDR 2280351.00",
+                    "cif": "0000000000001679512",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 2280351,
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                "onlineSessionId": "693810029464-693810029464-1001.00-6d0551a6-9927-413f-88de-40fb831c8e1c"
+            }
+        }

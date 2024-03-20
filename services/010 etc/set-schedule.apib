@@ -1,0 +1,33 @@
+
+## VKYC Set Schedule [/etc/vkyc/schedule/set]
+
+### VKYC Set Schedule [POST]
+
+ErrorCodes
+1. 08102 Error quota full
+2. 08103 Already Set Schedule
+
++ Request (application/json)
+
+        {
+            "day": "Thursday",
+            "date": "2021-03-16T17:00:00.000+00:00",
+            "fullSchedule": false,
+            "hour": {
+                "code": "QO809",
+                "isAvailable": false,
+                "hour": "08.00"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "message": "Kami akan menghubungi Anda pada:\nSenin, 5 Oktober 2020\nPukul 13:00 - 14:00 WIB"
+            },
+            "response_code": "00000"
+        }

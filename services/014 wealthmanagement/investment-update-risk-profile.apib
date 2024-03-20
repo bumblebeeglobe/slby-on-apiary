@@ -1,0 +1,108 @@
+
+## Register Update Risk Profile [/wealth/investment/register/risk-profile/update]
+
+### Register Update Register Risk Profile [POST]
+
++ Request (application/json)
+
+        {
+            "referenceNumber": "NTI202104161201172815",
+            "questions" : [
+                {
+                    "code": "RISK12",
+                    "page": 2,
+                    "isMultipleAnswer": false,
+                    "type": "select",
+                    "question": "What is your expectation for potential profit and potential losses that you can tolerate in investment?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER12001",
+                            "value": "Does not matter with minimal return, as long as investment capital is protected.",
+                            "score": 2,
+                            "nextPage": 3
+                        }
+                    ]
+                },
+                {
+                    "code": "RISK12",
+                    "page": 2,
+                    "isMultipleAnswer": true,
+                    "type": "select",
+                    "question": "What is your expectation for potential profit and potential losses that you can tolerate in investment?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER12001",
+                            "value": "Does not matter with minimal return, as long as investment capital is protected.",
+                            "score": 2,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER12002",
+                            "value": "To achieve regular coupon/dividen and slight capital growth, I am willing to bear losses (less than 10%) in certain market conditions.",
+                            "score": 4,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER12003",
+                            "value": "To achieve regular coupon/dividen and balanced capital growth, I am willing to bear losses (less than 15%) in certain market conditions.",
+                            "score": 6,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER12004",
+                            "value": "To achieve higher capital gain and slight coupon/dividen, I am willing to bear losses (less than 25%) in certain market conditions. ",
+                            "score": 8,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER12005",
+                            "value": "To achieve high capital growth, I am willing to bear any losses in certain market conditions.",
+                            "score": 10,
+                            "nextPage": 3
+                        }
+                    ]
+                },
+                {
+                    "code": "RISK12",
+                    "page": 2,
+                    "isMultipleAnswer": true,
+                    "type": "select",
+                    "question": "What is your expectation for potential profit and potential losses that you can tolerate in investment?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER12001",
+                            "value": "Does not matter with minimal return, as long as investment capital is protected.",
+                            "score": 2,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER12002",
+                            "value": "To achieve regular coupon/dividen and slight capital growth, I am willing to bear losses (less than 10%) in certain market conditions.",
+                            "score": 4,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER12003",
+                            "value": "To achieve regular coupon/dividen and balanced capital growth, I am willing to bear losses (less than 15%) in certain market conditions.",
+                            "score": 6,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER12004",
+                            "value": "To achieve higher capital gain and slight coupon/dividen, I am willing to bear losses (less than 25%) in certain market conditions. ",
+                            "score": 20,
+                            "nextPage": 3
+                        }
+                    ]
+                }
+            ]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "response_code": "00000"
+        }

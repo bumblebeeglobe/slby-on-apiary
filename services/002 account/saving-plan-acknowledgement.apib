@@ -1,0 +1,131 @@
+
+## TAKA Acknowledgement [/account/saving/plan/acknowledgement]
+
+### TAKA Acknowledgement [POST]
+- IF TAKA FIX disbursement = OPTIONAL
+- IF TAKA TARGET disbursement = ALWAYS NULL
+- IF TAKA CASHBACK need additional params: penalty ... groupProgType
+
++ Request (application/json)
+
+        {
+            "responseCodeOTP" : "537788",
+            "operationCode" : "200",
+            "email":"A@gmail.com",
+            "installmentAmount" : 100000,
+            "productName" : "TAKA Cicilan Tetap",
+            "tenor" : 2.5,
+            "currencyCode" : "IDR",
+            "productCode" : "TKFIXNA003",
+            "interestRate" : 4.0,
+            "sourceOfFundCode" : "D",
+            "sourceOfFundName" : "Pendapatan",
+            "purposeCode" : "B",
+            "purposeName" : "Investasi",
+            "initialAmount" : 0,
+            "minimumTargetAmount": 1000000,
+            "maximumTargetAmount": 999999999999999,
+            "targetAmount": 3881576,
+            "penalty": "359375",
+            "programCode": "13",
+            "giftCode": "OM028",
+            "giftName": "Cashback - Rp 250ribu nett",
+            "cashbackValue": "250000",
+            "groupProgCode": "13",
+            "descGroupProgCode": "13",
+            "groupProgType": "NP",
+            "sourceOfFund":{
+                 "productCode":"TBSMCY9901",
+                 "productName":"Tanda360Plus-S",
+                 "accountNo":"545810206031",
+                 "accountName": "ENDANG MUSTIKOWATI",
+                 "accountType":"S",
+                 "branchCode":"02545",
+                 "mcBit":"Y",
+                 "accountId":"B67E0FA76A576FA4E050A8C09407283E"
+              },
+            "disbursement":{
+                 "productCode":"TBSMCY9901",
+                 "productName":"Tanda360Plus-S",
+                 "accountNo":"545810206031",
+                 "accountName": "ENDANG MUSTIKOWATI",
+                 "accountType":"S",
+                 "branchCode":"02545",
+                 "mcBit":"Y",
+                 "accountId":"B67E0FA76A576FA4E050A8C09407283E"
+            },
+            "tac" : ["8DB445AF5C875EC2E050A8C094070229","8DB445AG5d875EC2E050A8C094070229"],
+            "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+        }  
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "545810206031",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "accountType": "S",
+                        "branchCode": "02545",
+                        "mcBit": "Y",
+                        "accountId": "B67E0FA76A576FA4E050A8C09407283E"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "transactionStatus": "S",
+                            "transactionAmmount": 100000.0,
+                            "transactionCcy": "IDR",
+                            "transactionDate": "2020-12-16T02:56:37.192+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Produk",
+                                    "value": "TAKA Cicilan Tetap"
+                                },
+                                {
+                                    "title": "Tenor",
+                                    "value": "2.5 Tahun"
+                                },
+                                {
+                                    "title": "Bunga (kotor per tahun)",
+                                    "value": "4.0%"
+                                },
+                                {
+                                    "title": "Estimasi Target Dana",
+                                    "value": "IDR 3.881.576,00"
+                                },
+                                {
+                                    "title": "Cicilan per Bulan",
+                                    "value": "IDR 100.000,00"
+                                },
+                                {
+                                    "title": "Rekening Pencairan",
+                                    "value": "Tanda360Plus-S 545-810-20603-1"
+                                },
+                                {
+                                    "title": "Tujuan",
+                                    "value": "Investasi"
+                                },
+                                {
+                                    "title": "Sumber Dana",
+                                    "value": "Pendapatan"
+                                },
+                                {
+                                    "title": "Nomor Referensi",
+                                    "value": "20201216129494"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }

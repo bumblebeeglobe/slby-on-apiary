@@ -1,0 +1,24 @@
+
+## First Deposit [/account/initial/deposit]
+
+### First Deposit [POST]
+
++ Request (application/json)
+
+        {
+            "referenceNumber":"ONB201909161631352533_01"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "initialDeposit": "200000",
+                "bankCode": "028",
+                "accountNumber": "010800018755",
+                "fullName": "AGISKA"
+            }
+        }

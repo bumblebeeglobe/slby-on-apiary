@@ -1,0 +1,69 @@
+
+## List Sell Exchange [/onfx/sell-exchange]
+
+### List Sell Exchange [POST]
+
++ Request (application/json)
+
+        {
+            "sellCcy": "IDR"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "timeCreated": "2020-05-26T08:23:14.000+00:00",
+                "listPairCcy": [
+                    {
+                        "pairCcy": "USD/IDR",
+                        "currencyCode": "USD",
+                        "bankBuyRate": 14057,
+                        "bankSellRate": 14300,
+                        "bidSpread": 31,
+                        "askSpread": 10,
+                        "tradeable": "Y"
+                    },
+                    {
+                        "pairCcy": "NZD/IDR",
+                        "currencyCode": "NZD",
+                        "bankBuyRate": 10457,
+                        "bankSellRate": 10577,
+                        "bidSpread": 16,
+                        "askSpread": 11,
+                        "tradeable": "Y"
+                    },
+                    {
+                        "pairCcy": "CHF/IDR",
+                        "currencyCode": "CHF",
+                        "bankBuyRate": 14085,
+                        "bankSellRate": 14217,
+                        "bidSpread": 11,
+                        "askSpread": 8,
+                        "tradeable": "Y"
+                    },
+                    {
+                        "pairCcy": "CAD/IDR",
+                        "currencyCode": "CAD",
+                        "bankBuyRate": 10609,
+                        "bankSellRate": 10719,
+                        "bidSpread": 11,
+                        "askSpread": 8,
+                        "tradeable": "Y"
+                    },
+                    {
+                        "pairCcy": "CNH/IDR",
+                        "currencyCode": "CNH",
+                        "bankBuyRate": 2129,
+                        "bankSellRate": 2206,
+                        "bidSpread": 27,
+                        "askSpread": 11,
+                        "tradeable": "Y"
+                    }
+                ]
+            }
+        }
+ 

@@ -1,0 +1,182 @@
+
+## Investment Menu [/dashboard/asset]
+
+### Investment Menu [GET]
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "investments" : [
+                   {
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "code": "MF",
+                        "title": "Mutual Funds",
+                        "balanceDesc": "Total Portofolio",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 86848614.00,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "accountCcyNameID": "Dolar Amerika",
+                                "accountCcyNameEN": "US Dollar"
+                            }
+                        ],
+                        "assets": [
+                            {
+                                "clientId": 12,
+                                "clientCode": "FP123456",
+                                "productCode": "RFG",
+                                "productName": "ABERDEEN STANDARD IND BAL GROWTH FUND",
+                                "productCategory": "Saham",
+                                "productCurrency": "IDR",
+                                "balance": 204000000.00,
+                                "totalUnit": 47000.1212,
+                                "navAmount": 1000,
+                                "navDate":"2021-04-15T00:00:00.00+0700",
+                                "icon": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                                "suitabilityBit": true
+                            },
+                            {
+                                "clientId": 13,
+                                "clientCode": "FP123456",
+                                "productCode": "SDMP2",
+                                "productName": "SCHRODER DANA MANTAP PLUS II",
+                                "productCategory": "Saham",
+                                "productCurrency": "IDR",
+                                "balance": 3147061.27,
+                                "maturityDate": "2021-04-15T00:00:00.00+0700",
+                                "tenor": 12,
+                                "minUnitRemain":1000,
+                                "totalUnit": 1096.3269,
+                                "navAmount": 2870.55,
+                                "navDate": "021-04-15T00:00:00.00+0700",
+                                "isRecurringPurchase": true,
+                                "autoSubsUntil": "2021-04-15T00:00:00.00+0700",
+                                "monthlySubs": 100000,
+                                "withInsurance": true,
+                                "isAutoReedem": false,
+                                "subscriptionType": "W",
+                                "icon": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                                "suitabilityBit": true
+                            }
+                        ]
+                    },
+                    {
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "code": "SBN",
+                        "title": "SBN Retail",
+                        "balanceDesc": "Total Portofolio",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 86848614.00,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "accountCcyNameID": "Dolar Amerika",
+                                "accountCcyNameEN": "US Dollar"
+                            }
+                        ],
+                        "assets": []
+                    },
+                    {
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "code": "BONDS",
+                        "title": "Obligasi",
+                        "balanceDesc": "Indikasi Nilai Pasar",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 86848614.00,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "accountCcyNameID": "Dolar Amerika",
+                                "accountCcyNameEN": "US Dollar"
+                            }
+                        ],
+                        "assets": [
+                            {
+                                "clientId": 12,
+                                "clientCode": "FP123456",
+                                "productCode": "RFG",
+                                "productName": "ABERDEEN STANDARD IND BAL GROWTH FUND",
+                                "productCategory": "Saham",
+                                "productCurrency": "IDR",
+                                "balance": 204000000.00,
+                                "icon": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                                "suitabilityBit": true
+                            },
+                            {
+                                "clientId": 13,
+                                "clientCode": "FP123456",
+                                "productCode": "SDMP2",
+                                "productName": "SCHRODER DANA MANTAP PLUS II",
+                                "productCategory": "Saham",
+                                "productCurrency": "IDR",
+                                "balance": 3147061.27,
+                                "icon": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                                "suitabilityBit": true
+                            }
+                        ]
+                    },
+                    {
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "code": "BANCA",
+                        "title": "Bancassurance",
+                        "balanceDesc": "Total Portofolio",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 86848614.00,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            }
+                        ],
+                        "assets": [
+                            {
+                                "productCode": "LIVESMART",
+                                "productName": "LIVESMART PROTECTOR",
+                                "productCurrency": "IDR",
+                                "accountNo": "2100805518",
+                                "policyNo": "5000111878",
+                                "policyStatus": "OPEN",
+                                "maturityDate": "2021-05-17T00:00:00.00+0700",
+                                "holdBalance": 50000000,
+                                "availableBalance": 807500,
+                                "icon": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png"
+                            },
+                            {
+                                "productCode": "LIVESMART",
+                                "productName": "LIVESMART PROTECTOR",
+                                "productCurrency": "IDR",
+                                "accountNo": "2100805519",
+                                "policyNo": "5000111879",
+                                "policyStatus": "INFORCE",
+                                "maturityDate": "2021-05-17T00:00:00.00+0700",
+                                "holdBalance": 50000000,
+                                "availableBalance": 807500,
+                                "icon": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "response_code": "00000" 
+        }
+        

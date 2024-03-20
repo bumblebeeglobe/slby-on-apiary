@@ -1,0 +1,50 @@
+
+## Ack Register [/wealth/investment/register/ack]
+
+### Ack Register [POST]
+
++ Request (application/json)
+
+        {
+            "referenceNumber": "NTI202104141926202737",
+            "onlineSessionId": "2021-04-14T20:44:06.217+217:217-8fa45f01-91a5-4a2e-b070-3e9990b6c53f",
+            "responseCodeOTP" : "123456",
+            "tac" : [
+                "A",
+                "B"
+            ],
+            "sourceOfFund": {
+                "productCode": "GRRMCY9902",
+                "productName": "GIRO BUSINESS SMART",
+                "accountNo": "010800022963",
+                "accountType": "D",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "accountId": "BFF9C260BDE0C01FE050A8C094072EE1",
+                "labelDebitAccount": "",
+                "cif": "0000000000001398355",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 52700617,
+                        "holdBalance": 0,
+                        "isAvailable": true,
+                        "accountCcyNameID": "Rupiah Indonesia",
+                        "accountCcyNameEN": "Indonesian Rupiah"
+                    }
+                ]
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "title": "Pengajuan Terkirim",
+                "description": "Pengajuan kamu berhasil terkirim. Silakan tunggu maksimal 3 hari kerja sebelum mulai berinvestasi."
+            },
+            "response_code": "00000"
+        }

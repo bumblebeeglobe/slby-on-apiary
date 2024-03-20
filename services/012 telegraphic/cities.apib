@@ -1,0 +1,38 @@
+
+## Telegraphic Cities [/telegraphic/cities]
+
+### Telegraphic Cities [POST]
+
++ Request (application/json)
+
+        {
+            "countryCode": "001"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "cities": [
+                    {
+                        "code": "001",
+                        "value": "Aichi"
+                    },
+                    {
+                        "code": "002",
+                        "value": "Akita"
+                    },
+                    {
+                        "code": "003",
+                        "value": "Amagasaki"
+                    },
+                    {
+                        "code": "004",
+                        "value": "Aomori"
+                    }
+                ]
+            }
+        }

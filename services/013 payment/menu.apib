@@ -1,0 +1,42 @@
+
+## Payment Menu [/payment/menu]
+
+### Payment Menu [POST]
+
++ Request
+
+        {
+            "menuId": "001",
+            "menuType": "VOUCHER"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "menu": {
+                    "id": "001",
+                    "icon": "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",
+                    "title": "PLN",
+                    "type": "VOUCHER",
+                    "fields": [
+                        {
+                            "code": "CATEGORY",
+                            "title": "Kategori",
+                            "placeholder": "Pilih Kategori"
+                        },
+                        {
+                            "code": "REFERENCENUMBER",
+                            "title": "Nomor Meter / ID Pelanggan",
+                            "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                        }
+                    ]
+                },
+                "section": {
+                    "title": "Pembelian"
+                }
+            }
+        }

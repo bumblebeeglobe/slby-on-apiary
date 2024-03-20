@@ -1,0 +1,32 @@
+
+## Get credit card information [/card/credit/information]
+
+##ERROR CODE
+##03002 = CARD IS BLOCKED
+##03003 = CARD IS INACTIVE
+##03004 = CARD IS INACTIVE
+##03005 = YOUR DATA IS INVALID
+##03007 = YOUR SESSION HAS EXPIRED
+##03008 = OOPS! YOU'VE REACHED YOUR DAILY LIMIT
+
+### Get credit card information [POST]
+
++ Request (application/json)
+
+        {
+            "pan" : "1234567890121234"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "dateOfBirth" : "06101995",
+                "phoneNumber" : "085722746166",
+                "cardStatus": "0"
+            },
+            "response_code": "00000"
+        }

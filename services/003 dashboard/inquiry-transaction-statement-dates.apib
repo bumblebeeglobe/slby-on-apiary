@@ -1,0 +1,43 @@
+
+## Dashboard: Inquiry Transaction Statement Dates [/dashboard/transaction/statements]
+
+### Inquiry Transaction Statement Dates [POST]
+
++ Request (application/json)
+
+        {
+            "accountNo" : "10810094846",
+            "mcBit" : "N",
+            "flag" : "C"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code":"00000",
+            "response_desc_en":"SUCCESS",
+            "response_desc_id":"SUKSES",
+            "data" : {
+                "availableDates": [
+                    {
+                        "year": "2018",
+                        "month": [ 
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6"
+                        ]
+                    },
+                    {
+                        "year": "2019",
+                        "month": [ 
+                            "1",
+                            "2",
+                            "3"
+                        ]
+                    }
+                ]
+            }
+        }

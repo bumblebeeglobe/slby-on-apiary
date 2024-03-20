@@ -1,0 +1,82 @@
+
+## Investor/Kemenkeu Update Ack [/primary-bonds/sbnretail/investor/update/ack]
+
+### Investor/Kemenkeu Update Ackl [POST]
+
+List of Error Code
+1. B0065: Temporary Enable to Change Account
+
++ Request
+
+        {
+            "phoneNumber": "081180102961",
+            "email": "DEVITA_TES@GMAIL.COM",
+            "sid": "7878787878",
+            "investorName": "DEVITA",
+            "riskProfile": {
+                "code": "B",
+                "value": "Rendah - Menengah"
+            },
+            "idNumber": "31000909990001",
+            "placeOfBirth": "TANGERANG",
+            "dateOfBirth": "2021-03-16T00:00:00.000+0700",
+            "gender": {
+                "code": "2",
+                "value": "Perempuan"
+            },
+            "occupation": {
+                "code": "11",
+                "value": "Lainnya"
+            },
+            "occupationID": "Lainnya",
+            "occupationEN": "Other",
+            "address": "TANGERANG&CIMONE&&",
+            "province": {
+                "code": "3100",
+                "value": "PROV. DKI JAKARTA"
+            },
+            "city": {
+                "code": "3171",
+                "value": "JAKARTA SELATAN"
+            },
+            "securitiesAccountNumber": "N0024103",
+            "sourceOfFund": {
+                "productCode": "TBSMCY9902",
+                "productName": "GIRO BUSINESS SMART",
+                "accountNo": "693810053779",
+                "accountType": "D",
+                "branchCode": "99693",
+                "mcBit": "Y",
+                "accountId": "BD8078EF7538141AE053D407FF0A68AB",
+                "labelDebitAccount": "GIRO BUSINESS SMART 693800000723 IDR 65200583.00",
+                "cif": "0000000000001679512",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 693810053779,
+                        "isAvailable": true
+                    }
+                ]
+            },
+            "cifId": "24103",
+            "cifNo": "0000000000001614778",
+            "noTelp": "021-2684000",
+            "trxChannel": "7015",
+            "idSeri": 362,
+            "idRekDana": "0",
+            "idBank": "52",
+            "idRekSB": "0",
+            "noRekSB": "N0024103",
+            "idPartisipan": "0",
+            "idSubregistry": "388",
+            "isInsideMasaPerdana": false
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "response_code": "00000"
+        }

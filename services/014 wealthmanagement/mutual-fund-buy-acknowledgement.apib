@@ -1,0 +1,170 @@
+
+##  Mutual Fund Acknowledgement [/wealth/mutualfund/acknowledgement]
+
+###  Mutual Fund Acknowledgement [POST]
+
++ Request (application/json)
+
+        {
+            "navDate": "2021-03-16T17:00:00.000+00:00",
+            "navAmount": 1906.7334,
+            "productId": 10,
+            "productCode": "RDISP",
+            "productCurrency": "IDR",
+            "productName": "ABERDEEN STANDARD IND EQUITY FUND",
+            "productCategory": "EQUITY FUND",
+            "productRiskProfile": "Aggressive",
+            "totalAum": 7777777,
+            "isAllowRecurring": true,
+            "minLumpsump": 100000,
+            "minRecurring": 50000,
+            "subsFee": 1,
+            "suitabilityBit": false,
+            "listClientCode": [
+                {
+                    "clientId": 88804,
+                    "clientCode": "ISP00092273",
+                    "isRDB": true,
+                    "unitBalance": 599.5803,
+                    "amountBalance": 1143239.78399202
+                },
+                {
+                    "clientId": 89004,
+                    "clientCode": "ISP00092492",
+                    "isRDB": true,
+                    "unitBalance": 1930.283,
+                    "amountBalance": 3680535.0675522
+                }
+            ],
+            "isRecurringPurchase": true,
+            "totalAmount": 1000000,
+            "isIncludeFee": true,
+            "subscriptionType": "D",
+            "tenor": 36,
+            "startDate": "2021-01-25T05:21:46.000+0000",
+            "endDate": "2021-01-25T05:21:46.000+0000",
+            "maturityDate": "2021-01-25T05:21:46.000+0000",
+            "monthlySubs": 1000000.0,
+            "isAutoRedeem": true,
+            "withInsurance": true,
+            "isEligibleInsurance": true,
+            "limitInsuranceStatus": true,
+            "maxAgeProtection": false,
+            "insuranceVendorName": "Great Eastern",
+            "questions": [ 
+                {
+                    "type": "select",
+                    "question": "Are you sure 1",
+                    "answers": [{
+                            "code": "Y",
+                            "value": "Yes"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "question": "Are you sure 2",
+                    "answers": [{
+                            "code": "Y",
+                            "value": "Yes"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "question": "Are you sure 3",
+                    "answers": [{
+                            "code": "Y",
+                            "value": "Yes"
+                        }
+                    ]
+                } 
+            ],
+            "sourceOfFund": {
+                 "productCode": "GRRMCY0001",
+                 "productName": "GIRO MULTICURRENCY 0001",
+                 "accountId": "BA430176478D3498E0537007FF0AE598",
+                 "accountNo": "010810057199",
+                 "accountType": "D",
+                 "branchCode": "01010",
+                 "mcBit": "Y",
+                 "cif": "0000000000000000002",
+                 "accountBalances": [
+                     {
+                         "accountCcy": "IDR",
+                         "balance": 86285825.58,
+                         "isAvailable": true
+                     }
+                 ]
+            },
+            "tacId": "0003",
+            "tacCode": "MUTUALFUNDSUBS",
+            "uniqueIdentifier": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0",
+            "responseCodeOTP":"944352"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                         "productCode": "GRRMCY0001",
+                         "productName": "GIRO MULTICURRENCY 0001",
+                         "accountId": "BA430176478D3498E0537007FF0AE598",
+                         "accountNo": "010810057199",
+                         "accountType": "D",
+                         "branchCode": "01010",
+                         "mcBit": "Y",
+                         "cif": "0000000000000000002",
+                         "accountBalances": [
+                             {
+                                 "accountCcy": "IDR",
+                                 "balance": 86285825.58,
+                                 "isAvailable": true
+                             }
+                         ]
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "accountName": "ABERDEEN STANDARD IND EQUITY FUND",
+                                "productName": "EQUITY FUND",
+                                "description": "Aggressive - Not Match"
+                            },
+                            "transactionStatus": "S",
+                            "transactionAmount": 3250800.88,
+                            "transactionCcy": "IDR",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Total Pembelian",
+                                    "value": "IDR 1.000.000",
+                                    "note": "Biaya Admin 2,50"
+                                },
+                                {
+                                    "title": "Tipe Pembelian",
+                                    "value": "One Time"
+                                },
+                                {
+                                    "title": "Tanggal Efektif",
+                                    "value": "13 Maret 2021"
+                                },
+                                {
+                                    "title": "Nomor Referensi",
+                                    "value": "20201323242"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

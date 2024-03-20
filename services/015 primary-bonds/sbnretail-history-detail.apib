@@ -1,0 +1,46 @@
+
+##  History Detail SBN Retail [/primary-bonds/sbnretail/history/detail]
+
+###  History Detail SBN Retail [POST]
+
++ Request (application/json)
+
+        {
+            "securityNo": "ORI018"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "productInfo": {
+                    "securityNo": "ORI018",
+                    "outstandingAmount": 91502055,
+                    "marketPrice": 1200.00000,
+                    "totalMarketValue": 87502055,
+                    "accountCcy": "IDR"
+                },
+                "listTransaction": [
+                    {
+                        "transDescription": "Order TEST2019",
+                        "transactionDate": "2021-03-16T00:00:00.000+0700",
+                        "transactionStatus": "Unpaid Order",
+                        "amount": 5000000,
+                        "accountCcy": "IDR",
+                        "dealId": "33287"
+                    },
+                    {
+                        "transDescription": "Order TEST2019",
+                        "transactionDate": "2021-03-16T00:00:00.000+0700",
+                        "transactionStatus": "Unpaid Order",
+                        "amount": 5000000,
+                        "accountCcy": "IDR",
+                        "dealId": "33288"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

@@ -1,0 +1,32 @@
+
+## Get Interest Payment [/account/time/deposit/get/interest/payment]
+
+### Get Interest Payment [POST]
+
++ Request (application/json)
+
+        {
+            "tenor" : "3-M",
+            "currency" : "IDR"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "interestPayments": [
+                    {
+                        "code": "1-M",
+                        "value": "1 Month"
+                    },
+                    {
+                        "code": "3-M",
+                        "value": "3 Month"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

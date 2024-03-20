@@ -1,0 +1,78 @@
+
+## Quick Transfer - Inquiry Summary [/fundtransfer/inquiry-quick-transfer-summary]
+
+### Quick Transfer - Inquiry Summary [POST]
+
++ Request (application/json)
+
+        {
+            "transactionLinkId": "2BFfCB8C62A1815b986704AFdE0153b62f286103AC90Ff94706108c10435c85935b7ef7120b3"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sourceAccount": {
+                    "productCode": "TBSMCY9901",
+                    "productName": "Tanda360Plus-S",
+                    "accountNo": "693810021529",
+                    "accountType": "S",
+                    "accountName": "AULIA RACHMAN",
+                    "accountCcy": "",
+                    "branchCode": "99693",
+                    "mcBit": "Y",
+                    "dynamicAccountId": "B0AB559DE6FA75FBE0537007FF0ACC5F",
+                    "bankCode": "",
+                    "bankName": "",
+                    "description": "",
+                    "qrCode": "iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeAQAAAADlUEq3AAAC6ElEQVR4Xu2YXYosIQxGAy6gluTWXVIvQPDmfLF7rGK4zMvAYAzVYulJPXzkR9vGz63bc+U/duDVDrzagVc78GoHXu3Aq/06bFjt1+hX83GM5o8vlTHKi72SCWb+qnYx+tOtuq92GisB5IFfVlhsSIeGzR0L7sDumBA2RZFP/JGX+ch6SlhRBKA8QsMRH8kG+0/Sgb3YMtKqsUeACUgDG0b8fPewlwp+m5cUc60KoVVhNH9bFljrRpExh0MrpdWIBq2ISgTPGutC0ZRJqObug4Rq8k0ET8Uutti9wp11Fd46qSTwBeN81yHt05TxnZNEMPHjjPKoyKXMYxvd+ZFW+8PqxQMXI35ilwMb3yHFMsHBE0sxlxdZhoz2SKvtYWnVIqGGKm2PA7z4R1rtD9OOa6SVSg26DTryEleZYI0kl0SDifgp37bjrWESSic0vVFSUJKSW2d0ZYLni5LrU2lDMeb3tNoeNiQyRkURNlMpam/Ms8CDWBoqsPUzN+KKoLJ7Wm0PR5chg/gTgHmJNmRzXVQWOMSJUjNzah3v0iWAq1YawYNWrhhN+f2dJioPTCWRegSVC1j0Zwg9SBXmofPecHSZLpcIHvLr04yUYnlgB+gy1BaiSC7NxIeSyWDforyEhqZJFJz5nUxwh0SlAtCUVnNx6GpzS6v94RoP85lW2pkX/7AssM16SzZ9vc5OVJE0E6zqalO0d8lVFPmrf0FQGrjrOtOj+b44lqBVuKsxrdJtDw/CxmZaMVJYwtGxxzF+ezjECaCr2phaUtGBjTadCS4cQjyPlESy8i62vCjR8sBf64qigrtKrrByl257ODDqDFc8dDOCinYslyYqC4wy8/5SO6f3odDiE5KOMREccimnhnQjouTO9NG7k8ASzXQsKfpjRBWYrZTwtMEl1wHnlWuP+rw9PEirkA5H/TMWMmqlisoCSzBgteMah5PBwdVfGVPBP7MDr3bg1Q682oFXO/BqB17tr8D/AMM6iPqGEp06AAAAAElFTkSuQmCC",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 0,
+                            "holdBalance": 0,
+                            "isAvailable": false,
+                            "accountCcyNameID": "",
+                            "accountCcyNameEN": ""
+                        }
+                    ]
+                },
+                "beneAccount": {
+                    "productCode": "TBSMCY9901",
+                    "productName": "Tanda360Plus-S",
+                    "accountNo": "693810021529",
+                    "accountType": "S",
+                    "accountName": "AULIA RACHMAN",
+                    "accountCcy": "",
+                    "branchCode": "99693",
+                    "mcBit": "",
+                    "dynamicAccountId": "B0AB559DE6FA75FBE0537007FF0ACC5F",
+                    "bankCode": "",
+                    "bankName": "",
+                    "description": "",
+                    "qrCode": "iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeAQAAAADlUEq3AAAC6ElEQVR4Xu2YXYosIQxGAy6gluTWXVIvQPDmfLF7rGK4zMvAYAzVYulJPXzkR9vGz63bc+U/duDVDrzagVc78GoHXu3Aq/06bFjt1+hX83GM5o8vlTHKi72SCWb+qnYx+tOtuq92GisB5IFfVlhsSIeGzR0L7sDumBA2RZFP/JGX+ch6SlhRBKA8QsMRH8kG+0/Sgb3YMtKqsUeACUgDG0b8fPewlwp+m5cUc60KoVVhNH9bFljrRpExh0MrpdWIBq2ISgTPGutC0ZRJqObug4Rq8k0ET8Uutti9wp11Fd46qSTwBeN81yHt05TxnZNEMPHjjPKoyKXMYxvd+ZFW+8PqxQMXI35ilwMb3yHFMsHBE0sxlxdZhoz2SKvtYWnVIqGGKm2PA7z4R1rtD9OOa6SVSg26DTryEleZYI0kl0SDifgp37bjrWESSic0vVFSUJKSW2d0ZYLni5LrU2lDMeb3tNoeNiQyRkURNlMpam/Ms8CDWBoqsPUzN+KKoLJ7Wm0PR5chg/gTgHmJNmRzXVQWOMSJUjNzah3v0iWAq1YawYNWrhhN+f2dJioPTCWRegSVC1j0Zwg9SBXmofPecHSZLpcIHvLr04yUYnlgB+gy1BaiSC7NxIeSyWDforyEhqZJFJz5nUxwh0SlAtCUVnNx6GpzS6v94RoP85lW2pkX/7AssM16SzZ9vc5OVJE0E6zqalO0d8lVFPmrf0FQGrjrOtOj+b44lqBVuKsxrdJtDw/CxmZaMVJYwtGxxzF+ezjECaCr2phaUtGBjTadCS4cQjyPlESy8i62vCjR8sBf64qigrtKrrByl257ODDqDFc8dDOCinYslyYqC4wy8/5SO6f3odDiE5KOMREccimnhnQjouTO9NG7k8ASzXQsKfpjRBWYrZTwtMEl1wHnlWuP+rw9PEirkA5H/TMWMmqlisoCSzBgteMah5PBwdVfGVPBP7MDr3bg1Q682oFXO/BqB17tr8D/AMM6iPqGEp06AAAAAElFTkSuQmCC",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 0,
+                            "holdBalance": 0,
+                            "isAvailable": false,
+                            "accountCcyNameID": "",
+                            "accountCcyNameEN": ""
+                        }
+                    ]
+                },
+                "remark": "maksi",
+                "amount": 150000,
+                "amountCcy": "IDR",
+                "bankCode": "999",
+                "flagSyariah": "C",
+                "qrFlag": true,
+                "transferServiceCode": "IFT"
+            }
+        }
+

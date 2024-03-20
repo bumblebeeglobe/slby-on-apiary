@@ -1,0 +1,37 @@
+
+## Create new online debit Card [/card/vdc/create]
+
+instrCustomPAN diisi kalau nasabah ingin create online debit card menggunakan customPAN
+
+### Create new online debit Card [POST]
+
++ Request (application/json)
+
+        {
+            "instrFirstName" : "BUDI AJA", 
+            "instrCustomPAN" : "", 
+            "instrAccountNumber" : "060810468003",
+            "instrAccountType" : "S",
+            "instrNoHP" : "082118111366",
+            "instrProductCode" : "TBTKONMCY1",
+            "onlineSessionId": "2021-04-14T20:44:06.217+217:217-8fa45f01-91a5-4a2e-b070-3e9990b6c53f",
+            "responseCodeOTP" : "123456"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "createVirtualCardResult": {
+                    "cardExpire":"2303",
+                    "chunkCVV2":"b482afb5a33a422c",
+                    "chunk":"d69ae0ec3c",
+                    "pan":"5183166315300761",
+                    "cvv2":"fgrl0AyONeN/LFx5/uR2p8eNC2i61Srap7MMkHE9iue60Ri/cypCDg=="
+                }
+            },
+            "response_code": "00000"
+        }

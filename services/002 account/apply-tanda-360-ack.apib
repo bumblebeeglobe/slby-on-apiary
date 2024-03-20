@@ -1,0 +1,41 @@
+
+## Apply Tanda 360 ACK [/account/tanda360/acknowledgement]
+
+### Apply Tanda 360 ACK [POST]
+
++ Request (application/json)
+
+        {
+            "baseCurrency":"IDR",
+            "purpose":"A",
+            "sourceOfFund":"A",
+            "createAtm": "N",
+            "sendAtm": "N",
+            "otp": "219844",
+            "name": "MARIANA",
+            "phoneNumber": null,
+            "email": null,
+            "address": {
+                "address": "ADDR2 243 ADDR3 243 ADDR4 243",
+                "postalCode": "35111",
+                "province": "LAMPUNG",
+                "districtCity": "KOTA BDR LAMPUNG",
+                "kecamatan": "TANJUNGKARANG PUSAT",
+                "kelurahan": "TANJUNG KARANG"
+            },
+            "tac" : ["8DB445AF5C875EC2E050A8C094070229"],
+            "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "message": "Aktifkan rekening dengan melakukan setoran awal sebesar IDR 200,000 ke rekeningmu. Jika sewaktu-waktu kamu membutuhkan kartu ATM, kamu bisa mendapatkannya di kantor cabang OCBC NISP terdekat. If you'd like to receive your monthly statement, you need to update your email in the profile settings",
+                "isUpdateEmail": true
+            },
+            "response_code": "00000"
+        }

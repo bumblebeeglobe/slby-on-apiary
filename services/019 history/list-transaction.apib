@@ -1,0 +1,64 @@
+
+## ITR List Transaction [/history/list-transaction]
+
+### List Transaction [POST]
+
++ Request
+
+        {
+            "selectedAccount": [
+                "06081012345568|IDR", "06081012345568|USD", "09081012345568|IDR"
+            ],
+            "selectedFilter" : [
+                "10001","10002","10003","15001","20001","20002"
+            ],
+            "startDate" : "2021-04-19T00:00:00.000+00:00",
+            "endDate" : "2021-05-19T00:00:00.000+00:00"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "listTransaction" : [
+                        {
+                        "title" : "28 Februari 2020",
+                        "histories" : [
+                            {
+                                "historyId" : "777f5c6f-e03f-498b-a555-17101cbb7a48",
+                                "transactionCode" : "TRANSFER",
+                                "title" : "Transfer Dana",
+                                "description" : "Transfer Sesama OCBC (IDR & Valas)",
+                                "transactionStatus" : "S",
+                                "amount" : 150000
+                            },
+                            {
+                                "historyId" : "777f5c6f-e03f-498b-a555-17101cbb7a49",
+                                "transactionCode" : "TRANSFER",
+                                "title" : "Transfer Dana",
+                                "description" : "Transfer to other bank (IDR & Valas)",
+                                "transactionStatus" : "S",
+                                "amount" : 14400632.02
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "1 Maret 2020",
+                        "histories" : [
+                            {
+                                "historyId" : "777f5c6f-e03f-498b-a555-17101cbb7a50",
+                                "transactionCode" : "PAYMENT",
+                                "title" : "Payment & Purchase",
+                                "description" : "Topup emoney",
+                                "transactionStatus" : "F",
+                                "amount" : 12000000
+                            }
+                        ]
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

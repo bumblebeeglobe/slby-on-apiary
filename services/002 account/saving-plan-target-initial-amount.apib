@@ -1,0 +1,24 @@
+
+## TAKA Target Initial Amount [/account/saving/plan/target/initial/amount]
+
+### TAKA Target Initial Amount [POST]
+
++ Request (application/json)
+
+        {
+            "amount": 2000000,
+            "tenor": 1.0
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "isBungaPasti": true,
+                "maxPercentageFirstDeposit": 90,
+                "minPercentageFirstDeposit": 10
+            }
+        }

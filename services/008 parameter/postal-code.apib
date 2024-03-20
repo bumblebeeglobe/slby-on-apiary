@@ -1,0 +1,30 @@
+## Fetch Postal Code Parameter [/parameter/postalCode]
+
+### Fetch Postal Code Parameter [POST]
+
++ Request (application/json)
+
+        {
+            "provinceCode" : "RIAU",
+            "cityCode" : "Indragiri Hulu, Kab.",
+            "districtCode" : "RENGAT",
+            "subDistrictCode" : "KAMPUNG BESAR KOTA"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "parameters": [
+                    {
+                        "code": "29312",
+                        "value": "29312",
+                        "description": ""
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

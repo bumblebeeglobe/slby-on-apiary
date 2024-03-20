@@ -1,0 +1,31 @@
+
+## Inquiry QRIS Pay [/payment/inquiry-qris-pay]
+
+### Inquiry QRIS Pay [POST]
+
++ Request (application/json)
+
+        {
+            "qrcode": "00020101021226690017ID.CO.DANAMON.WWW011893600011000000088802150000880800000200303UME27720020COM.BANKSINARMAS.WWW011893600153100290563402157338680866228710303UMI51320002000215ID10191010101180303UME52045812530336054100010001.005502015802ID5918AYAM GORENG SEKALI6010TANGGERANG61051511562070703C0163044A9F"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "qrcode": "00020101021226690017ID.CO.DANAMON.WWW011893600011000000088802150000880800000200303UME27720020COM.BANKSINARMAS.WWW011893600153100290563402157338680866228710303UMI51320002000215ID10191010101180303UME52045812530336054100010001.005502015802ID5918AYAM GORENG SEKALI6010TANGGERANG61051511562070703C0163044A9F",
+                "merchant": {
+                    "name": "Kentucky Fried Chicken",
+                    "address": "Jakarta - 12940"
+                },
+                "billAmount": 200000,
+                "tip": {
+                    "isAllow": true,
+                    "percentage": 10,
+                    "amount": 25000
+                }
+            }
+        }

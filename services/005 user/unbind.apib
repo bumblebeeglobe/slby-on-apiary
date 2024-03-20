@@ -1,0 +1,31 @@
+
+## Unbind [/user/unbind]
+
+### Unbind [POST]
+
+Validation:
+Device yang bisa diunbind hanya device secondary, dengan kata lain device primary tidak bisa diunbind.
+
++ Request (application/json)
+
+        {
+            "listDeviceBindingRequest" : [
+                {
+                    "deviceId":"895e985f-7b48-46",
+                    "channel":"MB",
+                    "deviceModel":"device Model string",
+                    "deviceType":"red mi note",
+                    "deviceOs":"android 9.0",
+                    "isRooted":"false",
+                    "deviceFingerPrint": "0340ECED62CA7778DE9B040DAFD50A2656FB66C445CDAC74D49997E832DB79DC"
+                }
+            ]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES"
+        }

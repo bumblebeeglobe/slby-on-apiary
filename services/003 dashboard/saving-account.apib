@@ -1,0 +1,36 @@
+
+## Dashboard: Saving Account [/dashboard/saving/account]
+
+### Saving Account [POST]
+
++ Request (application/json)
+
+        {
+            "accountCcy": "IDR",
+            "accountNo": "693810052565",
+            "accountType" : "S",
+            "branchCode" : "01012"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "productCode": "TBTREG0002",
+                "productName": "TABUNGAN TANDA(LAMA)",
+                "accountCcy": "IDR",
+                "accountNo": "693810052565",
+                "balance": 99767216,
+                "availableBalance": 99417216,
+                "overdraftBalance": 0,
+                "outstandingUnit": 0,
+                "accountType": "S",
+                "branchCode": "01012",
+                "accountId": "B7826F70FC795884E050A8C09407163B",
+                "cif": "0000000800005393484"
+            },
+            "response_code": "00000"
+        }

@@ -1,0 +1,29 @@
+
+## Apply [/account/time/deposit/apply]
+
+### Apply [GET]
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "email": "mbank.user08@devteam.net",
+                "currency": {
+                    "currencyCode": "IDR",
+                    "currencyName": "Indonesian Rupiah",
+                    "tenor": {
+                        "code": "14-D",
+                        "value": "14 Days",
+                        "amount": {
+                            "minAmount": 5000000,
+                            "maxAmount": 10000000000
+                        },
+                        "depositProductCode": "DHECCB0014"
+                    }
+                }
+            },
+            "response_code": "00000"
+        }

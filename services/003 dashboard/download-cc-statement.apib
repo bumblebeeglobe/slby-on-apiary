@@ -1,0 +1,26 @@
+
+## Download CC Statement [/dashboard/transaction/creditcard]
+
+### Download CC Statement [POST]
+
++ Request (application/json)
+
+        {
+            "ccNo" : "4215618800001218",
+            "year" : "2020",
+            "month" : "3"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code":"00000",
+            "response_desc_en":"SUCCESS",
+            "response_desc_id":"SUKSES",
+            "data":{
+                "ccNo" : "4215618800001218",
+                "year" : "2020",
+                "month" : "3",
+                "statementBase64":"Base64"
+            }
+        }

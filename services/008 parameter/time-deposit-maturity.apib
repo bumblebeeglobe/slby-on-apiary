@@ -1,0 +1,42 @@
+
+## Fetch Time Deposit Maturity [/parameter/time-deposit/maturity]
+
+### Fetch Time Deposit Maturity [POST]
+
+1. AOMAT002  -> hanya tampilkan AOMAT001 & AOMAT003 (isSyariah false)
+2. AOMAT002  -> hanya tampilkan AOMAT003 (isSyariah true)
+
++ Request
+
+        {
+            "maturity": "AOMAT003",
+            "isSyariah" : false
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "parameters": [
+                    {
+                        "code": "AOMAT001",
+                        "value": "Tidak Diperpanjang Otomatis",
+                        "description": "Setelah jatuh tempo, deposito tidak akan diperpanjang. Jumlah pokok dan bunga akan dicairkan ke rekening kamu"
+                    },
+                    {
+                        "code": "AOMAT002",
+                        "value": "Perpanjangan Otomatis Dengan Bunga Majemuk",
+                        "description": "Setelah jatuh tempo, deposito akan otomatis diperpanjang menggunakan jumlah pokok gabungan dan bunga majemuk"
+                    },
+                    {
+                        "code": "AOMAT003",
+                        "value": "Perpanjangan Otomatis",
+                        "description": "Setelah jatuh tempo, deposito akan otomatis diperpanjang menggunakan jumlah pokok saja"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

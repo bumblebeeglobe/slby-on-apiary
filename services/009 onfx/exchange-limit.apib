@@ -1,0 +1,38 @@
+
+## Exchange Account Limit [/onfx/account-limit]
+
+### Exchange Account Limit [POST]
+
+- "maxLimit" -> Maximum limit in a month
+- "transferLimit" -> Remaining limit
+- "noNeedToCheck": true -> No need to check limit (transferLimit)
+
++ Request (application/json)
+
+        {
+            "debitAccount": {
+                "accountNo": "693810029464",
+                "accountType": "S",
+                "branchCode": "99693",
+                "mcBit": "Y",
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "accountCcy": "IDR",
+                "accountNo": "010810086685",
+                "accountType": "D",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "transferLimit": 24000,
+                "transferLimitCcy": "USD",
+                "maxLimit" : 25000,
+                "noNeedToCheck": true
+            }
+        }

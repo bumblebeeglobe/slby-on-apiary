@@ -1,0 +1,117 @@
+
+## Register Calculate Risk Profile [/wealth/investment/register/risk-profile/calculate]
+
+### Register Calculate Register Risk Profile [POST]
+
++ Request (application/json)
+
+        {
+            "referenceNumber": "NTI202104141926202737",
+            "questions" : [
+                {
+                    "code": "RISK02",
+                    "page": 2,
+                    "isMultipleAnswer": false,
+                    "type": "select",
+                    "question": "There is potentially profit and loss in every investment. How much potential profit you expect and how much potential loss you can tolerate?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER02001",
+                            "value": "I have no problem achieving minimal return, as long as my investment capital is protected.",
+                            "score": 2,
+                            "nextPage": 3
+                        }
+                    ]
+                },
+                {
+                    "code": "RISK02",
+                    "page": 3,
+                    "isMultipleAnswer": false,
+                    "type": "select",
+                    "question": "There is potentially profit and loss in every investment. How much potential profit you expect and how much potential loss you can tolerate?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER02001",
+                            "value": "I have no problem achieving minimal return, as long as my investment capital is protected.",
+                            "score": 2,
+                            "nextPage": 4
+                        }
+                    ]
+                },
+                {
+                    "code": "RISK02",
+                    "page": 4,
+                    "isMultipleAnswer": false,
+                    "type": "select",
+                    "question": "There is potentially profit and loss in every investment. How much potential profit you expect and how much potential loss you can tolerate?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER02001",
+                            "value": "I have no problem achieving minimal return, as long as my investment capital is protected.",
+                            "score": 20,
+                            "nextPage": 5
+                        }
+                    ]
+                },
+                {
+                    "code": "RISK02",
+                    "page": 5,
+                    "isMultipleAnswer": true,
+                    "type": "select",
+                    "question": "There is potentially profit and loss in every investment. How much potential profit you expect and how much potential loss you can tolerate?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER02001",
+                            "value": "I have no problem achieving minimal return, as long as my investment capital is protected.",
+                            "score": 12,
+                            "nextPage": 5
+                        },
+                        {
+                            "code": "RISKANSWER02002",
+                            "value": "To achieve income and slight capital growth, I am willing to bear losses (less than 10%) in certain market conditions.",
+                            "score": 4,
+                            "nextPage": 5
+                        }
+                    ]
+                }
+            ]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "riskProfile": {
+                    "code": "E",
+                    "title": "Highly Aggressive",
+                    "description": "You are an Investor who masters the financial market conditions and investment products. You choose to gain a  higher growth of your investment in the long term and can bear short-to-medium-term fluctuations.",
+                    "portofolio": {
+                        "description": "Berdasarkan jawaban kamu, kita merekomendasikan komposisi portfolio investasi yang lebih berat ke Obligasi dan pasar uang untuk meningkatkan diversifikasi di reksadana saham untuk return di atas angka inflasi dengan resiko yang moderat.",
+                        "compositions": [
+                            {
+                                "code": "RISK001",
+                                "description": "60% Fixed Income",
+                                "value": 60,
+                                "color": "#FDBE32"
+                            },
+                            {
+                                "code": "RISK002",
+                                "description": "25% Money Market",
+                                "value": 25,
+                                "color": "#005073"
+                            },
+                            {
+                                "code": "RISK003",
+                                "description": "15% Equity",
+                                "value": 15,
+                                "color": "#D0021B"
+                            }
+                        ]
+                    }
+                }
+            },
+            "response_code": "00000"
+        }

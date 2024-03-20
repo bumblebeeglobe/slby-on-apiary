@@ -1,0 +1,44 @@
+
+## VDC SOF Validation [/card/vdc/sof-validation]
+
+### VDC SOF Validation [POST]
+
++ Request (application/json)
+
+        {
+            "accounts":{
+                "productCode": "TBSMCY9901",
+                "productName": "Tanda360Plus-S",
+                "accountNo": "010810075332",
+                "accountType": "S",
+                "accountCcy": "",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "dynamicAccountId": "",
+                "bankCode": "999",
+                "bankName": "",
+                "description": "",
+                "imageInfo": "",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 71445663,
+                        "holdBalance": 0,
+                        "isAvailable": true,
+                        "accountCcyNameID": "Rupiah Indonesia",
+                        "accountCcyNameEN": "Indonesian Rupiah"
+                    }
+                ]
+            },
+            "total": 1000000
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "response_code": "00000"
+        }

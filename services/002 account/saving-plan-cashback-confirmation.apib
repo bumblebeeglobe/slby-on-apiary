@@ -1,0 +1,82 @@
+
+## TAKA Cashback Confirmation [/account/saving/plan/cashback/confirmation]
+
+### TAKA Cashback Confirmation [POST]
+
++ Request (application/json)
+
+        {
+            "email": "mbank.user06@devteam.net",
+            "cashback": 780000,
+            "currencyCode": "IDR",
+            "productCode": "TKNAS22038",
+            "productName": "Cashback Taka Online Rp 780ribu nett    ",
+            "purposeCode": "A",
+            "purposeName": "Pendidikan",
+            "sourceOfFundCode": "A",
+            "souceOfFundName": "Suami/Istri",
+            "tenor": 24,
+            "installmentAmount": 990435.00,
+            "initialAmount": 1121250,
+            "targetAmount": 25000000,
+            "penalty": 1121250,
+            "interestRate": 0.5,
+            "programCode": "13",
+            "giftCode": "OM001     ",
+            "giftName": "Cashback Taka Online Rp 780ribu nett    ",
+            "cashbackValue": 1000000,
+            "groupProgCode": "13",
+            "descGroupProgCode": "13",
+            "groupProgType": "NP",
+            "sourceOfFund": {
+                "productCode": "TBSMCY9902",
+                "productName": "Tanda360Plus-Digital",
+                "accountNo": "693810030363",
+                "accountType": "S",
+                "branchCode": "99693",
+                "mcBit": "Y",
+                "accountId": "B614B4DCE6B14E44E050A8C094072E37"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "email": "mbank.user06@devteam.net",
+                "productCode": "TKNAS22038",
+                "productName": "Cashback Taka Online Rp 780ribu nett    ",
+                "cashback": 780000,
+                "currencyCode": "IDR",
+                "tenor": 24,
+                "targetAmount": 25000000,
+                "penalty": 1121250,
+                "interestRate": 0.5,
+                "giftCode": "OM001     ",
+                "giftName": "Cashback Taka Online Rp 780ribu nett    ",
+                "programCode": "13",
+                "groupProgCode": "13",
+                "groupProgType": "NP",
+                "purposeCode": "A",
+                "purposeName": "Pendidikan",
+                "sourceOfFundCode": "AOPSRC001",
+                "sourceOfFundName": null,
+                "sourceOfFund": {
+                    "productCode": "TBSMCY9902",
+                    "productName": "Tanda360Plus-Digital",
+                    "accountNo": "693810030363",
+                    "accountType": "S",
+                    "branchCode": "99693",
+                    "mcBit": "Y",
+                    "accountId": "B614B4DCE6B14E44E050A8C094072E37",
+                    "currency": null
+                },
+                "installmentAmount": 990435.00,
+                "initialAmount": 1121250,
+                "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+            },
+            "response_code": "00000"
+        }

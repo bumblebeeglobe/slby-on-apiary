@@ -1,0 +1,45 @@
+
+## Ringkasan transaksi new online debit Card [/card/vdc/confirmation]
+
+cardNumber diisi empty string kalau nasabah pilih bikin kartu menggunakan nomor kartu default
+cardNumber diisi dengan nomor yg diinginkan nasabah apabila nasabah hendak menggunakan nomor khusus
+
+### Ringkasan transaksi new online debit Card [POST]
+
++ Request (application/json)
+
+        {
+            "phoneNumber":"08123123123123",
+            "cardNumber": "123123123123123"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "summaryNotes": [
+                    {
+                        "title": "Nomor telefon",
+                        "value": "08122183578"
+                    },
+                    {
+                        "title": "Nomor kartu",
+                        "value": "123123123123123"
+                    },
+                    {
+                        "title": "Biaya Nomor Unik",
+                        "value": "50000"
+                    },
+                    {
+                        "title": "Biaya Pembuatan Kartu",
+                        "value": "30000"
+                    }
+                ],
+                "onlineSessionId": "2021-04-22T15:13:57.195+195:195-03a04b0f-9ac5-484f-bdbf-152b8b1f108f",
+                "totalAmount": 80000
+            },
+            "response_code": "00000"
+        }

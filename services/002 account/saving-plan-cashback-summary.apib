@@ -1,0 +1,66 @@
+
+## TAKA Cashback Summary [/account/saving/plan/cashback/summary]
+
+### TAKA Cashback Summary [POST]
+
++ Request (application/json)
+
+        {
+            "tenor": 12,
+            "productName": "Cashback Taka Online Rp 780ribu nett    ",
+            "productCode": "TKNAS22038",
+            "installmentAmount": 990435.00,
+            "initialAmount": 1121250,
+            "targetAmount": 25000000,
+            "penalty": 1121250,
+            "interestRate": 0.5,
+            "programCode": "13",
+            "giftCode": "OM001     ",
+            "giftName": "Cashback Taka Online Rp 780ribu nett    ",
+            "cashback": 780000,
+            "currencyCode": "IDR",
+            "groupProgCode": "13",
+            "descGroupProgCode": "13",
+            "groupProgType": "NP"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "summaryNotes": [
+                    {
+                        "title": "Produk",
+                        "value": "Cashback Taka Online Rp 780ribu nett    "
+                    },
+                    {
+                        "title": "Estimasi Target Dana",
+                        "value": "IDR 25.000.000"
+                    },
+                    {
+                        "title": "Setoran Awal",
+                        "value": "IDR IDR 1.121.250"
+                    },
+                    {
+                        "title": "Tenor",
+                        "value": "2 Tahun"
+                    },
+                    {
+                        "title": "Jumlah Setoran Bulanan",
+                        "value": "IDR 990.435"
+                    },
+                    {
+                        "title": "Bunga (gross per tahun)",
+                        "value": "0.5%"
+                    },
+                    {
+                        "title": "Cashback Reward",
+                        "value": "IDR 780.000"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

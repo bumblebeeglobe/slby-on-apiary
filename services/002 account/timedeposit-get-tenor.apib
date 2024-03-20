@@ -1,0 +1,68 @@
+
+## Get Tenor [/account/time/deposit/get/tenor]
+
+### Get Tenor [POST]
+
++ Request (application/json)
+
+        {
+            "currency" : "IDR"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "tenors": [
+                    {
+                        "code": "14-D",
+                        "value": "14 Days",
+                        "amount": {
+                            "minAmount": 5000000,
+                            "maxAmount": 10000000000
+                        },
+                        "depositProductCode": "DHECCB0014"
+                    },
+                    {
+                        "code": "1-M",
+                        "value": "1 Month",
+                        "amount": {
+                            "minAmount": 5000000,
+                            "maxAmount": 1000000000
+                        },
+                        "depositProductCode": "DBECCB0001"
+                    },
+                    {
+                        "code": "3-M",
+                        "value": "3 Month",
+                        "amount": {
+                            "minAmount": 5000000,
+                            "maxAmount": 1000000000
+                        },
+                        "depositProductCode": "DBECCB0003"
+                    },
+                    {
+                        "code": "6-M",
+                        "value": "6 Month",
+                        "amount": {
+                            "minAmount": 5000000,
+                            "maxAmount": 1000000000
+                        },
+                        "depositProductCode": "DBECCB0006"
+                    },
+                    {
+                        "code": "12-M",
+                        "value": "12 Month",
+                        "amount": {
+                            "minAmount": 5000000,
+                            "maxAmount": 1000000000
+                        },
+                        "depositProductCode": "DBECCB0012"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

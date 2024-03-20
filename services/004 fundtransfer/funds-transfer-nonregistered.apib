@@ -1,0 +1,145 @@
+
+## Validate Transfer [/fundtransfer/funds-transfer-nonregistered]
+
+### Validate Transfer [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "accountId": "B1C200A06D9C65D9E0537007FF0AF56E",
+                "accountNo": "693810029464",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "mcBit": "Y",
+                "branchCode": "99693",
+                "productCode": "TBSMCY9902",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR"
+                    }
+                ]
+            },
+            "listNonRegisteredAccount": [
+                {
+                    "beneAccount": {
+                        "accountNo": "693810030363",
+                        "accountName": "LISANLY",
+                        "accountType": "S",
+                        "mcBit": "Y",
+                        "branchCode": "99693",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "USD"
+                            }
+                        ]
+                    },
+                    "beneTransaction": {
+                        "bankCode": "999",
+                        "saveBeneFlag": false,
+                        "transferServiceCode": "IFT",
+                        "registerFlag": false,
+                        "beneIsExisting": false,
+                        "amount": 25000,
+                        "amountCcy": "IDR",
+                        "interval": "W",
+                        "recurStartDate": "2020-11-02T02:30:24.000+00:00",
+                        "recurEndDate": "2020-12-31T02:30:24.000+00:00",
+                        "remark": "test",
+                        "flagSyariah": "C",
+                        "qrFlag": true,
+                        "transferDate": "2020-11-02T02:30:24.000+00:00",
+                        "category" : {
+                            "code" : "BCAT002",
+                            "description" : "Pribadi"
+                        },
+                        "residentStatus" : {
+                            "code" : "RS001",
+                            "description" : "WNI"
+                        },
+                        "tacCode": "ABC123",
+                        "tacId": "7123",
+                        "exchangeRate": 14874.0,
+                        "exchangeRateCcy": "USD"
+                    }
+                }
+            ]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sourceAccount": {
+                    "productCode": "TBPAY10002",
+                    "productName": "TANDA PAYROLL 1-P",
+                    "accountNo": "693810003337",
+                    "accountType": "S",
+                    "branchCode": "99693",
+                    "mcBit": "N",
+                    "accountId": "AE28BF3D6C7CDA13E050A8C0940711A9",
+                    "labelDebitAccount": "TANDA PAYROLL 1-P 693810003337 IDR 2280351.00",
+                    "cif": "0000000000001679512",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 2280351,
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                "listNonRegisteredAccount": [
+                    {
+                        "beneAccount" : {
+                            "accountNo": "010810080985",
+                            "accountName": "IRA5",
+                            "branchCode": "01010",
+                            "accountType": "S",
+                            "mcBit": "N",
+                            "accountBalances" : [
+                                {
+                                    "accountCcy": "USD"
+                                }
+                            ]
+                        },
+                        "beneTransaction": {
+                            "bankCode": "999",
+                            "saveBeneFlag": false,
+                            "isInterBank": false,
+                            "isOnline": false,
+                            "transferServiceCode": "IFT",
+                            "registerFlag": false,
+                            "beneIsExisting": false,
+                            "amount": 10000,
+                            "amountCcy": "IDR",
+                            "transferDate": "2020-08-30T11:05:24.212+07:00",
+                            "remark": "catatan transfer",
+                            "onlineSessionId": "iosjfiow89234hjfi1",
+                            "billingReferenceNo": "872839",
+                            "interval": "W",
+                            "recurStartDate": "2020-11-02T02:30:24.000+00:00",
+                            "recurEndDate": "2020-12-31T02:30:24.000+00:00",
+                            "referenceNo" : "20201112405629",
+                            "qrFlag": false,
+                            "category" : {
+                                "code" : "BCAT002",
+                                "description" : "Pribadi"
+                            },
+                            "residentStatus" : {
+                                "code" : "RS001",
+                                "description" : "WNI"
+                            },
+                            "tacCode": "ABC123",
+                            "tacId": "7123",
+                            "exchangeRate": 14874.0,
+                            "exchangeRateCcy": "USD",
+                            "variantRateBuy": 10,
+                            "variantRateSell": -9
+                        }
+                    }
+                ]
+            }
+        }

@@ -1,0 +1,64 @@
+
+## Inquiry Beneficiaries [/fundtransfer/beneficiaries]
+
+### Inquiry Beneficiaries [GET]
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "accounts": [
+                    {
+                        "productCode": "TBPAY10002",
+                        "productName": "TANDA PAYROLL 1-P",
+                        "accountNo": "693810003337",
+                        "accountName": "Denza",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "N",
+                        "accountId": "AE28BF3D6C7CDA13E050A8C0940711A9",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 2280351,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 950,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 80,
+                                "isAvailable": false
+                            }
+                        ],
+                        "bankCode": "999"
+                    },
+                    {
+                        "productCode": "TBPAY10003",
+                        "productName": "TANDA PAYROLL 2-P",
+                        "accountNo": "693810045337",
+                        "accountName": "Denza",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "N",
+                        "accountId": "AE28BF3D6C7CDA13E05dfgsdC0940711A9",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 15246500,
+                                "isAvailable": true
+                            }
+                        ],
+                        "bankCode": "999"
+                    }
+                ]
+            }
+        }

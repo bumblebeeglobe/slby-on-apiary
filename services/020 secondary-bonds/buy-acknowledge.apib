@@ -1,0 +1,129 @@
+
+## Buy Secondary Bonds Acknowledge [/secondary-bonds/buy/acknowledge]
+
+### Buy Secondary Bonds Acknowledge [POST]
+
+Error Codes
+1. B0090 - Booking Expired
+
++ Request (application/json)
+        
+        {
+            "amount": 500000,
+            "cifId": "1234",
+            "securityNo": "SR 56",
+            "productAccountNo": "12",
+            "productCode": "205",
+            "productName": "SR 56",
+            "productDescription": "INDON ONE MOBILE",
+            "productCurrency": "IDR",
+            "productCategory": "Obligasi Pemerintah",
+            "productRiskProfile": "Konservatif",
+            "yearPerformancePercent" : 6.55486,
+            "faceValue": 1000000,
+            "maturityDate": "2021-03-16T00:00:00.000+0700",
+            "settlementDate": "2021-03-16T00:00:00.000+0700",
+            "suitabilityBit": true,
+            "navAmount": 105.25,
+            "tax": 15.00000,
+            "capitalPrice": 103,
+            "prebook": {
+                "dealId": "1285",
+                "dealPrice": 103,
+                "yieldToMaturity": 7.1842,
+                "capitalPrice": 103,
+                "capitalGain": 0,
+                "proceed": 51500000,
+                "accruedDays": 85,
+                "interest": 967200,
+                "taxOnAccrued": 0,
+                "taxOnCapitalGL": 0,
+                "transactionFee": 0,
+                "safeKeepingFee": 0,
+                "totalProceed": 52467200
+            },
+            "recipients": {
+                "accountName": "Manulife obligasi",
+                "productName": "Rendah",
+                "description": "Aggressive - (Sesuai)"
+            },
+            "sourceOfFund": {
+                "productCode": "GRRMCY0001",
+                "productName": "GIRO MULTICURRENCY 0001",
+                "accountName": "Yeremia",
+                "accountId": "BA430176478D3498E0537007FF0AE598",
+                "accountNo": "010810057199",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "cif": "0000000000000000002"
+            },
+            "responseCodeOTP":"123456",
+            "onlineSessionId":"693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0",
+            "tacId": [
+                "1234567890ASD"
+            ]
+        }
+        
++ Response 200 (application/json)
+        
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "productCode": "GRRMCY9902",
+                        "accountNo": "693800000723",
+                        "accountCcy": "IDR"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "accountName": "Manulife obligasi",
+                                "productName": "Rendah",
+                                "description": "Aggressive - (Sesuai)"
+                            },
+                            "transactionStatus": "S",
+                            "transactionAmount": 3250800.88,
+                            "transactionCcy": "IDR",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Jumlah Pemesanan",
+                                    "value": "IDR 50,000,000"
+                                },
+                                {
+                                    "title": "Price",
+                                    "value": "120.00 (YTM 6.50%)"
+                                },
+                                {
+                                    "title": "Tanggal Penyelesaian",
+                                    "value": "2 January 2021"
+                                },
+                                {
+                                    "title": "Bunga Berjalan",
+                                    "value": "IDR 567,000"
+                                },
+                                {
+                                    "title": "Biaya Penyimpanan",
+                                    "value": "IDR 2.000.000"
+                                },
+                                {
+                                    "title": "Biaya Transaksi",
+                                    "value": "IDR 0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }
+        

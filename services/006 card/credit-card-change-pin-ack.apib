@@ -1,0 +1,31 @@
+
+## Change pin credit card confirmation [/card/credit/changepinack]
+
+##ERROR CODE
+##03002 = CARD IS BLOCKED
+##03003 = CARD IS INACTIVE
+##03004 = CARD IS INACTIVE
+##03005 = YOUR DATA IS INVALID
+##03007 = YOUR SESSION HAS EXPIRED
+##03008 = OOPS! YOU'VE REACHED YOUR DAILY LIMIT
+
+### Change pin credit card confirmation [POST]
+
++ Request (application/json)
+
+        {
+            "pan" : "1234567890121234",
+            "dateOfBirth" : "06101995",
+            "phoneNumber" : "085722746166",
+            "encryptedPIN" : "D5thysx2YqRYC6nEaAeg9451AcMz4iViu2GPSoTBt//cOUusaM6quUaDG/vLj359jA44leLGo5osjau7lOhmTl595wTx7K/Di7f3Bv8Xdhb4/yffYxXlum06Z9t8u9EBKtNW5Mi0QmtKGuoS7XhQE6+vTv+KLFXbTkOpQBLZ2aU=",
+            "responseCodeOTP": "123456"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "response_code": "00000"
+        }

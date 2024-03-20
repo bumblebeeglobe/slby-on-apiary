@@ -1,0 +1,56 @@
+
+## Transfer Recipients [/recipient/transfer]
+
+### Transfer Recipients [POST]
+
+Category List
+1. IDR: Transfer IDR (OLT, RTGS, LLG, IFT IDR)
+2. FOREIGN: Transfer Cross Currency (TT, IFT Valas)
+
++ Request (application/json)
+
+        {
+            "keyword": "budi",
+            "category": "IDR",
+            "pagination": {
+                "pageNumber": 1,
+                "pageSize": 10
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "recipients": [
+                    {
+                        "id": "002",
+                        "accountNo": "981798913",
+                        "accountName": "Steve Jobs",
+                        "bank": {
+                            "bankId": "028",
+                            "swiftCode": "",
+                            "bankName": "OCBC NISP"
+                        }
+                    },
+                    {
+                        "id": "001",
+                        "accountNo": "693800005375",
+                        "accountName": "Wozniak",
+                        "bank": {
+                            "bankId": "028",
+                            "swiftCode": "",
+                            "bankName": "OCBC NISP"
+                        }
+                    }
+                ],
+                "pagination": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "totalData": 35 
+                }
+            }
+        }

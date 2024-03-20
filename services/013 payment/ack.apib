@@ -1,0 +1,123 @@
+
+## Payment Ack [/payment/ack]
+
+### Payment Ack [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "productCode": "TBPAY10002",
+                "productName": "TANDA PAYROLL 1-P",
+                "accountNo": "693810003337",
+                "accountType": "S",
+                "branchCode": "99693",
+                "mcBit": "N",
+                "accountId": "AE28BF3D6C7CDA13E050A8C0940711A9",
+                "labelDebitAccount": "TANDA PAYROLL 1-P 693810003337 IDR 2280351.00",
+                "cif": "0000000000001679512",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 2280351,
+                        "isAvailable": true
+                    }
+                ]
+            },
+            "listTransaction": [
+                {
+                    "category": {
+                        "id": "001",
+                        "title": "Gojek",
+                        "type": "VOUCHER",
+                        "minimumAmount": 0,
+                        "additionalFields": [
+                            {
+                                "code": "AMOUNT",
+                                "title": "Nominal",
+                                "placeholder": "Masukkan Nominal"
+                            }
+                        ]
+                    },
+                    "referenceNumber": "12345678",
+                    "biller": {
+                        "accountName": "Andi Budi",
+                        "productName": "Token Listrik - R1M/900VA",
+                        "accountNo": "08112345678"
+                    },
+                    "invoiceId": "33333333",
+                    "totalAmount": 431000,
+                    "billAmount": 429000,
+                    "adminFee" : 2000,
+                    "selectedPackageCode": "17",
+                    "onlineSessionId": "6D52F7F8DB08E25F79263CA049EBE363"
+                }
+            ],
+            "responseCodeOTP" : "626553"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "productCode": "GRRMCY9902",
+                        "accountNo": "693800000723",
+                        "accountCcy": "IDR"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "recipients": {
+                                "accountName": "Andi Budi",
+                                "productName": "Token Listrik - R1M/900VA",
+                                "accountNo": "08112345678"
+                            },
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "transactionStatus": "S",
+                            "transactionAmount": 3250800.88,
+                            "transactionCcy": "IDR",
+                            "totalAmountDescription": "ekuivalen IDR 144010",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "headlines": [
+                                {
+                                    "title": "Token Listrik",
+                                    "value": "1234 5678 9012 3456 1234"
+                                }
+                            ],
+                            "descriptions": [
+                                {
+                                    "title": "",
+                                    "value": "STRUK PEMBELIAN XL PAKET DATA"
+                                },
+                                {
+                                    "title": "Pesan",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Metode Transfer",
+                                    "value": "OCBC NISP"
+                                },
+                                {
+                                    "title": "Waktu Transfer",
+                                    "value": "Sekarang / Now"
+                                },
+                                {
+                                    "title": "Reference Number",
+                                    "value": "20200828101006"
+                                }
+                            ],
+                            "footnote": "Informasi Hubungi Call Center 123 Atau Hubungi PLN Terdekat"
+                        }
+                    ]
+                }
+            }
+        }

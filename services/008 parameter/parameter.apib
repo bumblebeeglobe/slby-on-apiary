@@ -1,0 +1,52 @@
+
+## Fetch Category Parameter [/parameter/category]
+
+### Fetch Category Parameter [POST]
+
+1. Telegraphic Transfer - Negara Domisili: TTDOMICILECOUNTRY
+2. Telegraphic Transfer - Tujuan Transfer: TTPURPOSE
+3. Telegraphic Transfer - Remitter Kategori: TTREMITTERCATEGORY
+4. Telegraphic Transfer - Beneficiary Kategori: TTBENEFICARYCATEGORY
+5. Telegraphic Transfer - Hubungan Keuangan: TTAFFILIATIONSTATUS
+6. Telegraphic Transfer - Charge Method: TTCHARGEMETHOD
+7. Forex - Transaction Purpose: NECESSITY
+8. NTI - Jenis Kelamin: INVESTMENTGENDER
+9. NTI - Status Pernikahan: INVESTMENTMARRIAGE (A: Married; B: Single; C: Divorce)
+10. NTI - Tujuan Investasi: INVESTMENTPURPOSE
+11. NTI - Sumber Dana: INVESTMENTSOURCEOFFUND
+12. Pendidikan Terakhir: EDU
+13. Time Deposit - Maturity : TIMEDEPOSITMATURITY
+14. Time Deposit Syariah - Maturity : TIMEDEPOSITMATURITYSYR
+
++ Request
+
+        {
+            "categoryId": "INVESTMENTGENDER"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "parameters": [
+                    {
+                        "code": "001",
+                        "value": "Parameter 1",
+                        "description": "Lorem ipsum dolor sit amet"
+                    },
+                    {
+                        "code": "002",
+                        "value": "Parameter 2",
+                        "description": "Consectetur adipiscing elit"
+                    },
+                    {
+                        "code": "003",
+                        "value": "Parameter 3",
+                        "description": "Aliquam non odio in leo euismod pharetra ut in mi"
+                    }
+                ]
+            }
+        }

@@ -1,0 +1,52 @@
+
+## Payment Categories [/payment/categories]
+
+### Payment Categories [POST]
+
++ Request (application/json)
+
+        {
+            "menu": {
+                "id": "1",
+                "type": "VOUCHER"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "categories": [
+                    {
+                        "id": "001",
+                        "title": "Cek Token",
+                        "type": "VOUCHER",
+                        "minimumAmount": 0,
+                        "additionalFields": []
+                    },
+                    {
+                        "id": "002",
+                        "title": "Beli Token",
+                        "type": "VOUCHER",
+                        "minimumAmount": 10000,
+                        "additionalFields": []
+                    },
+                    {
+                        "id": "003",
+                        "title": "Gojek",
+                        "type": "VOUCHER",
+                        "minimumAmount": 0,
+                        "additionalFields": [
+                            {
+                                "code": "AMOUNT",
+                                "title": "Nominal",
+                                "placeholder": "Masukkan Nominal"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }

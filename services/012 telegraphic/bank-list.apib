@@ -1,0 +1,34 @@
+
+## Bank List Valas [/telegraphic/bank-list]
+
+### Bank List Valas [GET]
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "listBank": [
+                    {
+                        "bankId": "028",
+                        "bankName": "OCBC NISP",
+                        "availableTransaction": [
+                            "IFT"
+                        ],
+                        "enabled" : true,
+                        "description" : ""
+                    },
+                    {
+                        "bankId": "0",
+                        "bankName": "Bank Lainnya",
+                        "availableTransaction": [
+                            "TT"
+                        ],
+                        "enabled" : true,
+                        "description" : "Kamu bisa menggunakan layanan ini pada hari kerja pukul 08:00 s.d. 16:00 WIB"
+                    }
+                ]
+            }
+        }

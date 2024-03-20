@@ -1,0 +1,24 @@
+
+## Check online debit Card number [/card/vdc/check_number]
+
+kalau mau cek existence true pakai no kartu 5183169085916428
+
+### Check online debit Card number [POST]
+
++ Request (application/json)
+
+        {
+            "instrPAN" : "518316xxxxxxxxxx"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "existence": false
+            },
+            "response_code": "00000"
+        }

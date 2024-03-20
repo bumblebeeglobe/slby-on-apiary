@@ -1,0 +1,165 @@
+
+## Sell secondary-bonds [/secondary-bonds/sell]
+
+### Sell secondary-bonds [POST]
+
++ Request (application/json)
+        
+        {
+            "amount": 500000,
+            "cifId": "1234",
+            "securityNo": "SR 56",
+            "productAccountNo": "12",
+            "productCode": "205",
+            "productName": "SR 56",
+            "productDescription": "INDON ONE MOBILE",
+            "productCurrency": "IDR",
+            "productCategory": "Obligasi Pemerintah",
+            "productRiskProfile": "Konservatif",
+            "yearPerformancePercent" : 6.55486,
+            "faceValue": 1000000,
+            "maturityDate": "2021-03-16T00:00:00.000+0700",
+            "settlementDate": "2021-03-16T00:00:00.000+0700",
+            "suitabilityBit": true,
+            "navAmount": 105.25,
+            "tax": 15.00000,
+            "capitalPrice": 103,
+            "transaction": {
+                "dealId": "597469",
+                "dealNo": "ABCD1234",
+                "profitLoss": 9000,
+                "profitLossRate": 5.50,
+                "acquisitionDate": "2019-04-12T16:33:51.583+07:00",
+                "availableAmount": 100000000,
+                "transactionType": "4",
+                "transactionDate": "2019-04-12T16:33:51.583+07:00",
+                "settlementDate": "2019-04-25T00:00:00+07:00",
+                "faceValue": 1000000,
+                "dealPrice": 100,
+                "valueLeft": 1000000,
+                "taxAmnesty": "Non Tax Amnesty"
+            },
+            "source": {
+                "accountName": "Manulife obligasi",
+                "productName": "Rendah",
+                "description": "Aggressive - (Sesuai)"
+            },
+            "sourceOfFund": {
+                "productCode": "GRRMCY9902",
+                "productName": "GIRO BUSINESS SMART",
+                "accountNo": "693800004501",
+                "accountType": "D",
+                "branchCode": "99693",
+                "mcBit": "Y",
+                "accountId": "AE28BF3D6C5DDA13E050A8C0940711A9",
+                "labelDebitAccount": "GIRO BUSINESS SMART 693800004501 EUR 1.41",
+                "cif": "0000000000001679512",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 410525298.23,
+                        "isAvailable": true
+                    },
+                    {
+                        "accountCcy": "EUR",
+                        "balance": 1.41,
+                        "isAvailable": true
+                    },
+                    {
+                        "accountCcy": "USD",
+                        "balance": 50,
+                        "isAvailable": true
+                    }
+                ]
+            }
+        }
+
++ Response 200 (application/json)
+        
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "prebook": {
+                    "dealId": "31",
+                    "dealPrice": 102.1,
+                    "yieldToMaturity": 6.55486,
+                    "capitalPrice": 100000,
+                    "capitalGain": 1000,
+                    "proceed": 1021000,
+                    "accruedDays": 38,
+                    "interest": 8444,
+                    "taxOnAccrued": 1000,
+                    "taxOnCapitalGL": 1000,
+                    "transactionFee": 10000,
+                    "safeKeepingFee": 1000,
+                    "totalProceed": 1029444
+                },
+                "source": {
+                    "accountName": "Manulife obligasi",
+                    "productName": "Rendah",
+                    "description": "Aggressive - (Sesuai)"
+                },
+                "sourceOfFund": {
+                    "productCode": "GRRMCY9902",
+                    "productName": "GIRO BUSINESS SMART",
+                    "accountNo": "693800004501",
+                    "accountType": "D",
+                    "branchCode": "99693",
+                    "mcBit": "Y",
+                    "accountId": "AE28BF3D6C5DDA13E050A8C0940711A9",
+                    "labelDebitAccount": "GIRO BUSINESS SMART 693800004501 EUR 1.41",
+                    "cif": "0000000000001679512",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 410525298.23,
+                            "isAvailable": true
+                        },
+                        {
+                            "accountCcy": "EUR",
+                            "balance": 1.41,
+                            "isAvailable": true
+                        },
+                        {
+                            "accountCcy": "USD",
+                            "balance": 50,
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                "summaryNotes": [
+                    {
+                        "title": "Harga",
+                        "value": "120.00 (YTM 5.25%)"
+                    },
+                    {
+                        "title": "Tanggal Penyelesaian",
+                        "value": "2 January 2021"
+                    },
+                    {
+                        "title": "Jumlah Penjualan",
+                        "value": "IDR 60,000,000"
+                    },
+                    {
+                        "title": "Bunga Berjalan",
+                        "value": "IDR 567,000"
+                    },
+                    {
+                        "title": "Pajak",
+                        "value": "IDR 2,000,000"
+                    },
+                    {
+                        "title": "Biaya Penyimpanan",
+                        "value": "IDR 0"
+                    },
+                    {
+                        "title": "Biaya Admin",
+                        "value": "IDR 0"
+                    }
+                ],
+                "totalAmount": 80000
+            },
+            "response_code": "00000"
+        }

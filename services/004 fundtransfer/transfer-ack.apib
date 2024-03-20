@@ -1,0 +1,211 @@
+
+## Transfer Non Registered ACK [/fundtransfer/ack-nonregistered]
+
+### Transfer Non Registered ACK [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "productName": "GIRO BUSINESS SMART",
+                "accountId": "B1C200A06D9C65D9E0537007FF0AF56E",
+                "accountNo": "693810029464",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "mcBit": "Y",
+                "branchCode": "99693",
+                "productCode": "TBSMCY9902",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR"
+                    }
+                ]
+            },
+            "listNonRegisteredAccount": [
+                {
+                    "beneAccount": {
+                        "accountNo": "693810030363",
+                        "accountName": "LISANLY",
+                        "accountType": "S",
+                        "mcBit": "Y",
+                        "branchCode": "99693",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "USD"
+                            }
+                        ]
+                    },
+                    "beneTransaction": {
+                        "bankCode": "999",
+                        "saveBeneFlag": false,
+                        "transferServiceCode": "IFT",
+                        "registerFlag": false,
+                        "beneIsExisting": false,
+                        "amount": 25000,
+                        "amountCcy": "IDR",
+                        "interval": "W",
+                        "recurStartDate": "2020-11-02T02:30:24.000+00:00",
+                        "recurEndDate": "2020-12-31T02:30:24.000+00:00",
+                        "remark": "test",
+                        "flagSyariah": "C",
+                        "qrFlag": true,
+                        "transferDate": "2020-11-02T02:30:24.000+00:00",
+                        "referenceNo" : "20201112405629",
+                        "category" : {
+                            "code" : "BCAT002",
+                            "description" : "Pribadi"
+                        },
+                        "residentStatus" : {
+                            "code" : "RS001",
+                            "description" : "WNI"
+                        },
+                        "tacCode": "ABC123",
+                        "tacId": "7123",
+                        "exchangeRate": 14874.0,
+                        "exchangeRateCcy": "USD",
+                        "variantRateBuy": 10,
+                        "variantRateSell": -9
+                    }
+                }
+            ],
+            "responseCodeOTP" : "626553"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "selectedAccount": "ADF2F3B94237374CE050A8C0940739B4",
+                "debitAccountNo": "693800000723",
+                "debitAccountCcy": "IDR",
+                "debitAccountType": "D",
+                "debitAccountMcBit": "Y",
+                "debitBranchCode": "99693",
+                "debitProductCode": "GRRMCY9902",
+                "listNonRegisteredAccount": [
+                    {
+                        "productCode": "GRRMCY9902",
+                        "debitAccountNo": "693800000723",
+                        "debitAccountCcy": "IDR",
+                        "debitCif": "0000000000001679512",
+                        "debitAccountMcBit": true,
+                        "debitAccountBranch": "99693",
+                        "debitAccountType": "D",
+                        "beneAccountNo": "010810080985",
+                        "beneAccountName": "IRA5",
+                        "beneAccountCcy": "IDR",
+                        "beneficiaryBankBranchCode": "01010",
+                        "beneficiaryBankCode": "999",
+                        "beneAccountType": "S",
+                        "beneAccountMcBit": false,
+                        "saveBeneFlag": false,
+                        "isInterBank": false,
+                        "isOnline": false,
+                        "transferServiceCode": "IFT",
+                        "registerFlag": false,
+                        "beneIsExisting": false,
+                        "amount": 1000055555555,
+                        "amountCcy": "IDR",
+                        "transferDate": "2020-08-25T16:55:32.000+00:00",
+                        "errorCode": "00016",
+                        "errorDesc": "Error Single Transfer Limit - 1000055555555.00/1000000000.00",
+                        "createdBy": "AULIARAC1511",
+                        "version": 1,
+                        "isDel": false,
+                        "timeCreated": "2020-08-28T16:55:32.514+00:00",
+                        "isNotifGenerated": "A",
+                        "origin": "MB",
+                        "tokenType": "SW",
+                        "debitBankName": "OCBC NISP",
+                        "debitBankCode": "999",
+                        "beneficiaryBankName": "OCBC NISP",
+                        "beneficiaryBankBranch": "OCBC NISP Pusat",
+                        "recurringFlag": false,
+                        "paymentId": "9d33266a-08cf-41f3-8aea-8f6bf6f0a278",
+                        "transferStatus": "F",
+                        "transferStatusDesc": "00016",
+                        "referenceNo": "20200828101006",
+                        "transferServiceGroup": "IFT",
+                        "source": "UNREG"
+                    }
+                ],
+                "cif": "0000000000001679512",
+                "account": {
+                    "accountCcy": "IDR ",
+                    "accountNo": "693800000723",
+                    "balance": 65580595.0,
+                    "availableBalance": 65580595.0,
+                    "holdBalance": 0,
+                    "accountStatus": "1",
+                    "accountType": "D",
+                    "branchCode": "99693",
+                    "mcBit": "Y",
+                    "accountName": "AULIA RACHMAN       ",
+                    "listCcyCode": [
+                        "IDR",
+                        "USD",
+                        "SGD",
+                        "EUR",
+                        "AUD",
+                        "HKD",
+                        "JPY",
+                        "GBP",
+                        "NZD",
+                        "CNH",
+                        "CHF",
+                        "CAD"
+                    ],
+                    "cif": "0000000000001679512"
+                },
+                "receipt": {
+                    "sourceOfFund": {
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "productCode": "GRRMCY9902",
+                        "accountNo": "693800000723",
+                        "accountCcy": "IDR"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "productCode": "GRRMCY9902",
+                                "accountNo": "693810030363",
+                                "accountName": "LISANLY",
+                                "bankName": "BCA",
+                                "accountCcy": "USD"
+                            },
+                            "transactionStatus": "S",
+                            "transactionAmount": 3250800.88,
+                            "transactionCcy": "IDR",
+                            "totalAmountDescription": "ekuivalen IDR 144010",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Pesan",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Metode Transfer",
+                                    "value": "OCBC NISP"
+                                },
+                                {
+                                    "title": "Waktu Transfer",
+                                    "value": "Sekarang / Now"
+                                },
+                                {
+                                    "title": "Reference Number",
+                                    "value": "20200828101006"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }

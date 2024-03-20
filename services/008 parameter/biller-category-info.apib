@@ -1,0 +1,31 @@
+
+## Biller Category Info [/parameter/biller-category-info]
+
+### Biller Category Info [POST]
+
++ Request
+
+        {
+            "categoryId": "001"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "id": "001",
+                "title": "Gojek",
+                "type": "VOUCHER",
+                "minimumAmount": 0,
+                "additionalFields": [
+                    {
+                        "code": "AMOUNT",
+                        "title": "Nominal",
+                        "placeholder": "Masukkan Nominal"
+                    }
+                ]
+            }
+        }

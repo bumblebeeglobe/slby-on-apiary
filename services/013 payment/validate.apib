@@ -1,0 +1,108 @@
+
+## Payment Validate [/payment/validate]
+
+### Payment Validate [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "accountId": "B1C200A06D9C65D9E0537007FF0AF56E",
+                "accountNo": "693810029464",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "mcBit": "Y",
+                "branchCode": "99693",
+                "productCode": "TBSMCY9902",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR"
+                    }
+                ]
+            },
+            "listTransaction": [
+                {
+                    "category": {
+                        "id": "001",
+                        "title": "Gojek",
+                        "type": "VOUCHER",
+                        "minimumAmount": 0,
+                        "additionalFields": [
+                            {
+                                "code": "AMOUNT",
+                                "title": "Nominal",
+                                "placeholder": "Masukkan Nominal"
+                            }
+                        ]
+                    },
+                    "referenceNumber": "12345678",
+                    "biller": {
+                        "accountName": "Andi Budi",
+                        "productName": "Token Listrik - R1M/900VA",
+                        "accountNo": "08112345678"
+                    },
+                    "invoiceId": "33333333",
+                    "totalAmount": 431000,
+                    "billAmount": 429000,
+                    "adminFee" : 2000,
+                    "selectedPackageCode": "17"
+                }
+            ]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sourceAccount": {
+                    "productCode": "TBPAY10002",
+                    "productName": "TANDA PAYROLL 1-P",
+                    "accountNo": "693810003337",
+                    "accountType": "S",
+                    "branchCode": "99693",
+                    "mcBit": "N",
+                    "accountId": "AE28BF3D6C7CDA13E050A8C0940711A9",
+                    "labelDebitAccount": "TANDA PAYROLL 1-P 693810003337 IDR 2280351.00",
+                    "cif": "0000000000001679512",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 2280351,
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                "listTransaction": [
+                    {
+                        "category": {
+                            "id": "001",
+                            "title": "Gojek",
+                            "type": "VOUCHER",
+                            "minimumAmount": 0,
+                            "additionalFields": [
+                                {
+                                    "code": "AMOUNT",
+                                    "title": "Nominal",
+                                    "placeholder": "Masukkan Nominal"
+                                }
+                            ]
+                        },
+                        "referenceNumber": "12345678",
+                        "biller": {
+                            "accountName": "Andi Budi",
+                            "productName": "Token Listrik - R1M/900VA",
+                            "accountNo": "08112345678"
+                        },
+                        "invoiceId": "33333333",
+                        "totalAmount": 431000,
+                        "billAmount": 429000,
+                        "adminFee" : 2000,
+                        "selectedPackageCode": "17",
+                        "onlineSessionId": "6D52F7F8DB08E25F79263CA049EBE363"
+                    }
+                ]
+            }
+        }

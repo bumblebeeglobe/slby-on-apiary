@@ -1,0 +1,29 @@
+
+## Change pin credit card confirmation [/card/credit/confirmation]
+
+
+### Change pin credit card confirmation [POST]
+
++ Request (application/json)
+
+        {
+            "pan" : "1234567890121234",
+            "dateOfBirth" : "06101995",
+            "phoneNumber" : "085722746166",
+            "encryptedPIN" : "D5thysx2YqRYC6nEaAeg9451AcMz4iViu2GPSoTBt//cOUusaM6quUaDG/vLj359jA44leLGo5osjau7lOhmTl595wTx7K/Di7f3Bv8Xdhb4/yffYxXlum06Z9t8u9EBKtNW5Mi0QmtKGuoS7XhQE6+vTv+KLFXbTkOpQBLZ2aU="
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "pan" : "1234567890121234",
+            "dateOfBirth" : "06101995",
+            "phoneNumber" : "085722746166",
+            "encryptedPIN" : "D5thysx2YqRYC6nEaAeg9451AcMz4iViu2GPSoTBt//cOUusaM6quUaDG/vLj359jA44leLGo5osjau7lOhmTl595wTx7K/Di7f3Bv8Xdhb4/yffYxXlum06Z9t8u9EBKtNW5Mi0QmtKGuoS7XhQE6+vTv+KLFXbTkOpQBLZ2aU="
+            },
+            "response_code": "00000"
+        }

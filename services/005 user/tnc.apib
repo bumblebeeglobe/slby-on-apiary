@@ -1,0 +1,44 @@
+
+## Term and Condition [/user/tnc]
+
+### Term and Condition [POST]
+
+List of TAC Code
+1. REGISTERINVESTOR: Kemenkeu/Investor Registration
+2. TANDAGENERAL: Open Tanda
+3. TRFOAT: Own Account Transfer
+4. TRFIFT: Internal Account Transfer
+5. TRFTT: Telegrahic Transfer
+6. FOREXTRF: Buy and Sell Forex
+7. MUTUALFUNDSUBS: Mutual Fund Transaction
+8. PINTRANSACTION: Pin Transaction Activation
+9. ACTBIOMETRIC: Biometric Activation
+10. BONDSSELL: Jual Obligasi
+11. BONDSBUY: Beli Obligasi
+
++ Request (application/json)
+
+        {
+            "tacCode": "TANDAGENERAL"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "termAndConditionParametersResponse": {
+                    "tacId": "001",
+                    "tacCode": "001",
+                    "content": "Donec hendrerit lacus nibh, quis interdum purus mattis a. Quisque malesuada condimentum risus, eget bibendum nulla sollicitudin placerat. Etiam vitae nibh purus. Integer in lectus vitae lacus laoreet iaculis id quis augue. Sed dictum in ex at auctor. Nullam rutrum magna magna, bibendum interdum eros scelerisque non. Aliquam faucibus erat tortor, eu laoreet quam dapibus non. Etiam libero ipsum, vehicula non ullamcorper vitae, elementum non sem. Etiam pulvinar massa in ante vestibulum, finibus mattis felis vestibulum. Vestibulum felis sapien, porttitor vitae dictum in, posuere sit amet nisl. Fusce a ante a enim dapibus aliquam at nec erat. Quisque nec euismod massa. Maecenas rutrum posuere leo, nec vehicula enim auctor non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas risus eros, rhoncus id pulvinar vitae, efficitur non odio. Etiam fringilla ultricies nisl, sed sollicitudin elit sodales ut.",
+                    "contentDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed turpis ligula. Curabitur eget maximus purus, eget egestas tellus. Vivamus tincidunt pharetra ultrices. In porta eu quam eu ornare. Praesent imperdiet pretium nisi pulvinar sollicitudin. Proin et dapibus tortor. Mauris egestas libero a ex consectetur mattis. Nulla quis euismod ligula, ac condimentum nulla. Suspendisse et ipsum ut orci lobortis vulputate nec et odio.",
+                    "listCheckBox": [
+                        {
+                            "description": "Ok, I agree."
+                        }
+                    ]
+                }
+            }
+        }

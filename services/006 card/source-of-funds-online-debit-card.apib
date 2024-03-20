@@ -1,0 +1,57 @@
+
+## Source of funds online debit Card [/card/vdc/source-of-funds]
+
+
+### Source of funds online debit Card [POST]
+
++ Request (application/json)
+
+        {
+            "currencies" : ["IDR"]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "accounts": [
+                    {
+                        "productCode": "TBTREG0002",
+                        "productName": "",
+                        "accountId": "",
+                        "accountNo": "076130001095",
+                        "accountType": "S",
+                        "accountName": "",
+                        "accountCcy": "",
+                        "currency": "",
+                        "branchCode": "",
+                        "bankCode": "",
+                        "bankName": "",
+                        "mcBit": "",
+                        "labelDebitAccount": "",
+                        "cif": "",
+                        "imageInfo": "",
+                        "dynamicAccountId": "",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 72440554,
+                                "holdBalance": 0,
+                                "isAvailable": true,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            }
+                        ],
+                        "isStructured": false,
+                        "statusCode": "",
+                        "userName": "",
+                        "qrAccountId": "",
+                        "description": ""
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

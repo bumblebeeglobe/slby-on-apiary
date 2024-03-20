@@ -1,0 +1,57 @@
+
+## TAKA Source of Funds [/account/saving/plan/source-of-funds]
+
+### TAKA Source of Funds [POST]
+
++ Request (application/json)
+
+        {
+            "currencies" : ["IDR"]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accounts": [
+                    {
+                        "productCode": "TBSMCY9902",
+                        "productName": "Tanda360Plus-Digital",
+                        "accountNo": "693810030363",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "B48335E2CE7D11C9E0537007FF0AF372",
+                        "cif": "0000000000002139206",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 872808.49,
+                                "isAvailable": true
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810046559",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "B48335E2CE8111C9E0537007FF0AF372",
+                        "cif": "0000000000002139206",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 100000,
+                                "isAvailable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        }

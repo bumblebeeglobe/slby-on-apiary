@@ -1,0 +1,34 @@
+
+## CC Installment Acknowledge [/card/cc/installment/acknowledge]
+
+### CC Installment Acknowledge [POST]
+
++ Request (application/json)
+
+        {
+            "transactionDate": "07/09/2020",
+            "description": "DUMMY MERCHANT JAKARTARE ID ",
+            "amount": 2000000,
+            "authCode": null,
+            "listIPP": {
+                "cardNumber": "4645831100011478",
+                "transactionAuthNo": "101222",
+                "programName": "IPP3b",
+                "tenor": 3,
+                "interest": 1.5,
+                "interestAmount": 15000,
+                "adminFee": 15000,
+                "installmentBalance": 348333
+            },
+            "onlineSessionId": "2021-05-24T09:48:50.610+610:610-253fb3c6-53e5-4362-85c6-3a2e7bf6666a",
+            "responseCodeOTP" : "915800"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "response_code": "00000"
+        }

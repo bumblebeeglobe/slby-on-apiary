@@ -1,0 +1,90 @@
+
+## Switch Mutual Funds [/wealth/mutualfund/unit]
+
+### Switch Mutual Funds [POST]
+
++ Request (application/json)
+        
+        {
+            "actionCode": "MUTUALFUNDSWITCH",
+            "totalUnit": 1000000,
+            "minUnit": 100,
+            "fee": 1.1,
+            "sourceOfFund": {
+                "productCode": "GRRMCY0001",
+                "productName": "GIRO MULTICURRENCY 0001",
+                "accountName": "Yeremia",
+                "accountId": "BA430176478D3498E0537007FF0AE598",
+                "accountNo": "010810057199",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "cif": "0000000000000000002"
+            },
+            "mutualFundSource": {
+                "clientCode": "FP232",
+                "clientId": 1,
+                "productCode: "ADPN",
+                "suitabilityBit": true,
+                "productRiskProfile: "Rendah",
+                "productCurrency": "IDR",
+                "balance" : 14523.0,
+                "navAmount":  14523.0,
+                "navDate": "2021-01-25T05:21:46.000+0000"
+            },
+            "mutualFundDestination": {
+                "clientCode": "FP232", 
+                "clientId": 1,
+                "productCode: "ADPN",
+                "suitabilityBit": true,
+                "productRiskProfile: "Rendah",
+                "productCurrency": "IDR",
+                "balance" : 14523.0,
+                "navAmount":  14523.0,
+                "navDate": "2021-01-25T05:21:46.000+0000"
+            },
+        }
+
++ Response 200 (application/json)
+        
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+               "estimatedFeeAmount": 245942.61,
+               "estimatedAmount": 98377045.558974,
+               "sourceOfFund": {
+                    "productCode": "GRRMCY0001",
+                    "productName": "GIRO MULTICURRENCY 0001",
+                    "accountName": "Yeremia",
+                    "accountId": "BA430176478D3498E0537007FF0AE598",
+                    "accountNo": "010810057199",
+                    "branchCode": "01010",
+                    "mcBit": "Y",
+                    "cif": "0000000000000000002"
+               },
+               "mutualFundSource": {
+                    "productName": "Manulife obligasi",
+                    "productCategory": "Rendah",
+                    "suitabilityBit": true,
+                    "productRiskProfile" : "Aggresive"
+                },
+               "mutualFundDestination": {
+                    "productName": "Manulife Greater Indonesia Fund",
+                    "productCategory": "Rendah",
+                    "suitabilityBit": true,
+                    "productRiskProfile" : "Aggresive"
+                },
+                "summaryNotes": [
+                    {
+                        "title": "Jumlah Unit Dialihkan",
+                        "value": "124,190.11"
+                    },
+                    {
+                        "title": "Biaya Transaksi",
+                        "value": "IDR 0"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

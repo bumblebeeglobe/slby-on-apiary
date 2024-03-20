@@ -1,0 +1,99 @@
+
+##  Order Product SBN Retail [/primary-bonds/sbnretail/order/product]
+
+###  Order Product SBN Retail [POST]
+
+Error Code
+1. B0061 - Tidak ada penawaran
+2. B0062 - Up Coming
+
++ Request (application/json)
+
+        {
+            "idSeri": 362
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "idSeri" : 362,
+                "settlementDate": "2021-03-16T00:00:00.000+0700",
+                "maturityDate": "2021-03-16T00:00:00.000+0700",
+                "couponDateInd": "Tanggal 20 setiap bulan",
+                "couponDateEng": "20th of every month",
+                "couponRate": 8,
+                "securityNo": "ORI SERI 16",
+                "expireDate": "2021-03-16T00:00:00.000+0700",
+                "isRiskProfileExpired":false,
+                "isHaveRiskProfile":true,
+                "isCutOff": false,
+                "cutOffDialog": {
+                    "title":"Cut Off Order",
+                    "message":"Kamu tidak bisa membeli product ini dari jam 08.00 : 09.00"
+                },
+                "details" : [
+                    {
+                        "title":"Coupon Date",
+                        "value":"10th of every month",
+                        "note": ""
+                    },
+                    {
+                        "title":"Coupon Rate",
+                        "value":"5.70%",
+                        "note": ""
+                    },
+                    {
+                        "title":"Last Order Date",
+                        "value":"30 January 2021, 10.00 WIB",
+                        "note": ""
+                    },
+                    {
+                        "title":"Sisa Kuota",
+                        "value":"IDR 3.000.000,00",
+                        "note": "informasi kuota diperoleh dari kementrian keuangan"
+                    }
+                ],
+                "minOrder": 1000000,
+                "maxOrder": 100000000,
+                "multiplesOfNominal": 1000000,
+                "kuotaSeri": 859782000000,
+                "kuotaInvestor": 10000000,
+                "docs": [
+                    {
+                        "docType": "SKU",
+                        "urlPath": "http://www.ocbcnisp.com/OCBC-NISP-Staging/media/NISPOnline/Personal%20Banking/Wealth%20Management/Reksa%20Dana/Prospektus/2014/2014_-Propektus-NISP-DANA-TETAP-II.pdf"
+                    },
+                    {
+                        "docType": "Memorandum Informasi",
+                        "urlPath": "http://www.ocbcnisp.com/OCBC-NISP-Staging/media/NISPOnline/Personal%20Banking/Wealth%20Management/Reksa%20Dana/Fund%20Factsheet/2015/March/315-Aberdeen-Indonesia-Bond-Fund-Mar-15-Bhs.pdf"
+                    },
+                    {
+                        "docType": "FAQ",
+                        "urlPath": "http://www.ocbcnisp.com/OCBC-NISP-Staging/media/NISPOnline/Personal%20Banking/Wealth%20Management/Reksa%20Dana/Fund%20Factsheet/2015/March/1503-Equitra-Ind.pdf"
+                    }
+                ],
+                "sourceOfFund": {
+                    "productCode": "TBSMCY9902",
+                    "productName": "GIRO BUSINESS SMART",
+                    "accountNo": "693810053779",
+                    "accountType": "D",
+                    "branchCode": "99693",
+                    "mcBit": "Y",
+                    "accountId": "BD8078EF7538141AE053D407FF0A68AB",
+                    "labelDebitAccount": "GIRO BUSINESS SMART 693800000723 IDR 65200583.00",
+                    "cif": "0000000000001679512",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 693810053779,
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

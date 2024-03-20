@@ -1,0 +1,95 @@
+
+## Switch Mutual Funds Validate [/wealth/mutualfund/unit/validate]
+
+### Switch Mutual Funds Validate [POST]
+
++ Request (application/json)
+        
+        {
+            "actionCode": "MUTUALFUNDSWITCH",
+            "totalUnit": 1000000,
+            "minUnit": 100,
+            "unitRemaining": 5000,
+            "fee": 1.1,
+            "estimatedFeeAmount": 245942.61,
+            "estimatedAmount": 98377045.558974,
+            "sourceOfFund": {
+                "productCode": "GRRMCY0001",
+                "productName": "GIRO MULTICURRENCY 0001",
+                "accountName": "Yeremia",
+                "accountId": "BA430176478D3498E0537007FF0AE598",
+                "accountNo": "010810057199",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "cif": "0000000000000000002"
+            },
+            "mutualFundSource": {
+                "clientCode": "FP232",
+                "clientId": 1,
+                "productCode: "ADPN",
+                "productRiskProfile: "Rendah",
+                "productCurrency": "IDR",
+                "balance" : 14523.0,
+                "navAmount":  14523.0,
+                "nAVDate": "2021-01-25T05:21:46.000+0000"
+            },
+            "mutualFundDestination": {
+                "clientCode": "FP232", 
+                "clientId": 1,
+                "productCode: "ADPN",
+                "productRiskProfile: "Rendah",
+                "productCurrency": "IDR",
+                "balance" : 14523.0,
+                "navAmount":  14523.0,
+                "navDate": "2021-01-25T05:21:46.000+0000"
+            },
+        }
+        
++ Response 200 (application/json)
+        
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "actionCode": "MUTUALFUNDSWITCH",
+                "totalUnit": 1000000,
+                "minUnit": 100,
+                "unitRemaining": 5000,
+                "fee": 1.1,
+                "estimatedFeeAmount": 245942.61,
+                "estimatedAmount": 98377045.558974,
+                "sourceOfFund": {
+                    "productCode": "GRRMCY0001",
+                    "productName": "GIRO MULTICURRENCY 0001",
+                    "accountName": "Yeremia",
+                    "accountId": "BA430176478D3498E0537007FF0AE598",
+                    "accountNo": "010810057199",
+                    "branchCode": "01010",
+                    "mcBit": "Y",
+                    "cif": "0000000000000000002"
+                },
+                "mutualFundSource": {
+                    "clientCode": "FP232",
+                    "clientId": 1,
+                    "productCode": "ADPN",
+                    "productRiskProfile": "Rendah",
+                    "productCurrency": "IDR",
+                    "balance" : 14523.0,
+                    "navAmount":  14523.0,
+                    "nAVDate": "2021-01-25T05:21:46.000+0000"
+                },
+                "mutualFundDestination": {
+                    "clientCode": "FP232", 
+                    "clientId": 1,
+                    "productCode": "ADPN",
+                    "productRiskProfile": "Rendah",
+                    "productCurrency": "IDR",
+                    "balance" : 14523.0,
+                    "navAmount":  14523.0,
+                    "navDate": "2021-01-25T05:21:46.000+0000"
+                },
+                "onlineSessionId":"693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+            },
+            "response_code": "00000"
+        }

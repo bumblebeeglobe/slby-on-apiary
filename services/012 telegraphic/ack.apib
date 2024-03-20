@@ -1,0 +1,172 @@
+
+## Telegraphic Ack [/telegraphic/ack]
+
+### Telegraphic Ack [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "accountId": "B1C200A06D9C65D9E0537007FF0AF56E",
+                "accountNo": "693810029464",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "mcBit": "Y",
+                "branchCode": "99693",
+                "productCode": "TBSMCY9902",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR"
+                    }
+                ]
+            },
+            "listTelegraphicTransfer": [
+                {
+                    "remitter": {
+                        "name": "ENDANG MUSTIKOWATI",
+                        "category": {
+                            "code": "A0",
+                            "value": "Perorangan",
+                            "description": ""
+                        },
+                        "domicile": {
+                            "code": "001",
+                            "value": "Indonesian"
+                        },
+                        "residentStatus": {
+                            "code": "001",
+                            "value": "Warga Negara"
+                        },
+                        "address": "Jl. Mandar 4 No 12, Pondok Aren, Ciputat Timur, 15412"
+                    },
+                    "beneAccount": {
+                        "accountNo": "693810030363",
+                        "accountName": "LISANLY",
+                        "address": "1283, Hikobe, Shiwa-cho Shiwa-gun, Iwate, Chuo-Ku",
+                        "domicile": {
+                            "code": "001",
+                            "value": "Afghanistan"
+                        },
+                        "bank": {
+                            "swiftCode": "BOISSGS1XXX",
+                            "name": "MITSUBISHI UFJ SECURITIES (SINGAPORE), LIMITED",
+                            "address": "HONG LEONG BUILDING 01-06 9 RAFFLES PLACE 01-01, REPUBLIC PLAZA",
+                            "country": {
+                                "code": "001",
+                                "value": "Afghanistan"
+                            },
+                            "city": {
+                                "code": "001",
+                                "value": "Aichi"
+                            }
+                        },
+                        "accountBalances": [
+                            {
+                                "accountCcy": "JPY"
+                            }
+                        ]
+                    },
+                    "beneTransaction": {
+                        "swiftChargeMethod": {
+                            "code": "BEN",
+                            "value": "By Recipient (BEN)",
+                            "description": "By Recipient (BEN)"
+                        },
+                        "affiliationStatus": {
+                            "code": "N",
+                            "value": "Bukan Afiliasi",
+                            "description": ""
+                        },
+                        "category": {
+                            "code": "A0",
+                            "value": "Perorangan",
+                            "description": ""
+                        },
+                        "purpose": {
+                            "code": "2150",
+                            "value": "Transfer Penghasilan",
+                            "description": ""
+                        },
+                        "transferServiceCode": "TT",
+                        "amount": 50,
+                        "amountCcy": "IDR",
+                        "remark": "test",
+                        "tacId": "0001",
+                        "tacCode": "ABC123",
+                        "exchangeRate": 9877.5397178,
+                        "exchangeRateFormat": 0.000101239785267370965083622677974305315326,
+                        "exchangeRateCcy": "SGD",
+                        "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+                    }
+                }
+            ],
+            "responseCodeOTP": "123456"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "productCode": "TBSMCY9902",
+                        "productName": "TND360 PROMO3 2012-S",
+                        "accountId": "BB07EF58D04B01F0E0537007FF0AB713",
+                        "accountNo": "562810000025",
+                        "accountType": "S",
+                        "accountName": "AULIA RACHMAN",
+                        "branchCode": "01562",
+                        "mcBit": "N",
+                        "labelDebitAccount": "TND360 PROMO3 2012-S 562810000025 IDR 36842245.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR"
+                            }
+                        ]
+                    },
+                    "listTransaction": [
+                        {
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "accountNo": "12343141",
+                                "accountName": "Nama",
+                                "bankName": "OVERSEA-CHINESE BANKING CORPORATION LIMITED",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "SGD",
+                                        "balance": 0,
+                                        "holdBalance": 0,
+                                        "accountCcyNameID": "",
+                                        "accountCcyNameEN": ""
+                                    }
+                                ]
+                            },
+                            "transactionStatus": "S",
+                            "transactionAmount": 50,
+                            "transactionCcy": "SGD",
+                            "transactionDate": "2021-02-16T04:06:01.859+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Metode Pembayaran",
+                                    "value": "By Sender (OUR)"
+                                },
+                                {
+                                    "title": "Catatan",
+                                    "value": "test"
+                                },
+                                {
+                                    "title": "Nomor Referensi",
+                                    "value": "416865"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

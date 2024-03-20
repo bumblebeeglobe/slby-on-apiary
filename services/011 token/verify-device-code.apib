@@ -1,0 +1,26 @@
+
+## Verify Device Code [/token/verify-device-code]
+
+### Verify Device Code [POST]
+
++ Request (application/json)
+
+        {
+            "deviceFingerPrint": "8E89788B8BAF1AB075248DDD1C0223C6FB5A911D60720FA0209AEBAD0B1871C4",
+            "deviceCode": "3834060981325081",
+            "deviceIdOneMobile": "4B76543D-8814-4178-BD93-38DACBF66FC6"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sequenceNumber": "40",
+                "messageActivation2": "00415FE65E081AB9D7CE63EB4BF342EDFCEC21F9E5D1427EFD0046691B53613D49C44FB738CA8B923286654A66B4E48B635A42281D523444260506AE0DD6",
+                "deviceId": "28C8F1C3",
+                "velisTimeStamp": 1608951678
+            }
+        }

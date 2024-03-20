@@ -1,0 +1,40 @@
+
+## Primary bonds validate [/wealth/validate]
+
+### Primary bonds validate [POST]
+
+Error Response Code
+1. 00001 Cut Off Time
+2. 00006 KYC
+3. 08201 Risk Profile Expired
+4. B0056 NTI/Investment In Review
+5. B0060 Not Eligible SBN Retail
+6. 06010 Product for domestic investor
+7. 06012 Belum termasuk NTI
+8. 06022 KTP Invalid
+9. 06023 Risk Profile Not Registered
+
+Action Code
+1. U: Unit Trust / Reksa Dana
+2. B: Bounds / Obligasi
+3. BP: SBN Ritel
+4. BA: Bancassurance
+
++ Request (application/json)
+
+        {
+            "actionCode": "U"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "isInvestmentApproved": true,
+                "isInvestorApproved": true
+            },
+            "response_code": "00000"
+        }

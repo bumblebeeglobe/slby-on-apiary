@@ -1,0 +1,33 @@
+
+## Inquiry Swift Bank [/telegraphic/inquiry-swift-bank]
+
+### Inquiry Swift Bank [POST]
+
++ Request (application/json)
+
+        {
+            "swiftCode": "BOTJKSJDK"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "bank": {
+                    "swiftCode": "BOTJKSJDK",
+                    "name": "Bank of Tokyo - Mitsubishi UFJ, LTD., THE",
+                    "address": "3-1 Nihonbashi Hongoku-cho 1-Chome Chuo-Ku",
+                    "country": {
+                        "code": "001",
+                        "value": "Afghanistan"
+                    },
+                    "city": {
+                        "code": "001",
+                        "value": "Aichi"
+                    }
+                }
+            }
+        }

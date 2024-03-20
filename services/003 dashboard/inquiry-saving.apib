@@ -1,0 +1,255 @@
+
+## Dashboard: Inquiry Saving Plan [/dashboard/inquiry-saving]
+
+### Inquiry Saving Plan (Finance - My Savings) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "savings": [
+                    {
+                        "title": "Tabungan",
+                        "code": "TANDA",
+                        "balanceDesc": "Total Aset",
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 86848614.00,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 3002959.04,
+                                "accountCcyNameID": "Dolar Amerika",
+                                "accountCcyNameEN": "US Dollar"
+                            }
+
+                        ],
+                        "accounts": [
+                            {
+                                "productCode": "TBTND13082",
+                                "productName": "TND360 PROMO3 2012-S",
+                                "accountNo": "133810018381",
+                                "accountType": "S",
+                                "branchCode": "05133",
+                                "mcBit": "N",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 955195758.59
+                                    }
+                                ]
+                            },
+                            {
+                                "productCode": "TBSMCY9901",
+                                "productName": "Tanda360Plus-S",
+                                "accountNo": "133810018498",
+                                "accountType": "S",
+                                "branchCode": "05133",
+                                "mcBit": "Y",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 100748378053.99,
+                                        "holdBalance": 0
+                                    },
+                                    {
+                                        "accountCcy": "USD",
+                                        "balance": 3002959.04,
+                                        "holdBalance": 28.2
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Giro",
+                        "code": "GIRO",
+                        "balanceDesc": "Total Aset",
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 10198961373,
+                                "holdBalance": 0,
+                                "isAvailable": false,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 20746593.04,
+                                "holdBalance": 0,
+                                "isAvailable": false,
+                                "accountCcyNameID": "Dolar Amerika",
+                                "accountCcyNameEN": "US Dollar"
+                            }
+                        ],
+                        "accounts": [
+                            {
+                                "productCode": "GRRMCY9902",
+                                "productName": "GIRO BUSINESS SMART",
+                                "accountNo": "133800000076",
+                                "accountType": "D",
+                                "branchCode": "05133",
+                                "mcBit": "Y",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 10199061373
+                                    },
+                                    {
+                                        "accountCcy": "USD",
+                                        "balance": 20746593.04
+                                    }
+                                ]
+                            },
+                            {
+                                "productCode": "GRRMCY9902",
+                                "productName": "GIRO BUSINESS SMART",
+                                "accountNo": "520830009657",
+                                "accountType": "D",
+                                "branchCode": "99693",
+                                "mcBit": "N",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 44969821
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Deposito",
+                        "code": "TD",
+                        "balanceDesc": "Total",
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 28000000,
+                                "holdBalance": 0,
+                                "isAvailable": false,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            }
+                        ],
+                        "accounts": [
+                            {
+                                "productCode": "DEPOKVN",
+                                "productName": "Deposito Konven",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 19000000
+                                    }
+                                ],
+                                "assets": [
+                                    {
+                                        "productCode": "DHECCB0014",
+                                        "productName": "DEPO IBMB IDR 14HR",
+                                        "productCurrency": "IDR",
+                                        "balance": 10000000,
+                                        "isStructured": false,
+                                        "accountNo": "133820000130",
+                                        "isSyariah": false
+                                    },
+									{
+                                        "productCode": "DHECCB0001",
+                                        "productName": "DEPO IBMB IDR 1Bl",
+                                        "productCurrency": "IDR",
+                                        "balance": 90000000,
+                                        "isStructured": true,
+                                        "accountNo": "133820000131",
+                                        "isSyariah": false
+                                    }
+                                ]
+                            },
+                            {
+                                "productCode": "DEPOSYR",
+                                "productName": "Deposito Syariah",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 90000000
+                                    }
+                                ],
+                                "assets": [
+                                   {
+                                       "productCode": "DBIBI0001",
+                                       "productName": "DEPO IBMB Syariah IDR 1Bl",
+                                       "productCurrency": "IDR",
+                                       "balance": 90000000,
+                                       "isStructured": false,
+                                       "accountNo": "133820000169",
+                                       "isSyariah": true
+                                   }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Tabungan Berjangka",
+                        "code": "TAKA",
+                        "balanceDesc": "Total Aset",
+                        "image": "https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/96x96/diagram_v2-27.png",
+                        "totals": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 50814306,
+                                "holdBalance": 0,
+                                "isAvailable": false,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            }
+                        ],
+                        "accounts": [
+                            {
+                                "productCode": "TKASR24038",
+                                "productName": "Taka Cashback Asr OL",
+                                "accountNo": "133810018787",
+                                "mcBit": "N",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 15942790
+                                    }
+                                ],
+                                "monthlyPayment" : 992436,
+                                "availableBalance": 25000000,
+                                "effectiveDate": "2020-01-28T17:00:00.000+0700",
+                                "maturityDate": "2022-01-28T17:00:00.000+0700",
+                                "tenor": 24,
+                                "interestRate" : 0.5
+                            },
+                            {
+                                "productCode": "TKFIXAS003",
+                                "productName": "Taka FIX Inst AS",
+                                "accountNo": "133810018928",
+                                "mcBit": "N",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 2000000
+                                    }
+                                ],
+                                "monthlyPayment" : 200000,
+                                "availableBalance": 2441960,
+                                "effectiveDate": "2020-08-25T17:00:00.000+0700",
+                                "maturityDate": "2021-08-25T17:00:00.000+0700",
+                                "tenor": 12,
+                                "interestRate" : 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

@@ -1,0 +1,72 @@
+
+## Initialize [/user/initialize]
+
+### Initialize [POST]
+
+A. List Platform:
+1. IOS
+2. ANDROID
+
+B. List App Status:
+1. STABLE
+2. OBSOLETE
+
++ Request (application/json)
+
+        {
+            "deviceId": "010203040506",
+            "appPlatform": "IOS",
+            "appVersion": "1.0.0"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "deviceBindingResponse": {
+                    "isBinded": true,
+                    "maxDevices": 2,
+                    "isPrimary": false,
+                    "isActive": false
+                },
+                "preLoginResponse": {
+                    "version": 29,
+                    "versionEn": "4b2fd3ae-c2ad-4d7ACPwbg31AxNp23o/gFAwfkkq3TJYj0YC4GwAoPNSqvUTj7neG26px597yKO8A2/",
+                    "versionIn": "783ad372-8698-4eT+iGHPOvwOMgoCg3r9jY48PkibkcD9se01AdBABivWOg9tXpaKEqB0uortmisYRp"
+                },
+                "contactsResponse": {
+                    "call": {
+                        "value": "1500-999"
+                    },
+                    "mail": {
+                        "value": "callcenter@ocbcnisp.com"
+                    },
+                    "url": {
+                        "value": "https://www.ocbcnisp.com"
+                    },
+                    "instagram": {
+                        "value": "ocbc_nisp"
+                    },
+                    "twitter": {
+                        "value": "ocbcnisp"
+                    },
+                    "facebook": {
+                        "value": "215455391830431"
+                    }
+                },
+                "tncUrls": {
+                    "transferValasOverbooking": {
+                        "tacCode": "ABC123",
+                        "url": "https://google.com"
+                    },
+                    "transferValasTelegraphic": {
+                        "tacCode": "DEF456",
+                        "url": "https://kompas.com"
+                    }
+                },
+                "appStatus": "STABLE"
+            }
+        }

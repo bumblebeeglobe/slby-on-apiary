@@ -1,0 +1,369 @@
+
+## Payment Group [/payment/group]
+
+### Payment Group [GET]
+
+Section.Menu.Type
+1. VOUCHER
+2. PAYMENT
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sections": [
+                    {
+                        "title": "Pembelian",
+                        "menus": [
+                            {
+                                "id": "1",
+                                "icon": "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",
+                                "title": "Pulsa Isi Ulang",
+                                "type": "VOUCHER",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Kategori",
+                                        "placeholder": "Pilih Kategori"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "2",
+                                "icon": "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",
+                                "title": "PLN",
+                                "type": "VOUCHER",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Kategori",
+                                        "placeholder": "Pilih Kategori"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "3",
+                                "icon": "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",
+                                "title": "Paket Data",
+                                "type": "VOUCHER",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Kategori",
+                                        "placeholder": "Pilih Kategori"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "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",
+                                "title": "Paket Bundling",
+                                "type": "VOUCHER",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Kategori",
+                                        "placeholder": "Pilih Kategori"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Pembayaran",
+                        "menus": [
+                            {
+                                "id": "1",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbSSURBVHgB7VxNTxtHGH5njGgFUWukBojUw1KpUkIaWCeHHLP00mND/kBMT20vpL+g5tyqMaceMWnvuL8g5tJjvEZKiNQPtlKlUjjUl5AU7Jm+r1k3y3p3xmtnFkj2kVZez5d3nn0/Z2cNkEEJBmcEO7aVfxveztP5C3jRnHG9JpwBnBpBRMg74sLdFhMOB+ZIkHk4cWGsKUDWcpJVj3h785L71INTQOoEETEXxNgyMHYvTIoGlTYTK2kTlSpBf1+7cptzvpaQmCA8Llnpva3H65ASOKSE/bnZrxlnG0OQQ7AEkxUaC1JCKhJEE5IMSjHVaIylKyXbZBw8KpACLM5gXgLcjhuTSShd3HqyAoZhnKC9a7NFlNO1iKomkrZ6AAflOI/1l33Z4sCLTLJliJA8yURxyn1qVN2MEkQTzEn+EE+tYDmqmYuqstivwe0QJdlD9GxWqKr5jB3MmAwJjNogLlgJesnxDtjzhSTeiNqOsrcKeOqGqvLjcuw+GIQxCfKlZydYRuSg5HTI2Zu/ipIlrUB1E6SsTG5tr6rHzNXD6oZSNGFKioxJUE7keg0sk6WXkiMdOJau7mFjbFTenbtyL25M6iul7CFwTIzF9hkW5lSMiU+DX0l6ogwqBn8z/rHUuSDGlC58lI+WcfAT0sIYuwWGYEzF9uZnZaioMtl4shSuxzIWLiPCUD038DSgSsxDr7U65W5X9+Zmy3jly8HBTanZCBjAn/aHNoToEVI2VH3IvgT6WEAqdwLSQnfv7NuXF2QbjXXo1vqJ7isnyIiK5SDXE7PkuHSj2qLU7NAx0jG+HVRe1rJaVwWRvI7tkZLfbeeEFx5nJOQtXxVSSzUUsOjopiBSwh/BSjLMdLS5qB6XMAtShBGC2tDuEXXZ5lZk25CRZiHb0kUu0J+3WW9UHfGbrwJGbNA4jHtHcHiiDOMfO6ptIGCsoKpRShKYvHRI/fwvVqeEtSuMcSc8zjM48sAAEhFk27aDyxW3MBZxQKHzH+PxABOtqYDVRfdNbv//eIXcfrhfVFngd5pI8so0hgpIWinY4HdUhC/YRL1QmAAFPAwHGkKIsuu6HvSJvghCYiwk5j4ScxuPfrrAz5iaL6K7CcBCD+RcdJ/W6AumG4Vwn24ZeiRf2shItzuq112G7SS/oZvz67FHs0ANi24skrR8/fr1ChK10g9R2jiIyMFBexJOHeZwzeIbeRQu9jBeKejiFXT5znGSy2qTjccLwTpf5axg2Zd8FH5LHtJRVL6gI0lppAclh7CFEtTovWjrghjXLna9NPInVW5/7ur98LVs4RQGIKdzLTQ3mqOqkZIgHKAEQ8QXP7JeDZZM3vMnGov33V9cioyDkTf1ob7htt/yofwMkbSmahBLPRlkX3qGwueyFbZFXaDRFEtdmxSHffsjR0pBhPZ4QboBP7AcDAtf1WpRdbH0IzlFxYAU1ZahD3yPcfUitPAuMSdUhUaTP8Rlj86jHcFbjRYcL7mOwIjFBcy3GTkF4UReH0D1AfCvoD+nQaFDkQx0TD2tPNRificahUKBQv+eu4bkkPUvQQL8Y9v5I/nvRgRJA0LWnrHni0mTU9SKcgxJXr1en4nqo7JBdkx5BRJiwnWbk43tBQyNhl5kx1holcYaMHMvxZRbcR0SpxpJgqwwptwnpUN2VIgJCDWQlLguTLvbAy+O4bUnJtVIqqECeSj8mKFYB9esyS5QhB33rIwmVEVi1i9pjLkppE5QF/6E6YA9e9Zug8jn4DghRQmj5/LuaT2PD8I4QTdu3FjGsF6pFp/ElKOjAAWaKH3VR48eGX14aJwgSg7BENCjWvhhlKA0FsyMPflEgoxvYjAuQRhfFDH+KIEBDONR+0UqRjqNiZjCWViTPtPICNIgI0iDjCANEhtpDN524A3CIF7MgjcImYppkBGkQUaQBhlBGiQ20pggzsA5Bi6RJPLCiQk6z3kVQbPG1INMxTTICNIgI0iDjCANMoI0yAjSICNIg4wgDTKCNMgI0iAjSIOMIA0ygjRITBA+Rh7mvfdTheM4kBQqgryYcgfOIYicZrO5FFMdu/NMtcvV9beXhMvXUIrexXUh4zsrVLh582bfu8dbrRaRQ9uav4uqx3luxvWNJUgIsY4DRv3zQR7LK7jwRPt+jL2vrsPh4WGS5nTNKtOwEVehvAv+Q0ILXm/s1Ov1D+IqlUYaRW8JXm/gFOUdVQMlQbQ9/zUmicj5DOfoqhppX3TY3d11p6enN1GHHYjfrnueQO8u0KtQd5Cbqq5xoveI0HsV8eOuT1Za6O8Nvn4GkrKGHz/hsd7vpvKB/1hA957VWcN5f1x1ZvEftRzLuIYjsOcAAAAASUVORK5CYII=",
+                                "title": "Rumah Zakat",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Kategori",
+                                        "placeholder": "Pilih Kategori"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "2",
+                                "icon": "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",
+                                "title": "Pendidikan",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Kategori",
+                                        "placeholder": "Pilih Kategori"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "3",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVHSURBVHgB7Zu7cttGFIYPqBTp4hTJKGoCdY5nMoKkBxDUuYvKpAr1BJKfgHSXVJGfgOQTRO7SBe5SiVCTcWe4khIXlgt73Jjw+anlkKZ2sRcsQHNmvxkMKCz2YPfH7jl7gYgCgUAgEAgEAgEJEXkmSZK00+kc4GdZlgmf74kD3PCRR1FUTCaTjH8/y/O8MLQLG0ewvWA3XrBbLNnNyQNeBELhueAnXPBTmothSsb5hlyfkcL2EVf8hH+mZEfBdvtk8RJk1BKopjDLTCs0EwotkYUZ0LyVONtlO8OLi4vH5ICzQB4r8AmoDJ/usVhH5Be8gEPb1uQk0P7+/gn39TNaQ1ikRyyScdk3yJK9vb0eP+Q3WlO4hT7c2tqiq6urZ0b3kwVCnL7BrTd83zmfEUku+ShoHs12+ED3TMneb8EubML2S2EfxMIWHPoBGXR7ttNVBYZFjAUSPudvzW3o52i+I374Deltdtlmj/QVgjBP+Hzm0S5s7up8kpFA/MBYiBOr7hEV6JtUYMk23nxfhHKZ3YxPxy6hmm33hVAqsvF4fFiRbuaDuM/iIQ9V6cLx9a+vr9+TJcjDx1+bm5uR6HaLdh+z3WNOtxJ9wXbGdp+y3Z/5zy8lt8Sc/obv+0dlQ9uCROt5oUoXleiTB9CN+TRrSecmPsLUboV7QFfbVrV8rUC7u7tDPv0qSxMj4GNaA1ikUxbpD1laVejvkJ4DxfWCD6fR6SoQAmSyNBbuJ1W+SoFEk49laaz6qM4cZxXAHSiSUhEs7qBrQWlF2pDWDH6hGd3O/GVIpzaVAolB1x0Qetet9cxAy1ckJbKLuhakGule0vqiWif6SnbxC6omUVwvqAH+Tx4k5eS2qU86k+F3+fOC/KMSKJZdNIliMpwGblX89+MPR1TSOIqoh2Oj7Lx4ldxPyT9WZXcVyDtR5+4YpSw3erRidAIViut1Vw9lxHcvlSm18hw1OoFUzXGH1heVX5UGnkqBOCRKMy1PKtcJseMiYyy7qIti8PiyeViMUbYYeFkzi1bsjL/X3rvzYDD7XZb0sk50w2iZX3qqSJY3BtIY5NbyWpGsXUuRgWjFDvlPqkEUTQ6/yZ9nZIlYSBtIkgquy7YsT2UXE0sAmSI5FXM1K2TRyhaX6CaWbXpye+VTVT5tmK+Y4MEXDVSTvApiqk2ZWGZAWfsVz1bucmgFEn6mUCTH7PQsW8R0CbUmkdW2MjYbqHpNq1DlNRoospHjirQuF2BApkTRo5LKghxB3g/RB+NFOs1OTEGaNS2bXY0z1cL61NDt9q5Rwa+S+3GHoiSiaN49SxooSviJzbf07nw7L4ymC7ptKpOtHxuBENEwVoiVxixEWobDeSm7/u3lv067vwbiPGFxTkmD8VwMEQ1721Qxk7fubg1hIM7IRBxgNVmFM/vcRTIUp0uGWM/mmxNJFt2ijCwwEOfcRhzgtNzRiEhL0c1ztAIYGlj7R+fvg4DJlrRrdPMZrZhcfBtkvdBXSyDgWyRbmhQH1BYIrEqkpsUBXgQCbYvUhjjAm0CgLZHaEgd4FQg0LVKb4gDvAoGmRGpbHNCIQIBFSoRIyvUiG5FWIQ5oTCDgS6RViQMaFQjUFWmV4kzLRi3gKtKqxZmWi1rCRCSaf0b8hu/FEmlacW/j4oDWBAKGIpnQijigVYGAB5EK8QF44+KA1r/uwD+6iaUSlwoWbbWcGSv5/GVBpMImm8u/M9XF+r99fHHN4Ct4/vk1d7mqjUCshf/Owvzi+sV9HVr3QTIwNeFTl26/yZ75plwcoza7VCAQCAQCgUAgEPDBR18SUPfg/ZRTAAAAAElFTkSuQmCC",
+                                "title": "Asuransi",
+                                "fields": [
+                                    {
+                                        "code": "INSURANCE_PROGRAM",
+                                        "title": "Program Asuransi",
+                                        "placeholder": "Pilih perusahaan/program asuransi"
+                                    },
+                                    {
+                                        "code": "POLIS_ID",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Polis / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARISURBVHgB7ZtNbtNAFMffTCpUoEKpBBRWuKygSI3DAnXpcgHCCVpOQDgB6QkIJ2jgAoQTNJygLhJtdzUroF00G9pu4sd7aVKcxGO77ofz8X6SFdvznHj+fvPmzWQMIAiCIAiCIAiCIFw3Ks7Atm1Ha72CiA4dWjAeuEop1/f9r67r1qMMjQKRMBZ9yTrtOjDeePTwl0koL6wwVCASxyZxNmg3D5NBsyOS218wIFDHczZhcsTpwiIV+z1J91tNmOcEyXdCSg89ApH3lGB8AnEaHO6UgiemggekYMl0JbnfGn1UyQWbMMKQANw6VqmuHwwmK7Q1ugdTfYWFsCtInHckTBXGgM4DrrJQJNL7/nI65wSP+2OQDeHUYPwwPXAreKAhAaPerMJIWqdEAk0yIlAMIlAMIlAMIlAMIlAMIlAMIlAMIlAMUzBE7NlW/o4/s9JSPg15lNU976O/ldNYv+fuNs5jdxn0TJgVi0UMM9rc3Iydu74IXOFb/s0qDRRXYkw9hTQuVKqMgFFzVp5GVbn7/cenqC9LUt/Mm9i+vWDP4O29BOIwFiqoxIjTtvMV1g4Wn32AC5KpQCyOQrWRoMKpQIXl/cLCOlyAzAT6ZT+xAOHLVYkTYPX34tMypCQzgbSvKnBN07uaJsY4zkEKMhGIvSdBzOH5Ghfi8RLYUSdwK5UXZSJQrqWdiOKmp+DN/a3tWfDhY5QddfPLZDdPW5H256nrMf5LqhS8ghRk08SUcWoXqPdZe+Fu1+LsUPnlh4F8h/a9KXXjDV1kmim00zSzjATCgqnoGI5rZ2YKHxnMmnPu7kCOM8vTqIjG3GcapkdEoCsET2PXpZGJQIjw01Q2A9P2fztlsssf2E+csAKKNcbgfwIn5xYvE4EUaGOvg6jX2zlS+wCS2XU4WFzg/7msUHtAb971zi1QJoPVlm7Vc6hNwwCLyvb+FBbqPCBC89cE7ZoKVCkq6aTyBqQgE4G4x9kvPG3QbTsmG6p0CSEetuNPhGhrSgPWIAWZBemWwqgu+VKh1OEjPxRIQWYC8Q37KZ/qeSDPch+4O6M3FmPoxqs0fXFlIrE4R+p4GS5A5nnQnLtd4WEC9zIJzJOOz5os/NzWTjFNzxVkKBJFbm5UmXmav3mNp5lwUASPfKFB2Xf5rzrqjruWQ+yaQTsWPuo3K5XI4jMSTbnSzcyO2wqPzvqgw7CyqClXD8JJHeSGDfYcx3Egl8utGkx6mnBPHkSe8o1Utfqv4JVYpDh7UG3UPGlpaamnldTr9bzW+i3V9X2YPZ3vEajnYl7A2FnlOrGQQCVygq/d44G/cygOsUAOTCZ7FH8eB08M9GKkIGW4MFYBOSGHVPeX/ScHBOKV5rwsHyZLpLY4Ye9rhOZB/M4CL8sHc682LlA1cYO252HvaTBJXofi0TJvBQrgNgwvSQb/p4bYztobtH0mXRogCIIgCIIgCIIgDBX/AHTawGq+4+G1AAAAAElFTkSuQmCC",
+                                "title": "Kartu Kredit",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQKSURBVHgB7Zw/T9tAFMCfHUBC7UCXpmOAjYH8mRCTqdSdb0AY26VFol0Ja6nUTO1I2k8QxqoDYaFjTId2asmaLjC0IPHH1/cim7Zg597ZlNyF+0mnGOeS+H4+P/vu2QBYLBaLxWIqDqSkVCp5rusuCSE8/LMAeuI7juMHQbDl+34TUqAsCMUU8Ec3cdEDs+jgzlxAUR2VDykJQjkllLONixNgJoehJJ/7AbagsOe0wVw5ESSpzO1JLjAxvOf8zUQYIliwBGHvWQR9A3EaPDrJcCqOcCqh8cWk97C7ruNLHbvsIWgECqDeXsVtf51QZQlLCySwBCHFuJUoZwXF1EFDwh1WJ1Eoae3y+7jO43wPNwaVEtY3QH+SdmABGLCDdBy6HVZxZN3GTIJuA1aQBG6QvsKsCOBDcSYachRAT+iK2a+Jc/jk5CANrCvpcrksouW8ELAKZz1BJtHFpj53RqHr/Glyu92Wtl/pEJtGOW/FqXFyiDwIeCNOem1QgS2Ies4GyrkDaj+gE3exvERJeQVJbEGmy4kgSavijF2fJWgeD6n8EMiJmIWAHSZYZ7F5SP4y4cD6ERzVJ/2OVheN+6XCxDiMV10RPxZ7BOfwjvE9LEFTCbYDR6w88L9qORYLd1i9OzuDYzG4MhYrMuMQ6xCbTji8juG4AZoz5o7F7kBuyMh0Ja3bYRXHPTsW+79YQRJSj8X28NK9UqlsmpAX2z0/6Xsm7gdrLPajOHMR0WhM88oZgc+OWZ2PgvJGcPpPcL6/9+V6x2LfUM5jd9Q4OQTt2CfuWK8NKrBb2hsNo5xf6bPVA+cnlhcoqavQBrYg0+VEkCQKEVxYgnbxkOoOgZwIChF7zPawVO728aiSF8OJtwO4huwsZ6JLlhf7yJxhZAn6nhCUU+TFaArUgwzgb7Y49WR5Me6JhlWrT+RvgAIkFLKzDGrE7kBuyLjRvBjddoKSVBsYQXdlLKve32NcXgw3uIENneQeKgTVDe/racANk3qokYWwFyzQDVn4WsVSxDhBy70AjjLofSo7WFpYvwUDYiCCIsI7vZ6BxtjRvAQrSIIVJMEKkmAFSbCCJFhBEqwgCVaQBCtIghUkwQqSYAVJGHpBtVoNspBJUDgxrjXNZjPTNnIFdRLWazuXQz3H8zzI5XLVhCqspw5ZE2Y4w7eDM36Fy+spW4C9iOZ8Gzo8tzE3N3cxE089x3Xdp7jta3F1cT1LEGtqnx4+C584HBpQ0CLu1C1ZPXa6FJN+JMiD4WAfk49TnIrsIB2ma7S/5Y7BAbblIbcyWxBlIij1AmZL6slRya0pnebDxF8Zks9quoKbLbaxVFSemSey/GsKetCXSpTTuklY9/CG+bUWlveDzK1ZLBaLxTIYfgOnApDg9/AktgAAAABJRU5ErkJggg==",
+                                "title": "Virtual Account",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "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",
+                                "title": "Penerimaan Negara",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "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",
+                                "title": "Handphone",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "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",
+                                "title": "Telepon / Telkom",
+                                "fields": [
+                                    {
+                                        "code": "PHONENUMBER",
+                                        "title": "Nomor Telepon",
+                                        "placeholder": "Masukkan Nomor Telepon Kamu"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "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",
+                                "title": "Perumahan",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASgSURBVHgB7ZxBcts2FIYf6XbVjbqo62w89K6ZztSUNl5W7gWabLtomxM46gUsX6C2TxD1BvUJrFzA5mThZMYLc+GZONlEmyTyTEzmfwyUUSjIACiChh18MxrSEPjE95N4DwQIE3k8HosEOpU6nc52nuePiwOC4P8sy3aSJEmpInEct2BnD7u/12gzgp3+lM29o6OjHVoQpUAQZ3cizhQpyvbh0B4ZwMKEYbgl7LUkNvuw+R8ZcJ1NlPVMz7GMUqB2u/2GZp2ZoO0UHHmAq7qL3UhRlW0+hs0DUtv8Gza3r7GZHh8fr9EC6AiUK418aiI9WROBE13hRJcMwDGDec3OwKYbAn02NuWUuPW3Jc3T7AQRS2BzX9icxJm/NA93SyBBCicOIAw70aJ6qGpzYYG+ofqJ4MiWTkXUG8Jxdjiuy2bdhHQzcCDeRLPZxBVuY/8Rl5GDVBYITnEfY0RmjDj18m0PcYaTQuwPuGwBm/tkicoCwak+Toyvvla/hZ3AZ+26fkkFmztsE7sL9XWuo3KQxhX/fCxnF2yeIJ50y/U4zmDzyLSXLDLWIUn6OGWbou6ZxIwbQVqc6CZ33LDdwsnGwomd6aZUweZanTarUGsW41iCzYBqxIZNE24qi90avEAKvEAKvEAKvEAKvEAKvEAKvEAKbAx3SHn1y/0BesOqga70bfCuvZakpg+s1mjkDnoZ/xRpiMNE39G3ETlEIwKFV4FqQGzCaDk5TcghmolBAT3QqZbl9JQcoxGB0LzW9WoWT+tOYV0gjj+kHnMuCMMPQ3IM6wLd5vjD2E/zmvGHeb3+8+HM4Rgk++HZycJz7FWxLpB+/OH5rrxbLsyDYvb0bgpUxJ+cdJuYFAi0iDiR7sSneBukVy63GoMM4o+ULMj3f0xO+tQAPEWO8e9+udxukDaIP7Pkw5Xk+ULz+qbIevtWmxh+8FeqQE55+i54/5AcwHKaD4xfXmBx0LQ2XXlgtXoHXQVX7SUKu18UFm9ozE4wCka46x7eS56nVBOILamsHL8TkQZWBbqXvEipNKf1ev3+/Kf6gHrLyUmdncUU82ozM6tiJvhMx0CjA2Zv4rg17+7hdA5xBuQYjQo0prE07TeZzk1pVKClLJxJ+wjKSdPp3IRmx6SD/IvHDpGxnEjn82hMoHL8maRzEcidpTGByvHnUzp3WxymMYGm4w/unLrTuTWai0FhVgjC6RxB2dorc3XT2LzYcvJiQDf4IlRV/MyqAi+QAi+QAi+QAi+QgsoCxUXP2BnmDa61NjY2pOW6dnTSfEryFX38gNknB8CYzwizF+xc2fHW5eVlDyLtrq6uFgXn5+fBeDyWPhxjcM1cIBx0gMeCmaVIvOKv0+nkWZbx0kkXhkdTkkxx4zz/hUh0eno65L/DMPyT5i/Im1kGqlyrIZY/HtJXgFhsk06XKWOQWBcxpDsOxHkiW3CjFaRdXvBWEzw+/Y/sCy2BWFleIUh3U6Qz+PYbB3rZl0ukycXFxWhlZYWD2Pe8NIluP7lYqfgHxLmYV0nrX1OUEdMmnCp5CDWim8N0RTbDwy7P8Nmbd9d4PB6Px+PxeDxKPgJ6ujAXzC913wAAAABJRU5ErkJggg==",
+                                "title": "Listrik",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUhSURBVHgB7ZlNbxtFGMefdThREOZS0VM2JyDQ1k5uXDCfIOHE0YnE3fEn8PoTNLlwjfsJ3J4R6vIF4r1RiUM2J0QRqjlQEEl2+T/ObLRdj2dmXyyl0vOTVuN4xzOz/33eZkIkCIIgCIIgCIIgCIIgCILgikdrotPptD3PO8bHPVxzfA6TJBlHURTTO0TjArEwrVZrkKbpEf5sL03oeZOmhcKcPje4NnF9jOs1rgtcMeaJqAaNCoSF9iDAKT76tr51hcq9iAPLfHEd621EICy2g0U8wccelUQJ9RSLD1362yzUYa5SQtUSSC12pBZblxDjTLD4p7R6PmcLNRBjnm9cRaoskLKaF1TyLTrADxDkhapjoSuYK5Gs8amyQN1ud0Y3gdEEP+wQLS/kAA/ZJ/e3vxAKFtppyEKLsEhdmyXVESg13Wd3QTPEAub572EMLNSI6rlJca4QzTO6yVyRGpuvPcy1b/hpPJvNtgz3awnE7tUz9cHigrOzs7HuXkNCRWyhpgDPJYAKBb7uPn7PQTtY9fsWVQQDH6KJLX0CCHmORfaL97CoCb89jgXKAsrA7jHE77sO2c+3rNMYJmpnMTRHyhKM2FIsB2I1Vt80DoQ5QRMUXVczno/49QT99y3jceY8XHW/qTrIaMY5ljKUbiw0QVEoZWWHtqBask6ypvymK+nMmmwL45rH+LBKKN7HsWU5FZIl4hq76MkPdB19mqSbV63ri4TS6EH0Mi52XMdezCeNBegwBfGSc/aUMD1bX3apr+i/k3Hi9VPvrfIhJu/y2/vRr2/VRuvczTu9TWXiIVWbIzsxsL4M5aLjn5Krx4mXBimlOiuf/+292dqK4tv49h6tCc5SeIAIDzAls0gcREMqQYU4E/xIVxdoR9de2jP0bX9I73+N9nn2xVoEKvkAMyo39j5vOzC2b+m6iDPf0b+T75ONAdxpQg6klPyV/7txgbINpcMDMDGunx36lY4zdONOe4m3MYM4TvtFuF18P3oZ5r+rJJCqf/jqqJZrjk0srEP2/RkzV/XMsUM943xikMUZuBN/PrW409KaEJuW6iHPsDB+UB/XJhbI+5WPlABtqrE9yN6uy3HDzs7OyNFNWfCjKc2ff5DcGxWykwsTBOdhPjhnLFmQrujD5FSX7O061jOubnpriXCnfuLdO3d1p8WaUPvAaoYPCm6VZ0kgh6xTlsXbNVXPGWXOfTAm796HcCcfn6cV3Gn8SfTLsa2jLga5xBCnRawzzsCdoqbdSYdOoJCqn9yxKDHdZKZjlzizu7s7wCY2wO+c4gxb4p+PvhzAnaZNu5OOJYH4GMHhKJWLLy6muCyfZ63NUvJkcQbi+Jaut5YId+qkj794cU1Jj9xxdicd2izmsjuvuo9SY/PBe8/WN4szbIl/PNqGO1FA5SjlTjpMab5RkXLVdWDrW8x4v3U+8zfS1jk5UtWddBg3q+qhTk2HThDpGdzk0OReWZwhx3qmmPF+f/j5vtdaZFcbtdxJh9NuHkIFllND7cGTijOctm2Z0ZjxXj3cPsDh8KlljNrupMP5uMNRJLaksEo9Y8p4r2HJl+klXGw5azXpTjpKnQepnTS/Sef0uooylTXzqrPN/x+beuT56qvG3UlH6QOzEufPq3CurHUgYPda5LXf0D9h0+6ko9KJYkWRnCvru0Sd/81bM1yGS5y5q9Q+k+azZzQDWNRSpiobZ+4ijR3aq/9mZBdvPeJ3yZUEQRAEQRAEQRAEQRAEQRDq8z8STWoQg+I2XAAAAABJRU5ErkJggg==",
+                                "title": "Tiket Pesawat",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUGSURBVHgB7ZzBTuRGEIZ/e5IgsZHCHtiFm7mNkigyT5Ahl+SWOefCbB4ggrwAkycIvECA3HJi9gmYPXJJzCXLjb4FLYc4inZhD+Peqh1b8o7scdvjsj3In2QNtA20f1dXV1W3AVpaWlpaWpYVCwVxXdexbXtXa92nbx061lAilmWNgiDY9zxPoUZyC0TCrJEwByTMHuTx6e/skEgeaiKXQGw19GTPMbWYqqhVJGOB2HJInL9QrTgRtYlkm15I4hyiHnEYfjjn9JBcVIyRBYVD6xr1U7klfWR43TyHrKjTbF2XWAB6AMfIttDIkioTyUgg6tTXKadU+EQVFmR7e9v00kpFMvVBTlIjiXNUU5xSmU8yFSgtCKwtPkFFIhnPYg1FXKTGC0TDeB/zLVVUpGWwoPdTO2oSaSmGGE0EtYm0ND6oLpGWyknXIdIyCPTBjVYtUmMEohvyUtp3OReMt1UpkmkuVph/3K4T//4e9/6Wp/zZ66h6+IJuqJ/wK6IbHdLXL+InSKRndO4M6TncwmmJUTZPeZJOag/zsHHSuVfu5y400jp/8tp6sx8XKqw3ccWg1NJtSOEqgMgQY6ux9NzK4+DT4NFBvCEcNkeQIbKk3OKLCGRPLFdDz+2MtvQgoZnLJgoycH8c5EREIAtWoWESc74KMjTDgj7ufDIimfyMy0ZJjVw+YZHoOEUDEBHoMVkCLLpJaJV0nmaGETvptJ9nkegYxIRSqAmxaf6J9zfPGFum03wS4QzJB0IHazREyqyfi8dBm96VQgmwf6IPI2FzlG8zWfaCmTitQBm0AmXQCpSBqJO+db/sTYJJ37asz1AStrbG/9uvn5vOhIsiJtDtV1/8qnWwR+KgTAJKUR7pVXXtOttzRBrT0UtoV8iJVLLao1xrD3I4q8Fq6u8PV0L8mbZfiixyilhQZ2I70t5Nz1Qa43BZgwJLDoYGmAaXo7SyTBYiAk06gepoaf+fnMZEhNYyxIKI3AVFz2O6gTGE4BxP2+93lIgjl4tdvtx55XYHVPjZRYkEGpcsTlkpTBai0/wT7+qEPk6wxLSBYgYPWiAukcwuGeVFvNxRB+Fe7uNwkzuXPwrvhHuQFsQ7ciNxQqL93bl5qEPs+4Q2p8gqq9gQ41JrR3eOKWrpoVwUpTH7T72XoznXrOVsT0Vs4ZAi6XMBcRhelDy7pXwPFSC2cAjhXfla26UGoGk0auEwDxRRP0YFCC4cymLZwRkqQGzhcGIFzyAEFc2OnnpXlay8is1ilEyekLMeo3xfpKpKVBnRSDq8EYXq4aBwZ6ZNoykl17qhKPpH+uDlZx0d3FZHybW01YoyYSEoaP4G07JsVHIttApiKpCP5CiU677P0UBCa1FYkI7JRZubm98hwdlSAuhubGz8cXNzU8kaVR6GwyHu7u6wvr6ObrcLpRSKYPpK5pDEOEg57YfvuPN2l/8gj8paoej1evB9nwNJjrbZ8k9XVlauLy4ukBdTgSR3oBbBC+s7iZZL/d2i/v6JWH95razf7x+yZeXBaBYT3oFaBHa+qQuHJM5vmHmYPAJGo5FcNk8iDVHvG4azzKvt9BLa1jJ+JpFccVC4A3WMZvBvgXO5JxOjWSyCZqt7Ok5p5iKLtRzU55NYgB/SZk/q31vq37eI+Vh6uGc0CnK7iYX++wumpszlTf5aUqz4qxCKjp+zXiug/g3o4ydM+/U7HYdFg8WWlhYx3gE70kWEeDWJlQAAAABJRU5ErkJggg==",
+                                "title": "Pembayaran Lainnya",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "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",
+                                "title": "TV Berlangganan",
+                                "fields": [
+                                    {
+                                        "code": "PROVIDER",
+                                        "title": "Provider",
+                                        "placeholder": "Pilih Provider"
+                                    },
+                                    {
+                                        "code": "CUSTOMER_ID",
+                                        "title": "ID Pelanggan",
+                                        "placeholder": "Masukkan ID Pelanggan kamu"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEkAAABICAYAAAC6L9h5AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR8SURBVHgB7Zw/b9tGGMafo7w0HawCdatucqfAQFG6+gJq+wHiGuja2J8gtaduVbJ1CZy1QyN/gdr9BNbYRTC7BEEDN9xsxEEtDTZaN+b1eR0JcBz+uaNIiHLuBxCkedSr48P33veOujPgcDgcDsdNQ2FCfN9ve553V2vd5p9NVJNAKRVEUbQdBEEPluQWieI0+cWPedjGDME671CsTYoVGn8GOaBAPr9sj4d1zCbP6fmrFCowudhapJEH7WN2BRojQn1l4lEeLJlxD7rKIu/lF5MLrUSSII3qBuc8tEf3lMocLKDya0lldN0N7rp03wEqQqfTwe7urnj9Ouv+MOYSCTd3uPXS7FjFpOXlZYlF/vXzIhDF2UJFobfIrkOhfowp3idfpH3eNib5Cee7qDD1+mUI3U4qRgbWgTuOKjWxMihEpJuOE8kAq+yWBAO6RoUZDoeSmZEX50kGOJEMcCIZ4EQywIlkQCHZjd36id9wCglZUtP+RA+z3W5jMBjIqP8v5MB5kgFOJAOcSAY4kQxwIhngRDLAiWSAE8kAJ5IBTiQDChmWyK+6KJFJ7XNIIrsmclKISBwTPUd5qJLtZ+KamwFOJAOcSAY4kQwoJHBrrUPMAEwATeSgEJH4M/ciKsz4zSQPc72ZLEQkE174S75CVH8FhJ8ET0MUhP52CcfPFG1fFG57TOkiiTjQ2OHW1AyBNTn3+VL3QkX3J7kh3WrhxfnZNy//lNlqun7F9uNTdba5GISFTeIoVaRD/3ZTabWneRPXitZq2pNpPMvIwVgg5alfaft68fotfUu+bxUFUWp28yLViRFojP/ys6U7yMHfc/8pCvQwqZw/3awc+7fbKIhSRWI2uZtWfqHsPUkzCJ//e95ExlhMX3ip5TaU3E9SU5vcpWo4QUGULFKUOpnc86IeLFG9HubUeyEPU22/QvQHCqJckZTaSPGm7kLwtIccfDg/r5kdN5PKtcKDIrsCtiLF3jDf98QG54+CJwGU/pLBO7x6PlL6EdP0BnIi3tSovb+nlV69ZvuEtjc+Dp50rl6/sLAgu9wT9G27ACFiZuB6nidTf2Nv+lIoYPGyv0ROcRYW0YdR/b7sdtiZ3Dl+JnVStH0aa/vg4ECNVlK9ZcdkSGU10YEes8WMdS/WkFKdKIp+Q4K3TRER6B7FiK03z29xWJXq1bYitUdrS24K1Eh/mrUIxyomjRbU9XAzEIG6paxSouF1vI5Ns07I7YHJhXkXBTZHza6J2cR4rZuQt580QPUCtA1S96GsYjIhz8rJ+siLkhbjTOtN5Rv5nXWUftEHKdfvs55fr6ysnGSJZZvdTAS6TzfuYMq0Wi3FLokspE4bZO+Pml1qq7BqbhRI1rRVXiCh3+9r9o8kyWynXCZvIb5HBrYxKfGpUKBHVRFojIlQfPDfIYNCxm4USP4pQeYTmQYGQmUmICuRpDnFnBOB1lBhUoSSDmXmstgaLDg6Ovq90WgMedjg9g83iUE/YAY4PDwE676L18lqntsRt59Y/5/hcDgcDsc7x/9fO7RQvhOsFgAAAABJRU5ErkJggg==",
+                                "title": "Kereta API",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "iVBORw0KGgoAAAANSUhEUgAAAEkAAABICAYAAAC6L9h5AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVNSURBVHgB7ZxNT9xGGMef8bIlpDksqpJsOTmVKkU9tAaJA6dse+GUQq+9sHyCJJ8gS78AtKf21G1PPTWbLwDOMSecHlKkHnBPuFQKG+WAeFlPnofYSmQ8nhm/AF7NT7IMnnnG4//OPJ5XAxgMBoPBMG4wnciO47TwtMIYW6Z/8WhBvRji4XHO+3h+5nmer2KkLBIKtIzi/Ar1E0bELoq1hkL9JovYAAXm5uYe4+lnPK7B+DCNP/rSzMwM7O3tPcuKKBUJS1AXTxswnlBNutdut/0gCF6IIlkgS4WxxzDe4COy9cjfpjKRZR2VIlsQPMQ67YFebtKcvTQdgR2gnQt697ch/Xko7S4IasyEJNGVtOuYOXJ2D9HpDUGD2dnZXUg8LAmEfC2ymZ+fZ6enp5v4ZyeZjSy7NBYWFtjh4eE6PteDRBCVpm9BIJKsujkp14aYua6uQFeBxcVFjqc1eNcUSOKI7GQipRVxrSp2lej1etBsNs/aSinBQp8kddwGI5ISRiQFjEgKGJEUMCIpYERSwIikwASUwJ5z12Yhe2gxdg9b+MOQhy+4xTc+9XZ8uCA4NhT9Qb91I7z+gDNYpnzgVX/EwrWi+Sgs0r7zhcM42+KMRy1WDihWBzhb2nc+/+6W90/lLXTe6UAw+OPOx/z6Jgpkx/kgGtxa+c+5u3rb25EOrokoVN0OaHiBwxMOPK1JbwNvPtl17MpHMl8dvmIoxiak9/AZ49Z6kXwUEulkdExj3XZGFPsGXHOgQqgUHR8ddyT5aE2FU13ISSGR3hdtMWFodaBC/od9aIwatiQaQxfwJeSkkEjszDnK7hDuQoXcfDOFNT6U5iPk/DXkpJBITavZl8UJceoGquT+ffioMelC9g/GGxZ/CjkpJNI0DrxhlVsThVNY1c0Ahq/+cHLyIGThD6I4IeM/3vR2XMhJ4cbkbe9lDzPxCN9w/geXh3SNwuAC+OT5c7BabB1YuJrMB/1Qbe/vR1CAUhqTmAkaG96gRiX9f5GNyJhb7ks69fFt1w+GgV1mPkoRKeYyxEnCXJdOPpSI6bspYERSwIikgBFJAW2RaMo5a978qmNZZ49sa9mAPi28US0XUXSwM3xyckJ5t3XsMhdx4dw9zwj2sVTRWJHydDfO/tKowbkFE5jOQGLXgZQHQ7s+aCBKJw7e3t5OLTRF2kk23tSG4rQwnS7kIK+dLsZxK2BEUsCIpEAekfw6L7+J8q61tkrbceNN/HiFGbaXbB1bfBttQeLtEi3pW802Y3/C+UVWaMo/Aw1o3XbGyjkhhUYBVBeLx2CTQjud6KGGunZlYnySAnm6JbXeERB1S/RsQB/qu3WghtDq26Ojozug4Y+IXD6J9pigUD38k1bRX9oqXM0XBy1PXsqzeD+v47Z1+00VQG+9Suf0YozjVsCIpIARSYFSp5SuOB+OjWntGM3TLXHh3f6Mr/CY1rGNNr6U1s6inY860fE4wOMv2roFGXtJkuQqSdgdcPHkgibYLaFdT2WJRLuUeqBJVjdHhPFJChiRFJCJ5Ccv1HlKibZyjUYj+tNOCRZWQZlP8lMSpCklcnyrcMmQf1GNi34IBoNBPB1mJ8OzBhIzRULDp4yWG5+/3kUnTNd90MNOXqCSiWltiQzo4SD9TRQPnilD98K8p9UCevP1hXaQAVWrqH9U6+ERBehDCt+IBvEyfRLts0XjS69WFUPDwL2sUU7pxxOCINhpt9ssrdqNATz6FMdPWZGUPsOBQrko1L+i/fk15Kz1jQJ9jwL9Ious1Ychog8qrFywYBzKIf5QA609+L2O2/YNhjHnLXTJ72D0P7pKAAAAAElFTkSuQmCC",
+                                "title": "Pinjaman",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4",
+                                "icon": "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",
+                                "title": "Air",
+                                "fields": [
+                                    {
+                                        "code": "CATEGORY",
+                                        "title": "Bank Penerbit",
+                                        "placeholder": "Pilih Bank Penerbit"
+                                    },
+                                    {
+                                        "code": "REFERENCENUMBER",
+                                        "title": "Nomor Meter / ID Pelanggan",
+                                        "placeholder": "Masukkan Nomor Meter / ID Pelanggan"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }

@@ -1,0 +1,166 @@
+
+## Acknowledge [/account/time/deposit/acknowledgement]
+
+### Acknowledge [POST]
+
++ Request (application/json)
+
+        {
+            "productCode" : "AOPRD001",
+            "productName" : "Deposito",
+            "depositProductCode" : "DBECCB0001",
+            "email": "mbank.user08@devteam.net",
+            "currency": "IDR",
+            "amount": 5500000,
+            "tenor": "3-M",
+            "maturity": "AOMAT001",
+            "interestPayment": "3-M",
+            "promoCode" : "ERN00002",
+            "tncCode": "TIMEDEPOSIT",
+            "sourceOfFundName": "Pendapatan",
+            "purposeName": "Investasi",
+            "interestRate": 0.5,
+            "sourceOfFund": {
+                "productCode": "TBSMCY9901",
+                "productName": "Tanda360Plus-S",
+                "accountNo": "133810018498",
+                "accountType": "S",
+                "accountName": "NAME2 1419",
+                "accountCcy": "",
+                "branchCode": "05133",
+                "mcBit": "Y",
+                "dynamicAccountId": "",
+                "bankCode": "999",
+                "bankName": "",
+                "description": "",
+                "qrCode": "",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 100810855411.99,
+                        "holdBalance": 0,
+                        "isAvailable": true,
+                        "accountCcyNameID": "Rupiah Indonesia",
+                        "accountCcyNameEN": "Indonesian Rupiah"
+                    }
+                ]
+            },
+            "onlineSessionId" : "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0",
+            "tacIds" : ["8DB445AF5C875EC2E050A8C094070229","8DB445AG5d875EC2E050A8C094070229"],
+            "responseCodeOTP" : "915800"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {  
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "133810018498",
+                        "accountType": "S",
+                        "accountName": "NAME2 1419",
+                        "accountCcy": "",
+                        "branchCode": "05133",
+                        "mcBit": "Y",
+                        "dynamicAccountId": "",
+                        "bankCode": "999",
+                        "bankName": "",
+                        "description": "",
+                        "qrCode": "",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 100810855411.99,
+                                "holdBalance": 0,
+                                "isAvailable": true,
+                                "accountCcyNameID": "Rupiah Indonesia",
+                                "accountCcyNameEN": "Indonesian Rupiah"
+                            }
+                        ]
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "productCode": "",
+                                "productName": "Time Deposit",
+                                "accountNo": "133820000668",
+                                "accountType": "",
+                                "accountName": "NAME2 1419",
+                                "accountCcy": "IDR",
+                                "branchCode": "",
+                                "mcBit": "",
+                                "dynamicAccountId": "",
+                                "bankCode": "",
+                                "bankName": "",
+                                "description": "",
+                                "qrCode": "",
+                                "accountBalances": [
+                                    {
+                                        "accountCcy": "IDR",
+                                        "balance": 0,
+                                        "holdBalance": 0,
+                                        "isAvailable": true,
+                                        "accountCcyNameID": "",
+                                        "accountCcyNameEN": ""
+                                    }
+                                ]
+                            },
+                            "transactionTitle": "Time Deposit",
+                            "transactionStatus": "S",
+                            "transactionId": "01f5d439-0f03-4ac4-9270-830507a34a7e",
+                            "transactionCode": "TIMEDEPOSIT",
+                            "transactionAmount": 50034027,
+                            "totalAmountDescription": "",
+                            "transactionCcy": "IDR",
+                            "transactionFormatValue": 0,
+                            "transactionFormatCcy": "",
+                            "transactionDate": "2021-03-15T10:51:49.748+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Detailed Amount",
+                                    "value": "IDR 5,500,000",
+                                    "note": "Admin Fee - IDR 0"
+                                },
+                                {
+                                    "title": "Period",
+                                    "value": "3 Months"
+                                },
+                                {
+                                    "title": "Interest Rate (gross per annum)",
+                                    "value": "0.5%"
+                                },
+                                {
+                                    "title": "Maturity Instruction",
+                                    "value": "Auto Rollover and Interest Compounded"
+                                },
+                                {
+                                    "title": "Purpose",
+                                    "value": "Investment"
+                                },
+                                {
+                                    "title": "Cancellation Fee",
+                                    "value": "IDR 55,000"
+                                },
+                                {
+                                    "title": "Nomor Referensi",
+                                    "value": "1234567890"
+                                }
+                            ],
+                            "headlines": [],
+                            "footnote": "",
+                            "header": ""
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

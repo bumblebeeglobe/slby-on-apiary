@@ -1,0 +1,54 @@
+
+## Apply Mudharabah [/account/saving/account/mudharabah/apply]
+
+### Apply Mudharabah [GET]
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "name": "AULIA RACHMAN",
+                "email": "mbank.user09@devteam.net",
+                "phoneNumber": "123123123",
+                "address": {
+                    "address": "KALI ABANG BUNGUR",
+                    "postalCode": "17131",
+                    "province": "JAWA BARAT",
+                    "districtCity": "KOTA BEKASI",
+                    "kecamatan": "MEDAN SATRIA",
+                    "kelurahan": "PEJUANG"
+                },
+                "defaultCurrency": "IDR",
+                "cardDeliveryOption": "IDR",
+                "products": [{
+                        "productCode": "TBMDIB0001",
+                        "productDesc": "Tab Mudharabah iB-S ",
+                        "productType": "S",
+                        "mcyBit": "N",
+                        "ccyCode": "IDR",
+                        "initialDeposit": 100000,
+                        "mudharabahRate": 0.5,
+                        "nisbahSpesial": 0,
+                        "nisbahSpesialCode": "+",
+                        "conventionalRate": 0.05952,
+                        "conventionalRateDesc": "Berdasarkan rata-rata rasio bagi hasil 6 bulan terakhir"
+                    },
+                    {
+                        "productCode": "TBMDIB0101",
+                        "productDesc": "Tab Mudh iB S-USD",
+                        "productType": "S",
+                        "mcyBit": "N",
+                        "ccyCode": "USD",
+                        "initialDeposit": 100,
+                        "mudharabahRate": 1.4,
+                        "nisbahSpesial": 0,
+                        "nisbahSpesialCode": "+",
+                        "conventionalRate": 0.16667,
+                        "conventionalRateDesc": "Berdasarkan rata-rata rasio bagi hasil 6 bulan terakhir"
+                    }
+                ]
+            }
+        }

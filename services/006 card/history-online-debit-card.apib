@@ -1,0 +1,50 @@
+
+## History transaction online debit Card [/card/vdc/history]
+
+
+### History transaction online debit Card [POST]
+
++ Request (application/json)
+
+        {
+            "instrPAN" : "5183169085916428",
+            "instrChunk" : "8d99d5fa8a"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "data": [
+                    {
+                        "transDescription":"TOKOPAKEDI 113913384679",
+                        "balance": 319198,
+                        "transactionDate":"2020-11-14T00:00:00.000+00:00"
+                    },
+                    {
+                        "transDescription":"SHEEPO 113913384679",
+                        "balance": 20000,
+                        "transactionDate":"2020-11-14T00:00:00.000+00:00"
+                    },
+                    {
+                        "transDescription":"LUPABAPAK 113913384679",
+                        "balance": 25500,
+                        "transactionDate":"2020-12-14T00:00:00.000+00:00"
+                    },
+                    {
+                        "transDescription":"ALIBATACAN 113913384679",
+                        "balance": 52300,
+                        "transactionDate":"2020-12-14T00:00:00.000+00:00"
+                    },
+                    {
+                        "transDescription":"Warung bu asih 113913384679",
+                        "balance": 11000,
+                        "transactionDate":"2020-13-14T00:00:00.000+00:00"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

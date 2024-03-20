@@ -1,0 +1,40 @@
+
+## Upload Personal Information [/wealth/investment/register/personal-information]
+
+### Upload Personal Information [POST]
+
++ Request (application/json)
+
+        {
+            "referenceNumber": "NTI202104141926202737",
+            "personalInformation" : {
+                "email" : "lasma.silalahi@ocbcnisp.com",
+                "phoneNumber" : "082118111366",
+                "purpose":"A",
+                "sourceOfFund":"Z",
+                "maritalStatus":"B",
+                "lastEducation" : "C",
+                "spouseName":"TEST",
+                "isSendTransactionNotification": false,
+                "ktp": {
+                    "provinceCode": "DKI Jakarta",
+                    "cityCode": "Bekasi",
+                    "districtCode": "Tambun",
+                    "subDistrictCode": "Jatimulya",
+                    "rt": "015",
+                    "rw": "014",
+                    "postalCode" : "17510",
+                    "address" : "BULAK KAPAL PERMAI JLN. KERINCI 4 BLOK 4 NO. 82 RT/015 RW/014 KELURAHAN JATIMULYA TAMBUN, KAB. BEKASI 17510"
+                },
+                mailingAddressReferenceNumber: "a88e016c-7ec9-4ee3-929b-6382d9f45fcb"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "response_code": "00000"
+        }

@@ -1,0 +1,120 @@
+
+## Buy Secondary Bonds Validate [/secondary-bonds/buy/validate]
+
+### Buy Secondary Bonds Validate [POST]
+
+Error :
+1. 01009 - Saldo Tidak Cukup
+
++ Request (application/json)
+        
+        {
+            "amount": 500000,
+            "cifId": "1234",
+            "securityNo": "SR 56",
+            "productAccountNo": "12",
+            "productCode": "205",
+            "productName": "SR 56",
+            "productDescription": "INDON ONE MOBILE",
+            "productCurrency": "IDR",
+            "productCategory": "Obligasi Pemerintah",
+            "productRiskProfile": "Konservatif",
+            "yearPerformancePercent" : 6.55486,
+            "faceValue": 1000000,
+            "maturityDate": "2021-03-16T00:00:00.000+0700",
+            "settlementDate": "2021-03-16T00:00:00.000+0700",
+            "suitabilityBit": true,
+            "navAmount": 105.25,
+            "tax": 15.00000,
+            "capitalPrice": 103,
+            "prebook": {
+                "dealId": "1285",
+                "dealPrice": 103,
+                "yieldToMaturity": 7.1842,
+                "capitalPrice": 103,
+                "capitalGain": 0,
+                "proceed": 51500000,
+                "accruedDays": 85,
+                "interest": 967200,
+                "taxOnAccrued": 0,
+                "taxOnCapitalGL": 0,
+                "transactionFee": 0,
+                "safeKeepingFee": 0,
+                "totalProceed": 52467200
+            },
+            "recipients": {
+                "accountName": "Manulife obligasi",
+                "productName": "Rendah",
+                "description": "Aggressive - (Sesuai)"
+            },
+            "sourceOfFund": {
+                "productCode": "GRRMCY0001",
+                "productName": "GIRO MULTICURRENCY 0001",
+                "accountName": "Yeremia",
+                "accountId": "BA430176478D3498E0537007FF0AE598",
+                "accountNo": "010810057199",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "cif": "0000000000000000002"
+            }
+        }
+        
++ Response 200 (application/json)
+        
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "amount": 500000,
+                "cifId": "1234",
+                "securityNo": "SR 56",
+                "productAccountNo": "12",
+                "productCode": "205",
+                "productName": "SR 56",
+                "productDescription": "INDON ONE MOBILE",
+                "productCurrency": "IDR",
+                "productCategory": "Obligasi Pemerintah",
+                "productRiskProfile": "Konservatif",
+                "yearPerformancePercent" : 6.55486,
+                "faceValue": 1000000,
+                "maturityDate": "2021-03-16T00:00:00.000+0700",
+                "settlementDate": "2021-03-16T00:00:00.000+0700",
+                "suitabilityBit": true,
+                "navAmount": 105.25,
+                "tax": 15.00000,
+                "capitalPrice": 103,
+                "prebook": {
+                    "dealId": "31",
+                    "dealPrice": 102.1,
+                    "yieldToMaturity": 6.55486,
+                    "capitalPrice": 100000
+                    "capitalGain": 1000,
+                    "proceed": 1021000,
+                    "accruedDays": 38,
+                    "interest": 8444,
+                    "taxOnAccrued": 1000,
+                    "taxOnCapitalGL": 1000,
+                    "transactionFee": 10000,
+                    "safeKeepingFee": 1000,
+                    "totalProceed": 1029444
+                },
+                "recipients": {
+                    "accountName": "Manulife obligasi",
+                    "productName": "Rendah",
+                    "description": "Aggressive - (Sesuai)"
+                },
+                "sourceOfFund": {
+                    "productCode": "GRRMCY0001",
+                    "productName": "GIRO MULTICURRENCY 0001",
+                    "accountName": "Yeremia",
+                    "accountId": "BA430176478D3498E0537007FF0AE598",
+                    "accountNo": "010810057199",
+                    "branchCode": "01010",
+                    "mcBit": "Y",
+                    "cif": "0000000000000000002"
+                },
+                "onlineSessionId":"693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+            },
+            "response_code": "00000"
+        }

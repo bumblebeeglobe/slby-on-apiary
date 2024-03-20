@@ -1,0 +1,170 @@
+
+## Dashboard: Transaction Histories [/dashboard/transaction/histories]
+
+### Transaction Histories [POST]
+
+AccountNo
+1. For MutualFund, filled with clientCode 
+2. Unit ambil dari amount
+
++ Request (application/json)
+
+        {
+            "accountNo" : "010810091867",
+            "accountCcy" : "IDR",
+            "page" : 1,
+            "countPerPage" : 10
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code":"00000",
+            "response_desc_en":"SUCCESS",
+            "response_desc_id":"SUKSES",
+            "data":{
+                "resultCode":1000,
+                "message":"Success",
+                "data":[
+                    {
+                    "transactionDate":"2021-01-25T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"4",
+                    "transDescription":"Pemindahbukuan<br /><b>NAMA1 468540112/remark</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":10,
+                    "balance":3435844919.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-25T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"572",
+                    "transDescription":"Bill payment Dr customer acct<br /><b>5715 0227202542                   TELKOM</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":8000,
+                    "balance":3435844929.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-25T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"4",
+                    "transDescription":"Pemindahbukuan<br /><b>NAMA1 468540112/vbjj</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":10,
+                    "balance":3435852929.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-24T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"572",
+                    "transDescription":"Bill payment Dr customer acct<br /><b>5696 140000000001                 PLN</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":153000,
+                    "balance":3435852939.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-24T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"572",
+                    "transDescription":"Bill payment Dr customer acct<br /><b>5619 140000000001                 PLN</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":153000,
+                    "balance":3436005939.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-23T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"4",
+                    "transDescription":"Pemindahbukuan<br /><b>NAMA1 468540112/remajjh</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":10,
+                    "balance":3436158939.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-23T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"4",
+                    "transDescription":"Pemindahbukuan<br /><b>NAMA1 468540112/vbjj</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":10,
+                    "balance":3436158949.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-23T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"4",
+                    "transDescription":"Pemindahbukuan<br /><b>NAMA1 468540112/vjj</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":10,
+                    "balance":3436158959.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                },
+                {
+                    "transactionDate":"2021-01-23T05:21:46.000+0000",
+                    "valueDate":"11/09/2019",
+                    "tranCode":"4",
+                    "transDescription":"Pemindahbukuan<br /><b>NAMA1 468540112/ejj</b>",
+                    "trxDescription":null,
+                    "sign":"D",
+                    "amount":10,
+                    "balance":3436158959.03,
+                    "remark1":null,
+                    "remark2":null,
+                    "remark3":null,
+                    "remark4":null,
+                    "chequeNo":null
+                }
+            ],
+            "page": 1,
+            "countPerPage": 10,
+            "totalAllData": 9
+            }
+        }
+        

@@ -1,0 +1,23 @@
+
+## Unblock / block online debit Card [/card/vdc/update_status]
+"inchrUpdateCode" : "B" = block
+"inchrUpdateCode" : "U" = unblock
+
+### Unblock / block online debit Card [POST]
+
++ Request (application/json)
+
+        {
+            "instrPAN" : "5183169085916428",
+            "instrChunk" : "8d99d5fa8a",
+            "inchrUpdateCode" : "B"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "response_code": "00000"
+        }

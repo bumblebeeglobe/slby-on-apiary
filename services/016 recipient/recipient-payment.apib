@@ -1,0 +1,51 @@
+
+## Payment Recipients [/recipient/payment]
+
+### Payment Recipients [POST]
+
++ Request (application/json)
+
+        {
+            "keyword": "budi",
+            "menu": {
+                "id": "001",
+                "type": "VOUCHER"
+            },
+            "pagination": {
+                "pageNumber": 1,
+                "pageSize": 10
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "recipients": [
+                    {
+                        "id": "001",
+                        "referenceNumber": "981798913",
+                        "category": {
+                            "id": "001",
+                            "title": "Gojek"
+                        }
+                    },
+                    {
+                        "id": "002",
+                        "referenceNumber": "237489237498",
+                        "category": {
+                            "id": "001",
+                            "title": "Gojek"
+                        }
+                    }
+                ],
+                "pagination": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "totalData": 35 
+                }
+            }
+        }

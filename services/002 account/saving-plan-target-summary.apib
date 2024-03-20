@@ -1,0 +1,80 @@
+
+## TAKA Target Summary [/account/saving/plan/target/summary]
+
+### TAKA Target Summary [POST]
+
++ Request (application/json)
+
+        {
+            "accountType": "S",
+            "currencyCode": "IDR",
+            "productCode": "TKNAS22034",
+            "tncCode": "TAKATRGT",
+            "productName" : "Taka Bunga",
+            "installmentAmount" : 10000000,
+            "initialAmount" : 0,
+            "tenor" : 1,
+            "sourceOfFundName" : "Pendapatan",
+            "purposeName" : "Investasi",
+            "disburseAcctNo" : "010810161160"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "en",
+            "data": {
+                "accountType": "S",
+                "productName": "Taka Bunga",
+                "installmentAmount": 820778.0,
+                "initialAmount": 0,
+                "tenor": 1,
+                "currencyCode": "IDR",
+                "productCode": "TKNAS22034",
+                "tncCode": "TAKATRGT",
+                "disburseAcctNo": "010810161160",
+                "sourceOfFundName": "Pendapatan",
+                "purposeName": "Investasi",
+                "minimumTargetAmount": 10000000.0,
+                "maximumTargetAmount": 999999999999999.0,
+                "targetAmount": 10000000,
+                "interestRate": 3.5,
+                "summaries": [
+                    {
+                        "title": "Product",
+                        "value": "Taka Bunga"
+                    },
+                    {
+                        "title": "Monthly Deposit Amount",
+                        "value": "IDR 820,778"
+                    },
+                    {
+                        "title": "Disbursement Account",
+                        "value": "010-810-16116-0"
+                    },
+                    {
+                        "title": "Tenure",
+                        "value": "1 Year"
+                    },
+                    {
+                        "title": "Target Fund",
+                        "value": "IDR 10,000,000"
+                    },
+                    {
+                        "title": "Interest Rate (gross per annum)",
+                        "value": "3.5%*"
+                    },
+                    {
+                        "title": "Source of Fund",
+                        "value": "Pendapatan"
+                    },
+                    {
+                        "title": "Purpose",
+                        "value": "Investasi"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

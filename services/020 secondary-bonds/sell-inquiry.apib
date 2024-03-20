@@ -1,0 +1,54 @@
+
+##  Secondary Bonds Sell [/secondary-bonds/sell/inquiry]
+
+###  Secondary Bonds Sell [POST]
+
++ Request (application/json)
+
+        {
+            "productAccountNo": "12",
+            "securityNo": "SR 56"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "transactions" : [
+                    {
+                        "dealId": "597469",
+                        "dealNo": "ABCD1234",
+                        "profitLoss": 9000,
+                        "profitLossRate": 5.50,
+                        "acquisitionDate": "2019-04-12T16:33:51.583+07:00",
+                        "availableAmount": 100000000,
+                        "transactionType": "4",
+                        "transactionDate": "2019-04-12T16:33:51.583+07:00",
+                        "settlementDate": "2019-04-25T00:00:00+07:00",
+                        "faceValue": 1000000,
+                        "dealPrice": 100,
+                        "valueLeft": 1000000,
+                        "taxAmnesty": "Non Tax Amnesty"
+                    },
+                    {
+                        "dealId": "597468",
+                        "dealNo": "EFGH5678",
+                        "profitLoss": 9000,
+                        "profitLossRate": 5.50,
+                        "acquisitionDate": "2019-04-12T16:33:51.583+07:00",
+                        "availableAmount": 100000000,
+                        "transactionType": "4",
+                        "transactionDate": "2019-04-12T16:33:51.583+07:00",
+                        "settlementDate": "2019-04-25T00:00:00+07:00",
+                        "faceValue": 1000000,
+                        "dealPrice": 100,
+                        "valueLeft": 1000000,
+                        "taxAmnesty": "Non Tax Amnesty"
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

@@ -1,0 +1,27 @@
+
+## Currency Rate [/fundtransfer/currency-rate]
+
+### Currency Rate [POST]
+
++ Request (application/json)
+
+        {
+            "sellCcy": "IDR",
+            "buyCcy": "USD",
+            "serviceCode": "TT"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sellCcy": "IDR",
+                "buyCcy": "USD",
+                "rate": 14000,
+                "rateFormat" : 0.00007142857143,
+                "date": "2020-11-02T02:30:24.000+00:00"
+            }
+        }

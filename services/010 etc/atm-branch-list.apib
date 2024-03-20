@@ -1,0 +1,37 @@
+
+## ATM and Branch List [/etc/atm_branch_list]
+
+### ATM and Branch List [POST]
+
++ Request (application/json)
+
+        {
+            "typeATMBranch": "1"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "listATMBranchResponse": [{
+                    "atmBranchId": "58",
+                    "nameATMBranch": "CRM Asia Afrika 2",
+                    "addressATMBranch": "Jl. Asia Afrika 100. Bandung",
+                    "typeATMBranch": "1",
+                    "denom": "50000",
+                    "latitude": "-6.921102",
+                    "longitude": "107.609797"
+                }, {
+                    "atmBranchId": "57",
+                    "nameATMBranch": "CRM Asia Afrika",
+                    "addressATMBranch": "Jl. Asia Afrika 100. Bandung",
+                    "typeATMBranch": "1",
+                    "denom": "50000-100000",
+                    "latitude": "-6.921102",
+                    "longitude": "107.609797"
+                }]
+            }
+        }

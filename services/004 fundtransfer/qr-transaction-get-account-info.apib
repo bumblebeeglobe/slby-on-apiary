@@ -1,0 +1,46 @@
+
+## QR Transaction - Get Account Info [/fundtransfer/qr-transaction-get-account-info]
+
+### QR Transaction - Get Account Info [POST]
+
++ Request (application/json)
+
+        {
+            "dynamicAccountId" : "d6658cdc-0a92-4aaa-9474-04e833eb438a"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "hasDefaultAccount": true,
+                "account": {
+                    "productCode": "TBSMCY9901",
+                    "productName": "Tanda360Plus-S",
+                    "accountNo": "693810021529",
+                    "accountType": "S",
+                    "accountName": "AULIA RACHMAN",
+                    "accountCcy": "",
+                    "branchCode": "99693",
+                    "mcBit": "N",
+                    "dynamicAccountId": "d6658cdc-0a92-4aaa-9474-04e833eb438a",
+                    "bankCode": "",
+                    "bankName": "",
+                    "description": "",
+                    "qrCode": "iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeAQAAAADlUEq3AAACt0lEQVR42u2bTY7sIAyELXGAHImrcyQOgORnqmw6k2Tx1pio1WLIl1lY/imbtOj/X0MOfOADH/jAB94RlnnVcTW52rhso9mndJFL57dIyQTPda+2iS3B2p5Ve9zWDuSBu5Q+TWcLu1vMbrQnYHswITzdhv4jdfqSP54UNs+h/zCOhjH8J9lghBUBLhBiTbH/GYMbw0y5ZqWvz3d+3hhel93VPm+x9JROF/qu3bvC0zgwkV3mS0y2qMuzBs0ylAkeyC0MKNhtihMmHETcH0faHlb4Dw3FEEMNcp1GG+aBp/OYw0CqyeXOw7qDAl1LJpj5dszU2rDg3Ubh+orBzeECFyKGW16IId50vJqavWFkWmEyYWfn0dRnBh4IsTywxxG+2dlBr1KxyDMGd4e9EF+N5YZdHi3mbW8meHhzV2lDM9dABsbj7Vm7d4fVMy2HIag7nT3vNCn7mjzwVCOswkg1DDFGE/T8sxzvDS/pvuRZOJWu/Twwy66XoVDyEVbKuVkimL2/L4SN/xoZlVdY7Q2HuVyN3NV7jIlywQwf8em6z1HZ8RVtqWC6ivd0ECfi7cz886n5t4cx+kAQiVxxFgOesaaZYO/pPIimCzGaXL72XHBYqcFzKieoLNN+NxOMyqseRDyMw2jIn3rOGDeHNXbcetxRD6vXjDEBHAND6jTx4zke2r5MtzfsB/p3Q3HO7LMyzQX7GAQxBW2C04cR2abkgqHYfzZk26trkKiZ4BBj7fauS1vndPps/zeH+Y4HzcXxKU5va7T/mgq+6TRhAWJYxVigpoJ9lg4xr9Hy06n4hoNmgtnFjN/xnLvWelssF+wvif1p/yllv9r/FHDMyn6nDBwyP7vjJLAXnUpVH31NCPs88O3Amh7lE4DY0Uzwet2Fc0KNgar6qy8tFXx+g3DgAx/4wAfOCf8DRanGksn99xgAAAAASUVORK5CYII=",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 0,
+                            "holdBalance": 0,
+                            "isAvailable": false,
+                            "accountCcyNameID": "",
+                            "accountCcyNameEN": ""
+                        }
+                    ]
+                }
+            }
+        }

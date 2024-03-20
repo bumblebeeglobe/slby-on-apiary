@@ -1,0 +1,49 @@
+
+## CC Installment Confirmation [/card/cc/installment/confirmation]
+
+### CC Installment Confirmation [POST]
+
++ Request (application/json)
+
+        {
+            "transactionDate": "07/09/2020",
+            "description": "DUMMY MERCHANT JAKARTARE ID ",
+            "amount": 2000000,
+            "authCode": null,
+            "selectedIPP": {
+                "cardNumber": "4645831100011478",
+                "transactionAuthNo": "101222",
+                "programName": "IPP3b",
+                "tenor": 3,
+                "interest": 1.5,
+                "interestAmount": 15000,
+                "adminFee": 15000,
+                "installmentBalance": 348333
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "transactionDate": "07/09/2020",
+                "description": "DUMMY MERCHANT JAKARTARE ID ",
+                "amount": 2000000,
+                "authCode": null,
+                "selectedIPP": {
+                    "cardNumber": "4645831100011478",
+                    "transactionAuthNo": "101222",
+                    "programName": "IPP3b",
+                    "tenor": 3,
+                    "interest": 1.5,
+                    "interestAmount": 15000,
+                    "adminFee": 15000,
+                    "installmentBalance": 348333
+                },
+                "onlineSessionId": "2021-05-24T09:48:50.610+610:610-253fb3c6-53e5-4362-85c6-3a2e7bf6666a"
+            },
+            "response_code": "00000"
+        }

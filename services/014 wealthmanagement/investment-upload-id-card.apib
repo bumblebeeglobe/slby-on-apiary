@@ -1,0 +1,36 @@
+
+## Upload Id Card [/wealth/investment/register/id-card]
+
+### Upload Id Card [POST]
+
+Error Response Code
+1. 09037 KTP Not Found
+2. 03702 Data not match with ocbc system
+3. 09030 Can't connect to dukcapil
+4. 09001 ID not valid
+5. 09035 Can't connect to server
+6. 99212 General Error
+
++ Request (application/json)
+
+        {
+            "referenceNumber": "NTI202104141926202737",
+            "file": "base64format",
+            "idCard" : {
+                "nik": "3175101404670005",
+                "name": "Basuki RACHMAT",
+                "motherName": "TUKINEM",
+                "dateOfBirth": "14041967",
+                "sexCode": "L",
+                "birthPlace": "Jakarta"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "response_code": "00000"
+        }

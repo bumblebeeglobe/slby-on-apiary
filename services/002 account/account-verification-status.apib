@@ -1,0 +1,36 @@
+
+## Account Verification Status [/account/verification/status]
+
+### Account Verification Status [POST]
+
++ Request (application/json)
+
+        {
+            "isBranchVerification":false
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "documents": [
+                    {
+                        "type": "KTP",
+                        "name": "E-KTP",
+                        "optional": false
+                    },
+                    {
+                        "type": "NPWP",
+                        "name": "NPWP",
+                        "optional": false
+                    }
+                ],
+                "startHour": "",
+                "workingHour": "Monday - Friday (08:00 - 17:00 WIB)\nSaturday (08:00 - 12:00 WIB)",
+                "endHour": ""
+            },
+            "response_code": "00000"
+        }

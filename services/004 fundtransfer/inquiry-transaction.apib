@@ -1,0 +1,48 @@
+
+## Inquiry IFT Transaction [/fundtransfer/inquiry-transaction]
+
+### Inquiry IFT Transaction [POST]
+
++ Request  (application/json)
+
+        {
+            "transaction": {
+                "beneficiaryBankCode": "999",
+                "beneAccountNo": "693800005375",
+                "availableTransactions": [
+                    "IFT"
+                ]
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "beneAccount": {
+                    "accountNo": "887711002930",
+                    "accountName": "Wozniak",
+                    "accountCcy": "IDR",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "USD",
+                            "accountCcyNameID": "Dolar US",
+                            "accountCcyNameEN": "US Dollar"
+                        },
+                        {
+                            "accountCcy": "AUD",
+                            "accountCcyNameID": "Dolar Australia",
+                            "accountCcyNameEN": "Australian Dollar"
+                        },
+                        {
+                            "accountCcy": "SGD",
+                            "accountCcyNameID": "Dolar Singapura",
+                            "accountCcyNameEN": "Singapore Dollar"
+                        }
+                    ]
+                }
+            }
+        }

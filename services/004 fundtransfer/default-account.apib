@@ -1,0 +1,96 @@
+
+## QR Transaction -  Default Account [/fundtransfer/account/primary]
+
+### QR Transaction - Get Default Account [GET]
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "hasDefaultAccount": true,
+                "account": {
+                    "productCode": "TBSMCY9901",
+                    "productName": "Tanda360Plus-S",
+                    "accountNo": "693810021529",
+                    "accountType": "S",
+                    "accountName": "AULIA RACHMAN",
+                    "accountCcy": "",
+                    "branchCode": "99693",
+                    "mcBit": "Y",
+                    "dynamicAccountId": "d6658cdc-0a92-4aaa-9474-04e833eb438a",
+                    "bankCode": "",
+                    "bankName": "",
+                    "description": "",
+                    "qrCode": "iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeAQAAAADlUEq3AAACt0lEQVR42u2bTY7sIAyELXGAHImrcyQOgORnqmw6k2Tx1pio1WLIl1lY/imbtOj/X0MOfOADH/jAB94RlnnVcTW52rhso9mndJFL57dIyQTPda+2iS3B2p5Ve9zWDuSBu5Q+TWcLu1vMbrQnYHswITzdhv4jdfqSP54UNs+h/zCOhjH8J9lghBUBLhBiTbH/GYMbw0y5ZqWvz3d+3hhel93VPm+x9JROF/qu3bvC0zgwkV3mS0y2qMuzBs0ylAkeyC0MKNhtihMmHETcH0faHlb4Dw3FEEMNcp1GG+aBp/OYw0CqyeXOw7qDAl1LJpj5dszU2rDg3Ubh+orBzeECFyKGW16IId50vJqavWFkWmEyYWfn0dRnBh4IsTywxxG+2dlBr1KxyDMGd4e9EF+N5YZdHi3mbW8meHhzV2lDM9dABsbj7Vm7d4fVMy2HIag7nT3vNCn7mjzwVCOswkg1DDFGE/T8sxzvDS/pvuRZOJWu/Twwy66XoVDyEVbKuVkimL2/L4SN/xoZlVdY7Q2HuVyN3NV7jIlywQwf8em6z1HZ8RVtqWC6ivd0ECfi7cz886n5t4cx+kAQiVxxFgOesaaZYO/pPIimCzGaXL72XHBYqcFzKieoLNN+NxOMyqseRDyMw2jIn3rOGDeHNXbcetxRD6vXjDEBHAND6jTx4zke2r5MtzfsB/p3Q3HO7LMyzQX7GAQxBW2C04cR2abkgqHYfzZk26trkKiZ4BBj7fauS1vndPps/zeH+Y4HzcXxKU5va7T/mgq+6TRhAWJYxVigpoJ9lg4xr9Hy06n4hoNmgtnFjN/xnLvWelssF+wvif1p/yllv9r/FHDMyn6nDBwyP7vjJLAXnUpVH31NCPs88O3Amh7lE4DY0Uzwet2Fc0KNgar6qy8tFXx+g3DgAx/4wAfOCf8DRanGksn99xgAAAAASUVORK5CYII=",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 1586829543,
+                            "holdBalance": 0,
+                            "isAvailable": true,
+                            "accountCcyNameID": "",
+                            "accountCcyNameEN": ""
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }
+
+### QR Transaction - Set Default Account [POST]
+
++ Request (application/json)
+
+        {
+            "productCode": "TBSMCY9901",
+            "productName": "Tanda360Plus-S",
+            "accountNo": "693810021529",
+            "accountType": "S",
+            "accountName": "AULIA RACHMAN",
+            "accountCcy": "IDR",
+            "branchCode": "99693",
+            "mcBit": "Y",
+            "dynamicAccountId": "",
+            "bankCode": "999",
+            "bankName": "",
+            "description": "",
+            "qrCode": "",
+            "accountBalances": [
+                {
+                    "accountCcy": "IDR",
+                    "balance": 1586302043,
+                    "holdBalance": 0,
+                    "isAvailable": true,
+                    "accountCcyNameID": "Rupiah Indonesia",
+                    "accountCcyNameEN": "Indonesian Rupiah"
+                }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "userCd": "AULIARAC1511",
+                "userName": "AULIA RACHMAN",
+                "accountId": "15855a6c-97bf-4f91-b336-341810d8261f",
+                "accountNo": "693810021529",
+                "accountMCBit": "",
+                "accountCcy": "IDR",
+                "accountType": "S",
+                "productCode": "TBSMCY9901",
+                "productName": "Tanda360Plus-S",
+                "branchCode": "99693",
+                "qrCode": "iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeAQAAAADlUEq3AAAC5ElEQVR4Xu2YUY4jIQxEkThAjsTVOVIfAIn1q6IzZEZazc9KqzZWJkPgOR8ll02nzN/HKN93/hIH3uPAexx4jwPvceA9DrzHP4cL0fj86uPloz4vDuvFWc0Es75aBWjxGkouZGnHQB74KlWbcRrSoV7kXq28gEPVhHCo9V6HjIOPXfsZ4fBU8KGbqqhr01+SDJ5UDmTIhW5TuauiFpAGRqvQR1b68eIsFewIoSr9FukKa6pI2DpPAiPOxcQZqiVCzVbfEE24p4LnTdblIE6HritFPeejkJ4Oq5nQXjRx4rAVk0hKtzGVBA6yrpSGhi8ExFZIF+kkJoJRqbEv6aKEhiaRDeXcPHCQsSMHLSAqypu+s6WCB5e0JR0DSM6i1bDwOhGsmplSD2DosRfq9lcqOMQZXOC7EguKkcWmc7PBq4p0FaHPaCRJzPnTg8+GuYdQLf199OarxtCicsByEJVT5aChTlspJ62/2+rhsMYNYdEUajteftrq8TBCWcDCBimawvIa+6qlNLCe9ONI/tLawFo3UWng+0WrCeBWr2gcW8888JSVOGX+ohtWimeZte/IAqu1dnXaSYNFPeChC5tHUh54SLHK5HXx4C+rF/wdWWCeXyQgLy6xzRpWDWW8lgkeVEvjPXRDLjER9GG+IRWsEUPxVO6r3TyGopZUY5lgKRbLjqFkq+kfx4RhulSwpg/jhrsZfaYo3X2Gq0suuOloIpTe65d0nZRMsG015Sne/WuA03VF2aV7PDytlYevrmr3Gn5axjSwbSWmwDCakc5eo8wywVWXkOG7a8ilm+rQk53XqWBHVQkxjn1qW8l0qWDEous25Ir6URaddk2fLioLLKEaot0msssoMEmXC37LpWar/wCRqBR9Wzb4NpGdpfbb6cafAygN3G/1PIniI5surUTwxFaVfqJEPdqQdospKgsswVr8kajGS7/lmOBOmwn+XRx4jwPvceA9DrzHgfc48B7/C/wHqbeHgJsf5FwAAAAASUVORK5CYII=",
+                "dynamicAccountId": "15855a6c-97bf-4f91-b336-341810d8261f",
+                "accMCBit": 0,
+                "errorCode": "",
+                "errorDescription": ""
+            },
+            "response_code": "00000"
+        }

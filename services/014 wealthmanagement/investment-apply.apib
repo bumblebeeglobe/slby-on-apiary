@@ -1,0 +1,70 @@
+
+## Apply Wealth [/wealth/investment/apply]
+
+### Apply Wealth [GET]
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "referenceNumber": "NTI202104141918322736",
+                "documents": [
+                    {
+                        "code": "KTP",
+                        "title": "KTP",
+                        "subtitle": "Tap to Upload",
+                        "sequence": 1,
+                        "isOptional": true,
+                        "image": "iVBORw0KGgoAAAANSUhEUgAAAKgAAACQCAYAAACcYiB0AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAd7SURBVHgB7d3LblNHGAfw78yxSUPAJAEaRQTVoReJDRBFiLIC3gCeoPAEtKsqK8IqYtc8AfAE8AYNq7aqIqAbUGmJKQRyIfeLIbFnOp+DoyTk4thnPN85/v+kyE5iO47898ycOfONiQAAAAAAAAAAAAAAwJuA9mngt3dZlUpdNcqctXe+HFDQasi0EsAWNhuzJjA5MvZLq0e6UHjYd7Ezt7/HqNDA8MT1MKAfjKHLBFCtgJ5oQ4N9vV/eq+zmexj4c/KyUuauvZolgOjkNNHtvYK6Y0D7H4+0NtOhW6TNjwTgiFLBL0u0eLu/p3t2u99vG9CBx3acacIHZOgcAbiX0yvFK9uNTz8LaCmcOvyV0KVDfW0bUrXxG+7WEU7wJKuawgecwY0/3BTQ0pgT4QRf7JCyZS2D69a7eJ5Gsmm9SwCeaW27+vOdQ3x9vQW1V24RgABKhesNZSmg3HoSunaQI/spk2sBVSa4SQCC8FlLvgw+TSuNEIAwYZDOKlVIXSUAgYrFj9eU7eQvEYBARqmzys49ZQlAIF7OqYIAAQWxWhUWG4NgrYoABENAQTQEFERDQEE0BBREQ0BBNAQURENAQbQUObRaKNKbqRmanlukVV0kSJauY+3UfriFDjYdIFecBXR+OU/DL15R/uMKQTJNzy9Rsw1n7zdfUaalmVxw0sUv21AinI2BX+M/nr8sveYuOAnoi9FxhLOBrBaLlBt7Ty44Cej0whJBYxl9P0MuOAkoWs/Gw62oC04Cmg5DgsbSfCBNLjgJ6InjbQSN5WjmELngJKDdHcfQijYQbj2/PdFBLjgJKM+NXTh9ylmzD3Lwa9z7Xbb0mrvgbKI+c7CZvj/9NU0tLNLopJsjPPAnlQpLZ5H4bFI65a63dHqqk99VXU3tpX8CoBpYLAKiIaAgGgIKoiGgIBoCCqIhoCAaAgqiIaAgGgIKoqForkb1KByLQv7jKo3NztH8Up7yK2vrddPKnq48cog6WjNin39wZ3jCkAONVDTnunCsFlzY9vfo2J5VDu2ZFjrTfVJcUFE0FwHXhWPV4tqw35//W1EJDgd56Onz0n0kQdFcRFwWjlWDX4Nqwlbt/VxB0VyEXBWO7VetIeP7SnmzoWguQq4Kx/aDhxlRtID8GBKGLCiai5CECoKoumcpQxYUzUXIVeHYfkzMzFNUeMjiu1dA0VxEXBaOVYrH/lEGih+L5019QtFcBFwXjlVqzkGYFpY/kE8omqtBvQrHKlVw0B377uJRNAeiYbFIgrgYYmQOfkE+IaAJctQON6LGQzWfENAE4Ra0PcKQcuvp+8APAU2YrgjnoLN2utA3BDRhyutTa8VTZ13H/R/cIqAJdPbUyZrmoPm+PEUoAQKaQDxu5IBVE9JyOH2PPcsQ0IQqh7TrWOVjUp4FkBRO5nSiHvzioJ2x3T2PJd9MTtP4zJw9M6Q33SYdKupoO7I2ds1EP01VKwS0ARxu/qIUwlQYlhaUcL0Y4znOjrZM6fKw5wn5nSCgCcZ1RiPjk2urnAqfn1PnoJbDyk7Y4QCvyJJUOIeAJhCvhP/r5et9l97w+k/+khRUBDRh3kzO0LPXb7dtMSvFIeVwc0j3c5DlAgKaIFFWZOY/tcJ86XMhNqaZEsJVubDvMmQENAFch8hnSBHQmBsZe1+X8PiqlUdAY4yP1p/995bqhUNa7yI6BDTGeD+oeuL6pOF/XtW1TgkBjSlf+1/x36xnV4+AxlBU29tUiwNar21xENAY8r37HHfx9XoOCGjMcMslYRc9fg71aEUR0JiRtHdnPd4oCGiMcNca5eZgteKxqOsjegQ0RsZtOCXsQVrGz8X1tkYIaIzwqnhp+JNDXEJAY4IPSCRurc6Lol226ghoTEje93/c4bgYAY2JqflFkmra4XNDQGNi3vNGsruZcti6I6AxwGO8hWW/W3Hvhs/PuxqHIqAx4Hsb7kq46uYR0BiYW5Lbepbxh9W6gIDGQPnTiSVzdV4eAY0B3x8FU4k8Atq4tu6nJJGrVh4BjYGCoPPvO3H1JkJAYyAOH85bKGCaCQRzNQ+KrW9iwMXHy8QFAhoDF4TsF+8DungQDQEF0RBQEA0BBdEQUBANAQXREFAQDQEF0VRAwSwByDSrDBkEFEQKAsopbcwjAhBIa/1KKaOeEIBAgaEhpVOFhwQgkC6Yh6qvpzNnAhoiAEHs+PNJ38XOXGmayZjifQIQpGiKg3wZlH9wZ3hixF5kCcA7k/u5t6Obr61P1GtdvEEAAmjSt8vX1wPad75zyBgaJACPjNGDfb2d98rfbzrV2RSm+22nj2kn8MTkPoT5/o0/2RTQn3raZnVQvGav5gigrkxOr+gr/T3dm85sfrZYhKedtCpeIYQU6sX22hxOnlba+qttVzNxSA+odA/GpOAajznzwdK24WTBXg8wMPzuuqLwFmEKCiJlu3Stb/DB+W632jOgZaWgmvCmvcc5AqiS7ZWHTFC8v/FIfTcVB7Rs4PG7rCoEVykIL9k/l7WnpLKGqJUAtrDhmjVrX0OB1k/53PpOXTkAAAAAAAAAAAAAAAj0Pwa3IoHlqcs/AAAAAElFTkSuQmCC"
+                    },
+                    {
+                        "code": "NPWP",
+                        "title": "NPWP",
+                        "subtitle": "Tap to Upload (Optional)",
+                        "sequence": 2,
+                        "isOptional": true,
+                        "image": "iVBORw0KGgoAAAANSUhEUgAAADgAAAAwCAYAAABE1blzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgB7dpNSsNAGMbxZyaNAREJ3ZV20bgIuNMT2N5AcOPHpjfoVewJdKVuegarF2hXWkRIkK6LmG5MmoyTQsBVVm3ovH1/m3yt/uRjYDIAY1tNFDvju3P3wN3vQ4kOFDowkcJECTXwLx7ui1OrwPfHy7a9Zz0roA0CdFSYxGn3+OopXAV+Dm8CKnGFPDL6sU+tj+F1Tx/2QI9bc9JfaSnRB1FSiDOZCZyAKv2xlCCOA03HgaYjHyi+3l4VCKvJwyNQxu+g6cgH1souLpdLzOdzpGmKTavX63AcB+tWGjidThHHMaoQRRF838e6lT6iVdy5wmKxwCaUBjYaDVTBsiy0Wi1sgpjNZqQHeh4mTMeBpuNA03Gg6TjQdBxoOg403U4EjkDXRCqlXkBUlmUDEQSBa9v2GNQWIQgRNptNT3qe950kSVefC0FEHqdnA7ur/f8X9PxMT2/yRQmm/rcf5a+cns+9zW8cGNt+fyM0aOvnvTNwAAAAAElFTkSuQmCC"
+                    },
+                    {
+                        "code": "PERSONALINFORMATION",
+                        "title": "Personal Information",
+                        "subtitle": "Tap to fill",
+                        "sequence": 3,
+                        "isOptional": false,
+                        "image": "iVBORw0KGgoAAAANSUhEUgAAADgAAAAwCAYAAABE1blzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGvSURBVHgB7do9bsIwGAbgNwkBsUUgBsSP8ILE1p6gcBNuwFXaG/QmpScoI1sYkJBAoEiwlD/XX0SkThbCEGPLz4KTDOjlC/liy4DjPDUvG8RxHBWLxRHnvC8O+zDT5Hw+f7Tb7c/sRBpQhOuEYfglhh1YwPO82X6/HzDGZmnA+Xwew5JwmUvI10CEG4rjIewT+b7/64vBCJYSVXzzRAU5LObDctYHLMguLpdLLBYLnE4n6CD6Mur1OqrVKm4lraDOcEQ85qmFQYU0YLlchm5URRXSpyhVL0mS9JfUIQiC9Pakz1sVrvkCk7k2YToX0HTSh8zxeMRms8mlF1YqFZRKJdybNOB0Os2tRWy3W3S7Xdyb9BbN8y1mt9vhEaQB6T0wD9Rvm80mHsHNB03nAprOBTSdtNHTbJqWLVTUajW0Wi3oIq2gajiyWq2gkzSgykw6o7rkoEp6i/Z6PazXa6iIogg6uTcZ07mApnMBTUcBx7DXxOecf8NStOPCo+0jYRj+wMJNCI1Gg/mMseRwOAzEuRkskW0jScf/L1x2XNCmhBeYaUx/ObGe+06Fg+M8vz8J/JorWCdKeQAAAABJRU5ErkJggg=="
+                    },
+                    {
+                        "code": "RISKPROFILE",
+                        "title": "Kuisoner Profile Resiko",
+                        "subtitle": "Tap to fill",
+                        "sequence": 4,
+                        "isOptional": false,
+                        "image": "iVBORw0KGgoAAAANSUhEUgAAADgAAAAwCAYAAABE1blzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPxSURBVHgB7Zo/TFNRFIdPW0uIImkMqQRqQ7u41EQTEt0EXYyJOBLCwtDBrTjoAAkDCQw6AJsDA4tR1w5uCm4OJpLI4kLBNA0WMIXWlpb+8f7u4zSPpva9trdSar+k4b77LuV+75x77mt5RG3aNDUWboRCIUdHR0egUCgMicMhOp+s5/P5JbfbvcIdUlDIDdjt9lXRHKAWwGKxbGUymWGPx7MlBcPhcIhaRI45kbxlE3IT4niCWg+H1WpNW0UjQC2KiOJdi4hggRpEPv6bDl8H6ejLN8p8D8lj0HHdI15e6hq5R52DN6iRNEww9uqNlGOpv9E1cp8cT8boQp+TGoFyQQhFn86JqG3IY+vlS1ICUWMJnEsEP1I28lMeo9+5MCWjqhrlgpHRSZGOm7LdPT4iowPJciSCH0Sk30pRjOl7t6Q8klZSCNKS5SB25Zm/KIfIamtxszgeke1dnhNSV+X5Hf8UqUZZBLORKIUf+mUbkYMc9+/NLBZTFiBKuAAQBBDf8U/Lds9soNivAmURxCTlG4qIQRBADhPXy3H/3sySLEIAlfTi8B3ZRtqqRJkgTwwT5XWElMX6wjFScWA9SK73y2LMbXn+18tlKQu6xx/Jn7gYRpW3GpQJYp8DqJYAk2RppCPvd5DtmZ0srk0eo6+gnA0qUCbIV52jp48Cp1/xjwo57uMI6ittU0ZQXy1L0VfO0r5yW4jKrUKhYJf8yamKSXYO+mRbv9aAtp1o43gMH+vfS8m8SBFcOPRVEGsPYPLY4/CKjAakIIAcpypXVFwYXscqUC7IN9gAhQX7ITZyRBAVUh8554K29+FccvVz8XdUovRWDRGCBNYVtgWujJqc9okC5yDHItodzLRck9p2Mq90DSoVhAhSEJMulSyHXg6ovosBVQlubIgUy2QqjrH92KHuFytkSR5VlCyVSz0eki8jxBdj5PP5yCym12A8HjeUAzl3Lx0+n6DCxc6Tj07zpyooqFUOYA6Yi1lMC+7v75sdekpSux+dKkrWI8ccHByYHmtasJo3BeUkIVWvHMDFzuVypsaaWoN4w+3tbaoF/ZrUU6sc4/V6yeFwGI4zFcFYLEa1oo8kU68ciEajpsYZCqbT6arTsxSWzF7rpeTYg7rlQCKRMJWmhilaT3o2GpfLRU5n5ZsCwwiaTYWzwMzSqSiI9EylUtSsIE2TyWTFMRUFd3d3qdkxqg8VBeupnv8KoyWk9HvRs8Bms1U839B/vjQD5z6CRvwXgmvUuqxbC4XCJ2pR8MSFBY+P2O32r9SCDyH09/d7rB6PJ3Z8fDws+raoReDHSGRbf+LkiQs8lHCTzidrWHLZbHYRgaM2bZqfPyEjRvbWsCF+AAAAAElFTkSuQmCC"
+                    }
+                ],
+                "mailingAddressOptions": [
+                    {
+                        "referenceNumber": "a88e016c-7ec9-4ee3-929b-6382d9f45fcb",
+                        "address": "BULAK KAPAL PERMAI JLN. KERINCI 4 BLOK 4 & NO. 82 RT/015 RW/014 KELURAHAN JATIMULYA & TAMBUN, KAB. BEKASI 17510"
+                    },
+                    {
+                        "referenceNumber": "4b4b87e3-9766-44ae-9ef1-cd5fcbd0c5c0",
+                        "address": "CIKARANG no 12 &  &"
+                    }
+                ],
+                "riskProfile": {
+                    "code": "D",
+                    "title": "Aggressive",
+                    "description": "You are an investor with knowledge of the financial market condition and investment product. You choose to gain a high growth of your investment in the medium to long term and can bear short-term fluctuations.",
+                    "portfolios": []
+                },
+                "personalInformation": {
+                    "email": "lasma.silalahi@ocbcnisp.com",
+                    "phoneNumber": "081220011636"
+                }
+            },
+            "response_code": "00000"
+        }

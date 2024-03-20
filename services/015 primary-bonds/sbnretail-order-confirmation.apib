@@ -1,0 +1,76 @@
+
+##  Confirmation Order SBN Retail [/primary-bonds/sbnretail/order/confirmation]
+
+###  Confirmation Order SBN Retail [POST]
+
+Error :
+1. 01009 - Saldo Tidak Cukup
+
++ Request (application/json)
+
+        {
+            "idSeri" : 362,
+            "nominalOrder" : 1500100,
+            "settlementDate": "2021-03-16T00:00:00.000+0700",
+            "maturityDate": "2021-03-16T00:00:00.000+0700",
+            "couponDateInd": "Setiap tgl 15 setiap bulan",
+            "couponDateEng": "15th of every month",
+            "couponRate": 6.70000,
+            "securityNo": "ORI SERI 16",
+            "sourceOfFund": {
+                "productCode": "TBSMCY9902",
+                "productName": "GIRO BUSINESS SMART",
+                "accountNo": "693810053779",
+                "accountType": "D",
+                "branchCode": "99693",
+                "mcBit": "Y",
+                "accountId": "BD8078EF7538141AE053D407FF0A68AB",
+                "labelDebitAccount": "GIRO BUSINESS SMART 693800000723 IDR 65200583.00",
+                "cif": "0000000000001679512",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 693810053779,
+                        "isAvailable": true
+                    }
+                ]
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "idSeri" : 362,
+                "nominalOrder" : 1500100,
+                "settlementDate": "2021-03-16T00:00:00.000+0700",
+                "maturityDate": "2021-03-16T00:00:00.000+0700",
+                "couponDateInd": "Setiap tgl 15 setiap bulan",
+                "couponDateEng": "15th of every month",
+                "couponRate": 6.70000,
+                "securityNo": "ORI SERI 16",
+                "sourceOfFund": {
+                    "productCode": "TBSMCY9902",
+                    "productName": "GIRO BUSINESS SMART",
+                    "accountNo": "693810053779",
+                    "accountType": "D",
+                    "branchCode": "99693",
+                    "mcBit": "Y",
+                    "accountId": "BD8078EF7538141AE053D407FF0A68AB",
+                    "labelDebitAccount": "GIRO BUSINESS SMART 693800000723 IDR 65200583.00",
+                    "cif": "0000000000001679512",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR",
+                            "balance": 693810053779,
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+            },
+            "response_code": "00000"
+        }

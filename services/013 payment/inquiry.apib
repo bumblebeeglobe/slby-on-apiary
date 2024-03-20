@@ -1,0 +1,186 @@
+
+## Payment Inquiry [/payment/inquiry]
+
+### Payment Inquiry [POST]
+
++ Request (application/json)
+
+        {
+            "category": {
+                "id": "001",
+                "title": "Gojek",
+                "type": "VOUCHER",
+                "minimumAmount": 0,
+                "additionalFields": [
+                    {
+                        "code": "AMOUNT",
+                        "title": "Nominal",
+                        "placeholder": "Masukkan Nominal"
+                    }
+                ]
+            },
+            "referenceNumber": "12345678",
+            "amount": 80000,
+            "selectedPackageCode": "17"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "biller": {
+                    "accountName": "Andi Budi",
+                    "productName": "Token Listrik - R1M/900VA",
+                    "accountNo": "08112345678"
+                },
+                "selectionAmounts" : [
+                    {
+                        "code": "001",
+                        "displayText": "IDR 100,000",
+                        "value": 100000,
+                        "description": "Lorem ipsum dolor sit amet"
+                    },
+                    {
+                        "code": "002",
+                        "displayText": "IDR 150,000",
+                        "value": 150000,
+                        "description": "Lorem ipsum dolor sit amet"
+                    },
+                    {
+                        "code": "003",
+                        "displayText": "IDR 200,000",
+                        "value": 200000,
+                        "description": "Lorem ipsum dolor sit amet"
+                    }
+                ],
+                "selectionPackages": [
+                    {
+                        "code": "17",
+                        "description": "HotRod 800MB"
+                    },
+                    {
+                        "code": "18",
+                        "description": "HotRod 1.5GB"
+                    },
+                    {
+                        "code": "19",
+                        "description": "HotRod 3GB"
+                    },
+                    {
+                        "code": "20",
+                        "description": "HotRod 6GB"
+                    },
+                    {
+                        "code": "51",
+                        "description": "XTRA COMBO 5GB+5GB"
+                    },
+                    {
+                        "code": "52",
+                        "description": "XTRA COMBO 10GB+10GB"
+                    },
+                    {
+                        "code": "53",
+                        "description": "XTRA COMBO 15GB+15GB"
+                    },
+                    {
+                        "code": "54",
+                        "description": "XTRA COMBO 20GB+20GB"
+                    },
+                    {
+                        "code": "55",
+                        "description": "XTRA COMBO 35GB+35GB"
+                    },
+                    {
+                        "code": "71",
+                        "description": "PAKET UMROH COMBO S"
+                    },
+                    {
+                        "code": "72",
+                        "description": "PAKET UMROH COMBO M"
+                    },
+                    {
+                        "code": "73",
+                        "description": "PAKET UMROH COMBO L"
+                    }
+                ],
+                "invoice": {
+                    "id": "3333333333",
+                    "adminFee": 2000,
+                    "totalAmount": 429000,
+                    "descriptions": [
+                        {
+                            "title": "Periode",
+                            "value": "Desember 2020"
+                        },
+                        {
+                            "title": "Tarif/Daya",
+                            "value": "R1/0000450 VA"
+                        },
+                        {
+                            "title": "Jumlah Tagihan",
+                            "value": "IDR 427,000"
+                        },
+                        {
+                            "title": "Biaya Admin",
+                            "value": "IDR 2,000"
+                        }
+                    ]
+                },
+                "receipt": {
+                    "sourceOfFund": {
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "productCode": "GRRMCY9902",
+                        "accountNo": "693800000723",
+                        "accountCcy": "IDR"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "accountName": "Andi Budi",
+                                "productName": "Token Listrik - R1M/900VA",
+                                "accountNo": "08112345678"
+                            },
+                            "transactionStatus": "S",
+                            "transactionAmount": 3250800.88,
+                            "transactionCcy": "IDR",
+                            "totalAmountDescription": "ekuivalen IDR 144010",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "headlines": [
+                                {
+                                    "title": "Token Listrik",
+                                    "value": "1234 5678 9012 3456 1234"
+                                }
+                            ],
+                            "descriptions": [
+                                {
+                                    "title": "Pesan",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Metode Transfer",
+                                    "value": "OCBC NISP"
+                                },
+                                {
+                                    "title": "Waktu Transfer",
+                                    "value": "Sekarang / Now"
+                                },
+                                {
+                                    "title": "Reference Number",
+                                    "value": "20200828101006"
+                                }
+                            ],
+                            "footnote": "Informasi Hubungi Call Center 123 Atau Hubungi PLN Terdekat"
+                        }
+                    ]
+                },
+                "selectedPackageCode": "17"
+            }
+        }

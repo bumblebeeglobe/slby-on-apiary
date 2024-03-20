@@ -1,0 +1,45 @@
+
+## Mutual fund transaction capability [/wealth/mutualfund/asset/capability]
+
+### Mutual fund transaction capability [POST]
+
++ Request (application/json)
+
+        {
+            "clientCode": "FP00157752",
+            "productCode": "SDMP2",
+            "navAmount": 20423.2145
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "isExpired": true,
+                "isAllowPurchase": true,
+                "isAllowSell": true,
+                "isAllowSwitch": true,
+                "clientId": "FP231453",
+                "productRiskProfile": "Konservatif",
+                "minSwitchUnit": 100,
+                "minSellUnit": 100,
+                "switchFee": 1.1,
+                "sellFee":1.2,
+                "minUnitRemaining": 100,
+                "sourceOfFund": {
+                    "productCode": "GRRMCY0001",
+                    "productName": "GIRO MULTICURRENCY 0001",
+                    "accountName": "Yeremia",
+                    "accountId": "BA430176478D3498E0537007FF0AE598",
+                    "accountNo": "010810057199",
+                    "accountCcy": "IDR",
+                    "branchCode": "01010",
+                    "mcBit": "Y",
+                    "cif": "0000000000000000002"
+                }
+            },
+            "response_code": "00000" 
+        }

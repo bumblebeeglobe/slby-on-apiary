@@ -1,0 +1,47 @@
+
+## Quick Transfer - Create Link [/fundtransfer/create-quick-transfer-link]
+
+### Quick Transfer - Create Link [POST]
+
++ Request (application/json)
+
+        {
+            "beneAccount" : {
+                "productCode": "TBSMCY9901",
+                "productName": "Tanda360Plus-S",
+                "accountNo": "693810021529",
+                "accountType": "S",
+                "accountName": "AULIA RACHMAN",
+                "accountCcy": "",
+                "branchCode": "99693",
+                "mcBit": "Y",
+                "dynamicAccountId": "B0AB559DE6FA75FBE0537007FF0ACC5F",
+                "bankCode": "",
+                "bankName": "",
+                "description": "",
+                "qrCode": "iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeAQAAAADlUEq3AAAC6ElEQVR4Xu2YXYosIQxGAy6gluTWXVIvQPDmfLF7rGK4zMvAYAzVYulJPXzkR9vGz63bc+U/duDVDrzagVc78GoHXu3Aq/06bFjt1+hX83GM5o8vlTHKi72SCWb+qnYx+tOtuq92GisB5IFfVlhsSIeGzR0L7sDumBA2RZFP/JGX+ch6SlhRBKA8QsMRH8kG+0/Sgb3YMtKqsUeACUgDG0b8fPewlwp+m5cUc60KoVVhNH9bFljrRpExh0MrpdWIBq2ISgTPGutC0ZRJqObug4Rq8k0ET8Uutti9wp11Fd46qSTwBeN81yHt05TxnZNEMPHjjPKoyKXMYxvd+ZFW+8PqxQMXI35ilwMb3yHFMsHBE0sxlxdZhoz2SKvtYWnVIqGGKm2PA7z4R1rtD9OOa6SVSg26DTryEleZYI0kl0SDifgp37bjrWESSic0vVFSUJKSW2d0ZYLni5LrU2lDMeb3tNoeNiQyRkURNlMpam/Ms8CDWBoqsPUzN+KKoLJ7Wm0PR5chg/gTgHmJNmRzXVQWOMSJUjNzah3v0iWAq1YawYNWrhhN+f2dJioPTCWRegSVC1j0Zwg9SBXmofPecHSZLpcIHvLr04yUYnlgB+gy1BaiSC7NxIeSyWDforyEhqZJFJz5nUxwh0SlAtCUVnNx6GpzS6v94RoP85lW2pkX/7AssM16SzZ9vc5OVJE0E6zqalO0d8lVFPmrf0FQGrjrOtOj+b44lqBVuKsxrdJtDw/CxmZaMVJYwtGxxzF+ezjECaCr2phaUtGBjTadCS4cQjyPlESy8i62vCjR8sBf64qigrtKrrByl257ODDqDFc8dDOCinYslyYqC4wy8/5SO6f3odDiE5KOMREccimnhnQjouTO9NG7k8ASzXQsKfpjRBWYrZTwtMEl1wHnlWuP+rw9PEirkA5H/TMWMmqlisoCSzBgteMah5PBwdVfGVPBP7MDr3bg1Q682oFXO/BqB17tr8D/AMM6iPqGEp06AAAAAElFTkSuQmCC",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR",
+                        "balance": 1662631870,
+                        "holdBalance": 0,
+                        "isAvailable": true,
+                        "accountCcyNameID": "",
+                        "accountCcyNameEN": ""
+                    }
+                ]
+            },
+            "amount": 150000,
+            "remark": "maksi"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "narration": "Kamu telah diminta untuk mentransfer sejumlah dana via ONe Mobile OCBC NISP. Klik link berikut untuk mengirimkan dana: https://onemobile.ocbcnisp.com/qrtransfer/?trfid=dC3aD5875e249CF53F656e8CeE07533D47078FFa0Ab95c3D969638a10802015429bd722cc9ff&lang=IN"
+            }
+        }

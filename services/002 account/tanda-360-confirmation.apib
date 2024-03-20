@@ -1,0 +1,56 @@
+
+## Mudharabah Confirmation [/account/tanda360/confirmation]
+
+### Mudharabah Confirmation [POST]
+
++ Request (application/json)
+
+        {
+            "purpose": "A",
+            "address": {
+                "address": "ADDR2 243",
+                "province": "LAMPUNG",
+                "districtCity": "KOTA BDR LAMPUNG",
+                "kelurahan": "TANJUNG KARANG",
+                "kecamatan": "TANJUNGKARANG PUSAT",
+                "postalCode": "35111"
+            },
+            "email": "Rarfa@GMAIL.COM",
+            "sendAtm": "N",
+            "sourceOfFund": "A",
+            "baseCurrency": "IDR",
+            "phoneNumber": "",
+            "name": "MARIANA",
+            "createAtm": "Y"
+        }
+
++ Response 200 (application/json)
+
+        {
+                "responseDescription": "SUCCESS",
+                "responseTitle": "",
+                "language": "EN",
+                "data": {
+                    "operationCode": "000",
+                    "baseCurrency": "IDR",
+                    "purpose": "A",
+                    "sourceOfFund": "A",
+                    "createAtm": "Y",
+                    "sendAtm": "N",
+                    "otp": "",
+                    "name": "MARIANA",
+                    "email": "Rarfa@GMAIL.COM",
+                    "address": {
+                        "address": "ADDR2 243",
+                        "postalCode": "35111",
+                        "province": "LAMPUNG",
+                        "districtCity": "KOTA BDR LAMPUNG",
+                        "kecamatan": "TANJUNGKARANG PUSAT",
+                        "kelurahan": "TANJUNG KARANG"
+                    },
+                    "phoneNumber": "",
+                    "tac": null,
+                    "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+                },
+                "response_code": "00000"
+        }

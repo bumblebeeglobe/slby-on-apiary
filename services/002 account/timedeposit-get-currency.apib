@@ -1,0 +1,82 @@
+
+## Get Currency [/account/time/deposit/get/currency]
+
+### Get Currency [GET]
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "currencies": [
+                    {
+                        "currencyCode": "AUD",
+                        "currencyName": "Australian Dollar",
+                        "tenor": {
+                            "code": "1-M",
+                            "value": "1 Month",
+                            "amount": {
+                                "minAmount": 1000,
+                                "maxAmount": 50000
+                            },
+                            "depositProductCode": "DBECCB0401"
+                        }
+                    },
+                    {
+                        "currencyCode": "EUR",
+                        "currencyName": "Euro",
+                        "tenor": {
+                            "code": "1-M",
+                            "value": "1 Month",
+                            "amount": {
+                                "minAmount": 1000,
+                                "maxAmount": 10000
+                            },
+                            "depositProductCode": "DBECCB0601"
+                        }
+                    },
+                    {
+                        "currencyCode": "IDR",
+                        "currencyName": "Indonesian Rupiah",
+                        "tenor": {
+                            "code": "14-D",
+                            "value": "14 Days",
+                            "amount": {
+                                "minAmount": 5000000,
+                                "maxAmount": 10000000000
+                            },
+                            "depositProductCode": "DHECCB0014"
+                        }
+                    },
+                    {
+                        "currencyCode": "SGD",
+                        "currencyName": "Singapore Dollar",
+                        "tenor": {
+                            "code": "1-M",
+                            "value": "1 Month",
+                            "amount": {
+                                "minAmount": 1000,
+                                "maxAmount": 50000
+                            },
+                            "depositProductCode": "DBECCB0201"
+                        }
+                    },
+                    {
+                        "currencyCode": "USD",
+                        "currencyName": "US Dollar",
+                        "tenor": {
+                            "code": "1-M",
+                            "value": "1 Month",
+                            "amount": {
+                                "minAmount": 1000,
+                                "maxAmount": 83000
+                            },
+                            "depositProductCode": "DBECCB0101"
+                        }
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

@@ -1,0 +1,75 @@
+
+## confirmation maintenance maturity [/account/time/deposit/maintenance/confirmation]
+
+### confirmation  maintenance maturity [POST]
+
+####productCategory
+conven = AOPRD0001
+syariah = SYPRD0001
+
++ Request (application/json)
+
+        {
+            "productCode": "DHECCB0014",
+            "productName": "DEPO IBMB IDR 14HR",
+            "productCurrency": "IDR",
+            "balance": 8267509,
+            "maturityDate": "2021-06-20T17:00:00.000+0700",
+            "effectiveDate": "2021-06-06T17:00:00.000+0700",
+            "tenor": 14,
+            "tenorType": "D",
+            "interestRate": 0.5,
+            "accountId": "C441D520731547E6E053D407FF0AD093",
+            "interestPayment": 14,
+            "interestPaymentType": "D",
+            "isStructured": false,
+            "maturityCode": "A",
+            "maturity": "AOMAT002",
+            "maturityName": "Perpanjangan Otomatis Dengan Bunga Majemuk",
+            "ibFlag": true,
+            "accountNo": "133820000130",
+            "branchCode": "05133",
+            "progressTenor": 0,
+            "isSyariah": false,
+            "zakatFlag": false,
+            "zakat": 0,
+            "newMaturity" : "AOMAT001",
+            "newZakat" : 0
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "productCode": "DHECCB0014",
+                "productName": "DEPO IBMB IDR 14HR",
+                "productCurrency": "IDR",
+                "balance": 8267509,
+                "maturityDate": "2021-06-20T17:00:00.000+0700",
+                "effectiveDate": "2021-06-06T17:00:00.000+0700",
+                "tenor": 14,
+                "tenorType": "D",
+                "interestRate": 0.5,
+                "accountId": "C441D520731547E6E053D407FF0AD093",
+                "interestPayment": 14,
+                "interestPaymentType": "D",
+                "isStructured": false,
+                "maturityCode": "A",
+                "maturity": "AOMAT002",
+                "maturityName": "Perpanjangan Otomatis Dengan Bunga Majemuk",
+                "ibFlag": true,
+                "accountNo": "133820000130",
+                "branchCode": "05133",
+                "progressTenor": 0,
+                "isSyariah": false,
+                "zakatFlag": false,
+                "zakat": 0,
+                "newMaturity": "AOMAT001",
+                "newZakat": 0,
+                "onlineSessionId": "2021-06-09T09:19:48.979+979:979-74c42eab-1ce2-4edd-b209-87e600fe39fc"
+            },
+            "response_code": "00000"
+        }

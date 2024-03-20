@@ -1,0 +1,51 @@
+
+## Secondary Bonds Asset capability [/secondary-bonds/asset/capability]
+
+### Secondary Bonds Asset capability [POST]
+
++ Request (application/json)
+
+        {
+            "productCode": "206"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "isExpired": false,
+                "isAllowPurchase": true,
+                "isAllowSell": true,
+                "cifId": "1234",
+                "securityNo": "SR 56",
+                "productAccountNo": "12",
+                "productCode": "206",
+                "productName": "SR 56",
+                "productDescription": "INDON ONE MOBILE",
+                "productCurrency": "IDR",
+                "productCategory": "Obligasi Pemerintah",
+                "productRiskProfile": "Konservatif",
+                "yearPerformancePercent" : 6.55486,
+                "couponRate": 7.50,
+                "faceValue": 150000000,
+                "maturityDate": "2021-03-16T17:00:00.000+00:00",
+                "settlementDate": "2021-03-16T17:00:00.000+00:00",
+                "suitabilityBit": true,
+                "navAmount": 105.25,
+                "tax": 15.00000,
+                "capitalPrice": 10500,
+                "minNominal": 1000000,
+                "maxNominal": 75000000,
+                "multiplesOfNominal": 1000000,
+                "recipients": {
+                    "accountName": "Manulife obligasi",
+                    "productName": "Rendah",
+                    "description": "Aggressive - (Sesuai)"
+                }
+            },
+            "response_code": "00000" 
+        }
+        

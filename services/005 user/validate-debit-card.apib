@@ -1,0 +1,35 @@
+
+## Validate Debit Card [/user/validate_debit_card]
+
+### Validate Debit Card [POST]
+
++ Request (application/json)
+
+        {
+            "operationCode": "000",
+            "registerInternetBankingForm": {
+                "registrationCd": "INQUIRY",
+                "ccNumber": "0000000000000181",
+                "phoneNumber": "081220011636",
+                "dateOfBirthStr": "01012000"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "registerInternetBankingFormResponse": {
+                    "isValid": true,
+                    "rsaPublicKeyParsed": {
+                        "modulus": "7mskbOrgzq63QSPozMC/UQCFNVS1dyO7TYph90GvJXLTz9iielqNMaF7ax72iRQRhzVfR+nnaZ1+sCC3jnOzCFx0i3I3djBhtLdhHTM11EPmvrxMVB2CP74SIBk57BshspvzvGIHVNXQWwzSfp1+tQjXkfeL6PnjBFt79DRfG18=",
+                        "exponent": "AQAB"
+                    },
+                    "ccNumber": "0000000000000181",
+                    "cif": "8728930919020"
+                }
+            }
+        }

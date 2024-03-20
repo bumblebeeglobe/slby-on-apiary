@@ -1,0 +1,191 @@
+
+## VKYC Get Schedule [/etc/vkyc/schedule/get]
+
+### VKYC Get Schedule [GET]
+
+ErrorCodes
+1. 08102 Error quota full
+2. 08103 Already Set Schedule
+
++ Request (application/json)
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "schedule": [
+                    {
+                        "day": "Thursday",
+                        "date": "2021-03-16T17:00:00.000+00:00",
+                        "isAvailable": true,
+                        "hours": [
+                            {
+                                "code": "QO809",
+                                "isAvailable": false,
+                                "value": "08.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "09.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "10.00"
+                            }, 
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "11.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "12.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "13.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "14.00"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "Thursday",
+                        "date": "2021-03-17T17:00:00.000+00:00",
+                        "isAvailable": false,
+                        "hours": [
+                            {
+                                "code": "QO809",
+                                "isAvailable": false,
+                                "value": "08.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "09.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "10.00"
+                            }, 
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "11.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "12.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "13.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "14.00"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "Friday",
+                        "date": "2021-03-18T17:00:00.000+00:00",
+                        "isAvailable": true,
+                        "hours": [
+                            {
+                                "code": "QO809",
+                                "isAvailable": false,
+                                "value": "08.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "09.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "10.00"
+                            }, 
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "11.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "12.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "13.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "14.00"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "Saturday",
+                        "date": "2021-03-19T17:00:00.000+00:00",
+                        "isAvailable": true,
+                        "hours": [
+                            {
+                                "code": "QO809",
+                                "isAvailable": false,
+                                "value": "08.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "09.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "10.00"
+                            }, 
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "11.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "12.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": false,
+                                "value": "13.00"
+                            },
+                            {
+                                "code": "Q0910",
+                                "isAvailable": true,
+                                "value": "14.00"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

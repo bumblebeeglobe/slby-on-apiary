@@ -1,0 +1,107 @@
+
+## Validate Submit Own Account [/onfx/submit-own-account]
+
+### Validate Submit Own Account [POST]
+
++ Request (application/json)
+
+        {
+            "sourceAccount": {
+                "accountNo": "693810029464",
+                "accountName": "ENDANG MUSTIKOWATI",
+                "accountType": "S",
+                "mcBit": "Y",
+                "branchCode": "99693",
+                "productCode": "TBSMCY9902",
+                "accountBalances": [
+                    {
+                        "accountCcy": "IDR"
+                    }
+                ]
+            },
+            "listNonRegisteredAccount": [
+                {
+                    "beneAccount": {
+                        "accountNo": "693810029464",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "accountType": "S",
+                        "mcBit": "Y",
+                        "branchCode": "99693",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "USD"
+                            }
+                        ]
+                    },
+                    "beneTransaction": {
+                        "amountCcy": "IDR",
+                        "transferPurpose": {
+                            "code": "PR001",
+                            "description": "Business"
+                        },
+                        "remark": "Travelling",
+                        "transferDate": "2022-03-10T00:00:00.000+00:00",
+                        "amount": 50000.00
+                    }
+                }
+            ]
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "sourceAccount": {
+                    "accountNo": "693810029464",
+                    "accountName": "ENDANG MUSTIKOWATI",
+                    "accountType": "S",
+                    "mcBit": "Y",
+                    "branchCode": "99693",
+                    "productCode": "TBSMCY9902",
+                    "accountBalances": [
+                        {
+                            "accountCcy": "IDR"
+                        }
+                    ]
+                },
+                "listNonRegisteredAccount": [
+                    {
+                        "beneAccount": {
+                            "accountNo": "693810029464",
+                            "accountName": "ENDANG MUSTIKOWATI",
+                            "accountType": "S",
+                            "mcBit": "Y",
+                            "branchCode": "99693",
+                            "accountBalances": [
+                                {
+                                    "accountCcy": "USD"
+                                }
+                            ]
+                        },
+                        "beneTransaction": {
+                            "amountCcy": "IDR",
+                            "transferPurpose": {
+                                "code": "PR001",
+                                "description": "Business"
+                            },
+                            "remark": "Travelling",
+                            "transferDate": "2022-03-10T00:00:00.000+00:00",
+                            "amount": 50000.00,
+                            "exchangeRate": 14057,
+                            "exchangeRateFormat": 14057,
+                            "exchangeRateCcy": "USD",
+                            "bidRate": 14012.12,
+                            "askRate": 14045.00,
+                            "spread": 0.16,
+                            "countDown": 15,
+                            "transactionFormatValue": 50000.88,
+                            "transactionFormatCcy": "IDR",
+                            "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+                        }
+                    }
+                ]
+            }
+        }

@@ -1,0 +1,107 @@
+
+## Switch Mutual Funds Acknowledgement [/wealth/mutualfund/unit/acknowledgement]
+
+### Switch Mutual Funds Acknowledgement [POST]
+
++ Request (application/json)
+        
+        {
+            "actionCode": "MUTUALFUNDSWITCH",
+            "totalUnit": 1000000,
+            "minUnit": 100,
+            "unitRemaining": 5000,
+            "fee": 1.1,
+            "accountNo": "NDF00157752",
+            "accountName": "Topan",
+            "currencyType": "IDR",
+            "branchCode": "71717",
+            "estimatedFeeAmount": 245942.61,
+            "estimatedAmount": 98377045.558974,
+            "sourceOfFund": {
+                "productCode": "GRRMCY0001",
+                "productName": "GIRO MULTICURRENCY 0001",
+                "accountName": "Yeremia",
+                "accountId": "BA430176478D3498E0537007FF0AE598",
+                "accountNo": "010810057199",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "cif": "0000000000000000002"
+            },
+            "mutualFundSource": {
+                "clientCode": "FP232",
+                "clientId": 1,
+                "productCode: "ADPN",
+                "productRiskProfile: "Rendah",
+                "productCurrency": "IDR",
+                "balance" : 14523.0,
+                "navAmount":  14523.0,
+                "navDate": "2021-01-25T05:21:46.000+0000"
+            },
+            "mutualFundDestination": {
+                "clientCode": "FP232", 
+                "clientId": 1,
+                "productCode: "ADPN",
+                "productRiskProfile: "Rendah",
+                "productCurrency": "IDR",
+                "balance" : 14523.0,
+                "navAmount":  14523.0,
+                "navDate": "2021-01-25T05:21:46.000+0000"
+            },
+            "responseCodeOTP": "123456",
+            "tacId":"123456789",
+            "tacCode":"MUTUALFUNDSWITCH",
+            "onlineSessionId":"693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+        }
+        
++ Response 200 (application/json)
+        
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "accountName": "ABERDEEN STANDARD IND EQUITY FUND",
+                        "productName": "EQUITY FUND",
+                        "accountNo": "Aggressive - Not Match"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "accountName": "ABERDEEN STANDARD IND EQUITY FUND",
+                                "productName": "EQUITY FUND",
+                                "description": "Aggressive - Not Match"
+                            },
+                            "transactionStatus": "S",
+                            "transactionAmount": 124190.11,
+                            "transactionCcy": "Unit",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Kode Klien",
+                                    "value": "FIP00123423"
+                                },
+                                {
+                                    "title": "Resiko Produk",
+                                    "value": "Aggresif - Sesuai"
+                                },
+                                {
+                                    "title": "Tanggal Efektif",
+                                    "value": "13 Maret 2021"
+                                },
+                                {
+                                    "title": "Nomor Referensi",
+                                    "value": "20201323242"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

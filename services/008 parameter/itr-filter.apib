@@ -1,0 +1,65 @@
+
+## ITR Inquiry Filter [/parameter/itr/filter]
+
+### ITR Inquiry Filter (Internet Transaction Records) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "transactiontype": [
+                    {
+                        "code": "10000",
+                        "value": "Fund Transfer",
+                        "details" : [
+                            {
+                                "code": "10001",
+                                "value": "Transfer Sesama OCBC (IDR & Valas)",
+                                "description" : ""
+                            },
+                            {
+                                "code": "10002",
+                                "value": "Transfer to other bank (IDR & Valas)",
+                                "description" : ""
+                            },
+                            {
+                                "code": "10003",
+                                "value": "Transfer to my account (IDR & Valas)",
+                                "description" : ""
+                            }
+                        ]
+                    },
+                    {
+                        "code": "15000",
+                        "value": "ONFX",
+                        "details": [
+                            {
+                                "code": "15001",
+                                "value": "ONFX",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "code": "20000",
+                        "value": "Payment & Purchase",
+                        "details": [
+                            {
+                                "code": "20001",
+                                "value": "Purchase",
+                                "description": ""
+                            },
+                            {
+                                "code": "20002",
+                                "value": "Payment",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "response_code": "00000"
+        }

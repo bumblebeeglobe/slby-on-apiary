@@ -1,0 +1,62 @@
+
+## Inquiry Register Risk Profile Question [/wealth/investment/register/risk-profile/questions]
+
+### Inquiry Register Risk Profile Question [POST]
+
+The definition of Completed: When the `nextPage` of selected answer equal with requested `page`.
+
++ Request (application/json)
+
+        {
+            "page": 2
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUCCESS",
+            "responseTitle": "",
+            "language": "EN",
+            "data": {
+                "question": {
+                    "code": "RISK02",
+                    "page": 2,
+                    "isMultipleAnswer": false,
+                    "type": "select",
+                    "question": "There is potentially profit and loss in every investment. How much potential profit you expect and how much potential loss you can tolerate?",
+                    "answers": [
+                        {
+                            "code": "RISKANSWER02001",
+                            "value": "I have no problem achieving minimal return, as long as my investment capital is protected.",
+                            "score": 2,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER02002",
+                            "value": "To achieve income and slight capital growth, I am willing to bear losses (less than 10%) in certain market conditions.",
+                            "score": 4,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER02003",
+                            "value": "To achieve balanced income and capital growth, I am willing to bear losses (less than 15%) in certain market conditions.",
+                            "score": 6,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER02004",
+                            "value": "To get higher capital growth and modest income, I am willing to bear losses (less than 25%) in certain market conditions.",
+                            "score": 8,
+                            "nextPage": 3
+                        },
+                        {
+                            "code": "RISKANSWER02005",
+                            "value": "To achieve high capital growth , I am willing to bear any losses in certain market conditions.",
+                            "score": 10,
+                            "nextPage": 2
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

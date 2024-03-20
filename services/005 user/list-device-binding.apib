@@ -1,0 +1,45 @@
+
+## Get List Device Binding [/user/list_device_binding]
+
+### Get List Device Binding [GET]
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "deviceBindingResponse": {
+                    "listDevice": [
+                        {
+                            "deviceId": "f5b43ac5-d36c-4f",
+                            "cif": "0000000000002139882",
+                            "userCd": "DIANA1234",
+                            "dateBind": "2020-10-13T07:08:46.000+00:00",
+                            "deviceModel": "Xiaomi",
+                            "deviceType": "MI 9",
+                            "isRooted": false,
+                            "deviceOs": "android 10",
+                            "deviceFingerPrint": "112233",
+                            "isPrimary": true,
+                            "isActive": true
+                        },
+                        {
+                            "deviceId": "b5aa5140-8ad3-4f",
+                            "cif": "0000000000002139882",
+                            "userCd": "DIANA SUSANTI",
+                            "dateBind": "2020-10-26T06:23:39.000+00:00",
+                            "deviceModel": "Xiaomi",
+                            "deviceType": "MI 9",
+                            "isRooted": false,
+                            "deviceOs": "android 10",
+                            "deviceFingerPrint": "445566",
+                            "isPrimary": false,
+                            "isActive": true
+                        }
+                    ],
+                    "maxDevices": 2
+                }
+            }
+        }

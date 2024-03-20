@@ -1,0 +1,103 @@
+
+## TAKA Tenor [/account/saving/plan/tenor]
+
+### TAKA Tenor [POST]
+
+TYPE: 
+1. FIX
+2. TARGET
+
++ Request (application/json)
+
+        {
+            "amount": 123124,
+            "type": "FIX"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "tenors": [
+                    {
+                        "code": "1",
+                        "value": "1 Tahun"
+                    },
+                    {
+                        "code": "1.5",
+                        "value": "1.5 Tahun"
+                    },
+                    {
+                        "code": "2",
+                        "value": "2 Tahun"
+                    },
+                    {
+                        "code": "2.5",
+                        "value": "2.5 Tahun"
+                    },
+                    {
+                        "code": "3",
+                        "value": "3 Tahun"
+                    },
+                    {
+                        "code": "3.5",
+                        "value": "3.5 Tahun"
+                    },
+                    {
+                        "code": "4",
+                        "value": "4 Tahun"
+                    },
+                    {
+                        "code": "4.5",
+                        "value": "4.5 Tahun"
+                    },
+                    {
+                        "code": "5",
+                        "value": "5 Tahun"
+                    },
+                    {
+                        "code": "5.5",
+                        "value": "5.5 Tahun"
+                    },
+                    {
+                        "code": "6",
+                        "value": "6 Tahun"
+                    },
+                    {
+                        "code": "6.5",
+                        "value": "6.5 Tahun"
+                    },
+                    {
+                        "code": "7",
+                        "value": "7 Tahun"
+                    },
+                    {
+                        "code": "7.5",
+                        "value": "7.5 Tahun"
+                    },
+                    {
+                        "code": "8",
+                        "value": "8 Tahun"
+                    },
+                    {
+                        "code": "8.5",
+                        "value": "8.5 Tahun"
+                    },
+                    {
+                        "code": "9",
+                        "value": "9 Tahun"
+                    },
+                    {
+                        "code": "9.5",
+                        "value": "9.5 Tahun"
+                    },
+                    {
+                        "code": "10",
+                        "value": "10 Tahun"
+                    }
+                ]
+            }
+        }

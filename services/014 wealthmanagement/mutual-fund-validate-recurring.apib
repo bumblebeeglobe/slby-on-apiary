@@ -1,0 +1,73 @@
+
+## Primary bonds validate Recurring [/wealth/mutualfund/validate-recurring]
+
+### Primary bonds validate Recurring [POST]
+
++ Request (application/json)
+
+        {
+            "productCode": "PSONA",
+            "startDate":"2021-04-09T17:00:00.000+00:00",
+            "tenor": 12,
+            "subscriptionType": "M",
+            "totalAmount":1000000
+        }
+
++ Response 200 (application/json)
+
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "isEligibleInsurance": true,
+                "limitInsuranceStatus": true,
+                "questions": [
+                    {
+                        "type": "select",
+                        "question": "Apakah dalam 2 tahun terakhir Anda pernah dirawat di RS lebih dari 5 hari berturut turut dan atau tidak dapat bekerja kembali/ melakukan aktifitas sehari hari lebih dari 3 hari berturut turut, dianjurkan atau melakukan pengobatan rawat jalan selama 2 minggu atau lebih?",
+                        "answers": [
+                            {
+                                "code": "Y",
+                                "value": "Yes"
+                            },
+                            {
+                                "code": "N",
+                                "value": "No"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "select",
+                        "question": "Apakah anda pernah/ sedang dirawat atau diberitahu menderita penyakit seperti : asma, TBC, saluran pernafasan, hipertensi, stroke, jantung atau penyakit lain yang berhubungan dengan pembuluh darah, ginjal/ kandung kemih/saluran kencing termasuk batu saluran kencing, tukak lambung, hepatitis, hati, saluran pencernaan/ penyakit empedu, epilepsi, kerusakan otak, mental/ sistem syaraf, diabetes, penyakit thyroid, kanker/ tumor/ penyakit serius lainnya, lupus, penyakit kelamin/ penyakit lain yang ditularkan melalui hubungan kelamin?",
+                        "answers": [
+                            {
+                                "code": "Y",
+                                "value": "Yes"
+                            },
+                            {
+                                "code": "N",
+                                "value": "No"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "select",
+                        "question": "Apakah ada pengajuan asuransi Anda, proses pemulihan dan perubahan Polis asuransi jiwa, manfaat asuransi kecelakaan, cacat tetap total atau kesehatan yang berhubungan dengan pertanggungan jiwa Anda yang ditolak, ditangguhkan/ ditunda atau diterima dengan penambahan biaya/ kondisi khusus?",
+                        "answers": [
+                            {
+                                "code": "Y",
+                                "value": "Yes"
+                            },
+                            {
+                                "code": "N",
+                                "value": "No"
+                            }
+                        ]
+                    }
+                ],
+                "maxAgeProtection": true,
+                "insuranceVendorName": "PT ASURANSI JIWA GENERALI INDONESIA"
+            },
+            "response_code": "00000"
+        }

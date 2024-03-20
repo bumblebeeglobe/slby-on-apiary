@@ -1,0 +1,759 @@
+
+## Source of Fund [/fundtransfer/source-of-funds]
+
+### Source of Fund [POST]
+
++ Request (application/json)
+
+        {
+            "currencies" : ["IDR", "SGD"],
+            "transactionCurrencyCode" : "IDR",
+            "transferServiceCode": "OAT"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "accounts": [
+                    {
+                        "productCode": "GRRMCY9902",
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountNo": "693800000723",
+                        "accountType": "D",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6C4EDA13E050A8C0940711A9",
+                        "labelDebitAccount": "GIRO BUSINESS SMART 693800000723 IDR 65200583.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 65200583,
+                                "isAvailable": true
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "GRRMCY9902",
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountNo": "693800004501",
+                        "accountType": "D",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6C5DDA13E050A8C0940711A9",
+                        "labelDebitAccount": "GIRO BUSINESS SMART 693800004501 EUR 1.41",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 410525298.23,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 1.41,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 50,
+                                "isAvailable": true
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "GRRMCY9902",
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountNo": "693800005508",
+                        "accountType": "D",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6C61DA13E050A8C0940711A9",
+                        "labelDebitAccount": "GIRO BUSINESS SMART 693800005508 AUD 0.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -100000,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 0,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "GRRMCY9902",
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountNo": "693800005516",
+                        "accountType": "D",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6C62DA13E050A8C0940711A9",
+                        "labelDebitAccount": "GIRO BUSINESS SMART 693800005516 AUD 0.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -100000,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 0,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "GRRMCY9902",
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountNo": "693800005599",
+                        "accountType": "D",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6C63DA13E050A8C0940711A9",
+                        "labelDebitAccount": "GIRO BUSINESS SMART 693800005599 AUD 0.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -100000,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 0,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBPAY10002",
+                        "productName": "TANDA PAYROLL 1-P",
+                        "accountNo": "693810003337",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "N",
+                        "accountId": "AE28BF3D6C7CDA13E050A8C0940711A9",
+                        "labelDebitAccount": "TANDA PAYROLL 1-P 693810003337 IDR 2280351.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 2280351,
+                                "isAvailable": true
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBTND13082",
+                        "productName": "TND360 PROMO3 2012-S",
+                        "accountNo": "562810000025",
+                        "accountType": "S",
+                        "branchCode": "01562",
+                        "mcBit": "N",
+                        "accountId": "AE28BF3D6C7ADA13E050A8C0940711A9",
+                        "labelDebitAccount": "TND360 PROMO3 2012-S 562810000025 IDR 47526401.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 47526401,
+                                "isAvailable": true
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810021354",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6C7DDA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810021354 IDR -53310.21",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -53310.21,
+                                "isAvailable": true
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810021529",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6CB8DA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810021529 EUR 999978.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 275633157,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 999978,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 1000400,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 1001370.03,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810022139",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6CBEDA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810022139 AUD 1001846.68",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 522135,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 1001846.68,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 1000000,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 999980,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 1001392.07,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 1000080,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 1005081.55,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 999800,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 930202.64,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 1000000,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 1046666.78,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 955436.61,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810036170",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6C9BDA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810036170 IDR 13159505.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": 13159505,
+                                "isAvailable": true
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810039281",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6CBFDA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810039281 AUD 0.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -100000,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 0,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810039612",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6CC0DA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810039612 AUD 0.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -100000,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 0,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810040008",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6CC1DA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810040008 AUD 0.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -100000,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 0,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "isAvailable": false
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "TBSMCY9901",
+                        "productName": "Tanda360Plus-S",
+                        "accountNo": "693810040099",
+                        "accountType": "S",
+                        "branchCode": "99693",
+                        "mcBit": "Y",
+                        "accountId": "AE28BF3D6CC2DA13E050A8C0940711A9",
+                        "labelDebitAccount": "Tanda360Plus-S 693810040099 AUD 0.00",
+                        "cif": "0000000000001679512",
+                        "accountBalances": [
+                            {
+                                "accountCcy": "IDR",
+                                "balance": -100000,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "AUD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CAD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CHF",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "CNH",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "EUR",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "GBP",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "HKD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "JPY",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "NZD",
+                                "balance": 0,
+                                "isAvailable": false
+                            },
+                            {
+                                "accountCcy": "SGD",
+                                "balance": 0,
+                                "isAvailable": true
+                            },
+                            {
+                                "accountCcy": "USD",
+                                "balance": 0,
+                                "isAvailable": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        }

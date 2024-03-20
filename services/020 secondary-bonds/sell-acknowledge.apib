@@ -1,0 +1,139 @@
+
+## Sell Secondary Bonds Acknowledge [/secondary-bonds/sell/acknowledge]
+
+### Sell Secondary Bonds Acknowledge [POST]
+
+Error Codes
+1. B0090 - Booking Expired
+
++ Request (application/json)
+        
+        {
+            "amount": 500000,
+            "cifId": "1234",
+            "securityNo": "SR 56",
+            "productAccountNo": "12",
+            "productCode": "205",
+            "productName": "SR 56",
+            "productDescription": "INDON ONE MOBILE",
+            "productCurrency": "IDR",
+            "productCategory": "Obligasi Pemerintah",
+            "productRiskProfile": "Konservatif",
+            "yearPerformancePercent" : 6.55486,
+            "maturityDate": "2021-03-16T00:00:00.000+0700",
+            "settlementDate": "2021-03-16T00:00:00.000+0700",
+            "suitabilityBit": true,
+            "navAmount": 105.25,
+            "tax": 15.00000,
+            "capitalPrice": 103,
+            "faceValue": 1000000,
+            "transaction": {
+                "dealId": "597469",
+                "dealNo": "ABCD1234",
+                "profitLoss": 9000,
+                "profitLossRate": 5.50,
+                "acquisitionDate": "2019-04-12T16:33:51.583+07:00",
+                "availableAmount": 100000000,
+                "transactionType": "4",
+                "transactionDate": "2019-04-12T16:33:51.583+07:00",
+                "settlementDate": "2019-04-25T00:00:00+07:00",
+                "faceValue": 1000000,
+                "dealPrice": 100,
+                "valueLeft": 1000000,
+                "taxAmnesty": "Non Tax Amnesty"
+            },
+            "prebook": {
+                "dealId": "31",
+                "dealPrice": 102.1,
+                "yieldToMaturity": 6.55486,
+                "capitalPrice": 100000,
+                "capitalGain": 1000,
+                "proceed": 1021000,
+                "accruedDays": 38,
+                "interest": 8444,
+                "taxOnAccrued": 1000,
+                "taxOnCapitalGL": 1000,
+                "transactionFee": 10000,
+                "safeKeepingFee": 1000,
+                "totalProceed": 1029444
+            },
+            "source": {
+                "productName": "SR 56",
+                "productCategory": "Obligasi Pemerintah IDR",
+                "productRiskProfile" : "Rendah - Menengah"
+            },
+            "sourceOfFund": {
+                "productCode": "GRRMCY0001",
+                "productName": "GIRO MULTICURRENCY 0001",
+                "accountName": "Yeremia",
+                "accountId": "BA430176478D3498E0537007FF0AE598",
+                "accountNo": "010810057199",
+                "branchCode": "01010",
+                "mcBit": "Y",
+                "cif": "0000000000000000002"
+            },
+            "responseCodeOTP":"123456",
+            "onlineSessionId":"693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0",
+            "tacId": [
+                "1234567890ASD"
+            ]
+        }
+        
++ Response 200 (application/json)
+        
+        {
+            "responseDescription": "SUKSES",
+            "responseTitle": "",
+            "language": "IN",
+            "data": {
+                "receipt": {
+                    "sourceOfFund": {
+                        "productName": "GIRO BUSINESS SMART",
+                        "accountName": "ENDANG MUSTIKOWATI",
+                        "productCode": "GRRMCY9902",
+                        "accountNo": "693800000723",
+                        "accountCcy": "IDR"
+                    },
+                    "listTransaction": [
+                        {
+                            "errorCode": "00000",
+                            "errorDesc": "",
+                            "transactionCode": "TRANSACTIONCODE",
+                            "transactionId": "00dc7e54-f31b-40a1-a258-18b5ff06904a",
+                            "recipients": {
+                                "accountName": "ABERDEEN STANDARD IND EQUITY FUND",
+                                "productName": "EQUITY FUND",
+                                "description": "Aggressive - Not Match"
+                            },
+                            "transactionStatus": "S",
+                            "transactionAmount": 3250800.88,
+                            "transactionCcy": "IDR",
+                            "transactionDate": "2020-08-25T16:55:32.000+00:00",
+                            "descriptions": [
+                                {
+                                    "title": "Jumlah Pencairan",
+                                    "value": "IDR 50,000,000"
+                                },
+                                {
+                                    "title": "Price",
+                                    "value": "120.00 (YTM 6.50%)"
+                                },
+                                {
+                                    "title": "Tanggal Penyelesaian",
+                                    "value": "2 January 2021"
+                                },
+                                {
+                                    "title": "Bunga Berjalan",
+                                    "value": "IDR 567,000"
+                                },
+                                {
+                                    "title": "Biaya Penyimpanan",
+                                    "value": "IDR 2.000.000"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "response_code": "00000"
+        }

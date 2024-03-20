@@ -1,0 +1,36 @@
+
+## Telegraphic Banks [/telegraphic/swift-banks]
+
+### Telegraphic Banks [POST]
+
++ Request (application/json)
+
+        {
+            "countryCode": "001",
+            "cityCode": "001"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "banks": [
+                    {
+                        "swiftCode": "ABFMSGS1XXX",
+                        "name": "ABERDEEN STANDARD INVESTMENTS (ASIA) LIMITED",
+                        "address": "21 CHURCH STREET CAPITAL SQUARE TWO 01 - 01",
+                        "country": {
+                            "code": "SG",
+                            "value": "SINGAPORE"
+                        },
+                        "city": {
+                            "code": "SINGAPORE",
+                            "value": "SINGAPORE"
+                        }
+                    }
+                ]
+            }
+        }

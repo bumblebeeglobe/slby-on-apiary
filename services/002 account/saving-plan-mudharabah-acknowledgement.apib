@@ -1,0 +1,48 @@
+
+## Mudharabah Acknowledgement [/account/saving/account/mudharabah/acknowledgement]
+
+### Mudharabah Acknowledgement [POST]
+
++ Request (application/json)
+
+        {
+            "name": "AULIA RACHMAN",
+            "email": "mbank.user09@devteam.net",
+            "phoneNumber":"123123",
+            "custAddress" : {
+                "address": "ADDR2 5850001882955",
+                "postalCode": "16117",
+                "province": "JAWA BARAT",
+                "districtCity": "KOTA BOGOR",
+                "kecamatan": "BOGOR BARAT",
+                "kelurahan": "LOJI"
+            },
+            "ccyCode":"IDR",
+            "productCode": "TBMDIB0001",
+            "productType": "S",
+            "mcyBit":"N",
+            "purpose":"A",
+            "sourceOfFund":"A",
+            "initialDeposit": 100000,
+            "isCreateATMCard" : "Y",
+            "isSendATMCard" : "Y",
+            "mudharabahRate": 0.5,
+            "nisbahSpesial": 0,
+            "nisbahSpesialCode": "+",
+            "conventionalRate": 0.05952,
+            "conventionalRateDesc": "Berdasarkan rata-rata rasio bagi hasil 6 bulan terakhir",
+            "tacId":"8406503911EC3202E050A8C094073221",
+            "otp": "123456",
+            "onlineSessionId": "693810053779--1000000-30ad6495-318e-4969-9850-e560b1ad3af0"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUCCESS",
+            "data": {
+                "message": "Aktifkan rekeningmu dengan melakukan setoran awal sebesar IDR 100000 ke rekeningmu. Kamu bisa mengambil kartumu di cabang OCBC NISP terdekat dan laporan bulananmu akan dikirim ke mbank.user09@devteam.net"
+            }
+        }

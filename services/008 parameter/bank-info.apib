@@ -1,0 +1,25 @@
+
+## Bank Info [/parameter/bank-info]
+
+### Bank Info [POST]
+
++ Request
+
+        {
+            "bankId": "999"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "response_code": "00000",
+            "response_desc_en": "SUCCESS",
+            "response_desc_id": "SUKSES",
+            "data": {
+                "bankId": "028",
+                "bankName": "OCBC NISP",
+                "availableTransaction": [
+                    "IFT"
+                ]
+            }
+        }
